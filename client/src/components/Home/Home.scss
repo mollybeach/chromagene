@@ -1,0 +1,10 @@
+
+@use '../../partials/variables' as * ;
+@use '../../partials/colors' as * ;
+@use '../../partials/breakpoints' as * ;
+@use '../../partials/typography' as * ;
+@use '../../partials/mixins' as * ;
+
+.home{
+    background-color: #111111;
+}
