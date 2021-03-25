@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import axios from 'axios';
-import './App.scss';
+import './App.css';
 import Home from './components/Home/Home';
 import Upload from './components/Upload/Upload';
 import Email from './components/Email/Email';
@@ -12,9 +12,9 @@ import EditGallery from "./components/EditGallery/EditGallery";
 import ContactItemDetails from "./components/ContactItemDetails/ContactItemDetails";
 import NewGallery from "./components/NewGallery/NewGallery";
 import Contact from "./components/Contact/Contact";
-import EditContactItem from "./components/EditcontactItem/EditcontactItem";
+import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';
-import AddContactItem from "./components/AddcontactItem/AddcontactItem";
+import AddContactItem from "./components/AddContactItem/AddContactItem";
 class App extends Component {
   state = {
     galleryList : null,
