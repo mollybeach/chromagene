@@ -18,7 +18,6 @@ import AddContactItem from "./components/AddContactItem/AddContactItem";
 class App extends Component {
   state = {
     galleryList : null,
-    singleWarehouse :null,
     contactList: null
 }
 
@@ -57,7 +56,7 @@ axios.get('http://localhost:8080/home')
           <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList} contactList={contactList} {...props} />} />
             <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
             <Route exact path = '/gallery/add' render = {(props)=> <NewGallery {...props}  />}  />
-          <Route exact path = '/contact'    render = {(props)=> <Contact contactList={contactList} {...props} />} />
+            <Route exact path = '/contact'    render = {(props)=> <Contact contactList={contactList} {...props} />} />
             <Route exact path='/contact/add' render={(props) => <AddContactItem {...props} contactList={contactList} galleryList={galleryList} />} />
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} contactList = {contactList} />} />
           <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} contactList ={contactList} galleryList ={galleryList}/> } />

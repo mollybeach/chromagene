@@ -9,13 +9,13 @@ router.get('/contacts/:id',(req,res)=>{
     const parsedData = JSON.parse(contactsArr)
     const selectedWareId = req.params.id;
   
-    const singlecontact = parsedData.find(ware=> ware.id === selectedWareId)
+    const singleContact = parsedData.find(ware=> ware.id === selectedWareId)
 
    const gallerytArr = fs.readFileSync("./data/gallery.json");
    const parsedInvArr = JSON.parse(gallerytArr);
    const wareInvenArr =  parsedInvArr.filter(invobj => invobj.contactID===selectedWareId);
 
-   const fullDetails = {...singlecontact,galleryt:wareInvenArr}
+   const fullDetails = {...singleContact,galleryt:wareInvenArr}
    res.json(fullDetails)
 })
 

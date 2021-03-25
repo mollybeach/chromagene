@@ -31,11 +31,11 @@ router.post("/gallery/add", (req, res) => {
         ) {
             res.status(400).send("Please fill all required fields");
         } else {
-            let updatedgalleryData = galleryData = [newgalleryItem, ...galleryData];
-            updatedgalleryData = JSON.stringify(updatedgalleryData, null, 2);
-            fs.writeFileSync("./data/inventories.json", updatedgalleryData);
+            let updatedGalleryData = galleryData = [newGalleryItem, ...galleryData];
+            updatedGalleryData = JSON.stringify(updatedGalleryData, null, 2);
+            fs.writeFileSync("./data/inventories.json", updatedGalleryData);
 
-            res.status(200).send(newgalleryItem);
+            res.status(200).send(newGalleryItem);
         }
     };
 

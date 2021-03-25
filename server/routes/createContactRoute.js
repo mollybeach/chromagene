@@ -37,10 +37,10 @@ router.post("/contact/add", (req, res) => {
     return;
   }
 
-  let updateCdcontactData = contactData = [newCcontact, ...contactData];
-  updatedcontactData = JSON.stringify(updatedCcontactData, null, 2);
-  fs.writeFileSync("./data/contacts.json", updatedCcontactData);
-  res.status(200).json(newCcontact);
+  let updatedContactData = contactData = [newContact, ...contactData];
+  updatedContactData = JSON.stringify(updatedContactData, null, 2);
+  fs.writeFileSync("./data/contacts.json", updatedContactData);
+  res.status(200).json(newContact);
 });
 
 module.exports = router;

@@ -2,28 +2,29 @@ const express = require('express');
 const app = express();
 const PORT = 8080;
 const cors = require("cors");
-const warehouseRoute = require("./routes/contact");
-const inventoryRoute = require("./routes/gallery");
-const createWarehouseRoute = require("./routes/createContactRoute");
-const editWarehouseRoute = require("./routes/editContactRoute");
-const deleteWarehouseRoute = require("./routes/deleteWarehouseRoute");
-const createInventoryRoute = require("./routes/createGalleryRoute");
-const deleteInventoryRoute = require("./routes/deleteInventoryRoute");
-const editInventoryRoute = require("./routes/editInventoryRoute");
-const singleWarehouseDetails = require('./routes/singleWarehouseDetails');
+const homeRoute = require("./routes/homeRoute");
+const contactRoute = require("./routes/contactRoute");
+const galleryRoute = require("./routes/galleryRoute");
+const createContactactRoute = require("./routes/createContactRoute");
+const editContactactRoute = require("./routes/editContactactRoute");
+const deleteContactactRoute = require("./routes/deleteContactactRoute");
+const creategalleryRoute = require("./routes/createGalleryRoute");
+const deletegalleryRoute = require("./routes/deletegalleryRoute");
+const editgalleryRoute = require("./routes/editgalleryRoute");
+const singleContactactDetails = require('./routes/singleContactactDetails');
 
 app.use(cors());
 app.use(express.json());
-
-app.use("/", warehouseRoute);
-app.use("/", inventoryRoute);
-app.use("/", createWarehouseRoute);
-app.use("/", editWarehouseRoute);
-app.use("/", deleteWarehouseRoute);
-app.use("/", createInventoryRoute);
-app.use("/", deleteInventoryRoute);
-app.use("/", editInventoryRoute);
-app.use("/",singleWarehouseDetails);
+app.use("/", homeRoute);
+app.use("/", contactRoute);
+app.use("/", galleryRoute);
+app.use("/", createContactactRoute);
+app.use("/", editContactactRoute);
+app.use("/", deleteContactactRoute);
+app.use("/", creategalleryRoute);
+app.use("/", deletegalleryRoute);
+app.use("/", editgalleryRoute);
+app.use("/",singleContactactDetails);
 
 
 
