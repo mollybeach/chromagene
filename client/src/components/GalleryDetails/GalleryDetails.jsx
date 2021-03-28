@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Header.scss';
+import './GalleryDetails.scss';
 
 class GalleryDetails extends Component {
     render() {

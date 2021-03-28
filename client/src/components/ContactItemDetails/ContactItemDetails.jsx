@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './contact-item-details.scss';
+import './ContactItemDetails.scss';
 
 
 class ContactItemDetails extends Component {

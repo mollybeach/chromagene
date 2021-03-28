@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './email.scss';
+import './Email.scss';
 
 
 class Email extends Component {

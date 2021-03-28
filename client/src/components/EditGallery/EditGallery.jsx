@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './edit-gallery.scss';
+import './EditGallery.scss';
 
 
 class EditGallery extends Component {

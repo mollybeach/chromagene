@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './edit-contact-title.scss';
+import './AddContactItem.scss';
 
 
 class AddContact extends Component {

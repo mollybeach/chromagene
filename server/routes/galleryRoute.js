@@ -3,7 +3,7 @@ const galleryList = require("../data/gallery.json");
 const router = express.Router();
 const fs = require("fs");
 
-router.get("/inventories", (req, res) => {
+router.get("/gallery", (req, res) => {
         res.status(200).json(galleryList);
   });
 

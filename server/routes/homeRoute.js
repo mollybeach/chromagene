@@ -5,7 +5,7 @@ const fs = require("fs");
 
 
 //get list of home items from data
-router.get("/homes", (req, res) => {
+router.get("/home", (req, res) => {
         res.status(200).json(homeList);
   });
 

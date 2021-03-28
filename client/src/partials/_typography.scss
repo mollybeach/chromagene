@@ -1,3 +1,9 @@
+//@use "./colors" as *;
+//@use "./breakpoints" as *;
+//@use "./variables" as *;
+
+
+
 /************************************FONTS******************************************/
 
 @font-face {
@@ -11,3 +17,46 @@
 	src: url("../assets/fonts/TitilliumWeb-Regular.woff") format("woff"), url("../assets/fonts/TitilliumWeb-Regular.woff2") format("woff2");
 	font-weight: 400;
 }
+/************************************FONTS**************************************
+
+@font-face {
+    font-family: "AvenirNextLTProRegular";
+    src: url("../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"), url("../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "AvenirNextLTProDemi";
+    src: url("../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff"), url("../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "AvenirNextLTProBold";
+    src: url("../assets/fonts/AvenirNextLTPro-Bold.woff") format("woff"), url("../assets/fonts/AvenirNextLTPro-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+
+/*************************************H1 HERO HEADING************************************
+
+@mixin h1-hero-heading {
+    font-family: AvenirNextLTProBold;
+    color: $white;
+    font-size: 3.8rem; //60px 
+    line-height: 4.3rem; //68px
+    @include tablet {
+        font-size: 3.8rem; //60px
+        line-height: 4.3rem; //68px
+    }
+    @include desktop {
+        font-size: 3.8rem; //60px 
+        line-height: 4.3rem; //68px
+    }
+}
+
+
+
+
+
+*/

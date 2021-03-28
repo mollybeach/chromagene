@@ -1,10 +1,96 @@
 
 @use '../../partials/variables' as *;
-@use '../../partials/breakpoints' as*;
+//@use '../../partials/breakpoints' as*;
 @use '../../partials/colors' as *;
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
 .contact{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $cloud;
+    background-color: $white;
+    padding-bottom: .5rem;
+  
+    @include tablet {
+      width: 50%;
+      padding-bottom: 1rem;
+  
+      &::after {
+        content: '';
+        position: absolute;
+        top: 1.5rem;
+        // left: 50%;
+        height: 24rem;
+        width: 1px;
+        background-color: $cloud;
+      }
+    }
+  
+    &__title {
+      font-size: 1.25rem;
+      margin: 1rem 1.5rem 1.5rem;
+  
+      @include tablet {
+        margin: 1.5rem 0 2rem 2rem;
+      }
+    }
+  
+    &__title-label-container {
+      display: flex;
+      flex-direction: column;
+      margin: 0 1.5rem 1rem;
+  
+      @include tablet {
+        margin: 0 2rem 1.5rem;
+      }
+    }
+  
+    &__label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      margin-bottom: .25rem;
+      line-height: 1.25rem;
+    }
+  
+    &__input {
+      height: 2.25rem;
+      border-radius: 20px;
+      border: 1px solid $cloud;
+      padding: 0 1rem;
+  
+      @include tablet {
+        height: 2.375rem;
+      }
+  
+      &::placeholder {
+        font-family: TitilliumWebRegular400;
+        font-size: 0.8125rem;
+      }
+  
+      &:focus {
+        border: 1px solid blue;
+        outline: none;
+      }
+    }
+  
 }
+.contact-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.25rem;
+    background-color: $light-grey;
+  
+    &__btn-container {
+      width: 100%;
+      margin: 0 1rem;
+      display: flex; 
+      justify-content: space-around;
+  
+      @include tablet {
+        justify-content: flex-end;
+        margin: 0 2rem;
+      }
+    }
+  }

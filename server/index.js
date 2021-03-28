@@ -3,6 +3,7 @@ const app = express();
 const PORT = 8080;
 const cors = require("cors");
 const homeRoute = require("./routes/homeRoute");
+/*
 const contactRoute = require("./routes/contactRoute");
 const galleryRoute = require("./routes/galleryRoute");
 const createContactactRoute = require("./routes/createContactRoute");
@@ -26,8 +27,10 @@ app.use("/", deletegalleryRoute);
 app.use("/", editgalleryRoute);
 app.use("/",singleContactactDetails);
 
-
-
+*/
+app.use(cors());
+app.use(express.json());
+app.use("/", homeRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

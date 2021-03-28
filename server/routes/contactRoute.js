@@ -1,11 +1,11 @@
 const express = require("express");
-const contactList = require("../data/contacts.json");
+const contactList = require("../data/contact.json");
 const router = express.Router();
 const fs = require("fs");
 
 
 //get list of contact items from data
-router.get("/contacts", (req, res) => {
+router.get("/contact", (req, res) => {
         res.status(200).json(contactList);
   });
 

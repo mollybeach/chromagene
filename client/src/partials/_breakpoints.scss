@@ -1,7 +1,6 @@
-@use "./variables" as *;
+
 
 /********************************* FOR TABLETS**********************************************************/
-@use './variables' as *;
 
 @mixin tablet {
     @media (min-width: $breakpoint-tablet) {

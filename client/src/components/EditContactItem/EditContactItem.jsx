@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './edit-contact-title.scss';
+import './EditContactItem.scss';
 
 
-class EditContactTitle extends Component {
+class EditContactItem extends Component {
 
     render() {
         return (
-            <div className = 'edit-contact-title'>
+            <div className = 'edit-contact-item'>
             </div>
         );
     }
 }
 
-export default EditContactTitle;
+export default EditContactItem;

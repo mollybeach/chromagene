@@ -1,4 +1,10 @@
 
+
+//Font Variables
+$font-family: 'Roboto', sans-serif;
+
+
+//Breakpoints
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1280px;
 
@@ -19,4 +25,237 @@ $mockup-column-small-desktop: 1.9vw; //24px
 $mockup-column-large-mobile: 16.9vw;  //54px 16.9vw
 $mockup-column-large-tablet: 13.0vw; //100px 13.0vw 
 $mockup-column-large-desktop: 5.3vw; //68px  5.3vw
+
+
+/*****************INCREMENT VARIABLES IN PX************/
+
+$increment0-px: 4px; 
+$increment1-px: 8px;
+$increment2-px: 16px;
+$increment3-px: 24px; 
+$increment4-px: 32px;
+$increment5-px: 40px; 
+$increment6-px: 48px; 
+$increment7-px: 56px; 
+$increment8-px: 64px; 
+$increment9-px: 72px;
+$increment10-px: 80px;
+$increment11-px: 88px;
+$increment12-px: 96px;
+$increment13-px: 104px;
+$increment14-px: 112px;
+$increment15-px: 120px;
+$increment16-px: 128px; 
+$increment17-px: 136px; 
+$increment18-px: 144px; 
+$increment19-px: 152px; 
+$increment20-px: 160px;
+$increment21-px: 168px;
+$increment22-px: 176px;
+$increment23-px: 184px;
+$increment24-px: 192px;
+$increment25-px: 200px;
+$increment26-px: 208px;
+$increment27-px: 216px;
+$increment28-px: 224px;
+$increment29-px: 232px;
+$increment30-px: 240px;
+$increment31-px: 248px;
+$increment32-px: 256px;
+$increment33-px: 264px;
+$increment34-px: 272px;
+$increment35-px: 280px;
+$increment36-px: 288px;
+$increment37-px: 296px;
+$increment38-px: 304px;
+$increment39-px: 312px;
+$increment40-px: 320px;
+$increment41-px: 328px;
+
+
+
+
+$increment20px-px:20px;
+$increment54px-px:54px; 
+$increment68px-px:68px; 
+$increment100px-px:100px;
+
+/*****************INCREMENT VARIABLES IN REM************/
+
+$increment0-rem: 0.3rem;  //4px 
+$increment1-rem: 0.5rem; //8px 
+$increment2-rem: 1.0rem;  //16px 
+$increment3-rem: 1.5rem;  //24x 
+$increment4-rem: 2.0rem; //32px 
+$increment5-rem: 2.5rem;  //40px 
+$increment6-rem: 3.0rem; //48px 
+$increment7-rem: 3.5rem;  //56px 
+$increment8-rem: 4.0rem;  //64px 
+$increment9-rem: 4.5rem;  //72px 
+$increment10-rem: 5.0rem;  //80px 
+
+
+$increment20px-rem: 1.3rem;  //20px 
+$increment54px-rem: 3.4rem; //54px 
+$increment68px-rem: 4.3rem; //64px 
+$increment100px-rem: 6.3rem; //100px 
+
+
+/*****************MOBILE INCREMENT VARIABLES IN VW************/
+
+$increment0-mobile: 1.3vw;  //4px 
+$increment1-mobile: 2.5vw;  //8px 
+$increment2-mobile: 5.0vw;  //16px 
+$increment3-mobile: 7.5vw;  //24px 
+$increment4-mobile: 10.0vw;  //32px 
+$increment5-mobile: 12.5vw;  //40px 
+$increment6-mobile: 15.0vw;  //48px 
+$increment7-mobile: 17.5vw;  //56px 
+$increment8-mobile: 20.0vw;  //64px 
+$increment9-mobile: 22.5vw;  //72px 
+$increment10-mobile: 25.0vw;  //80px 
+
+/*****************TABLET INCREMENT VARIABLES************/
+
+$increment0-tablet: 0.5vw;  //4px 
+$increment1-tablet: 1.0vw;  //8px 
+$increment2-tablet: 2.1vw;  //16px 
+$increment3-tablet: 3.1vw;  //24px 
+$increment4-tablet: 4.2vw;  //32px 
+$increment5-tablet: 5.2vw;  //40px 
+$increment6-tablet: 6.3vw;  //48px 
+$increment7-tablet: 7.3vw;  //56px 
+$increment8-tablet: 8.3vw;  //64px 
+$increment9-tablet: 9.4vw;  //72px 
+$increment10-tablet: 10.4vw;  //80px 
+
+
+/*****************DESKTOP INCREMENT VARIABLES************/
+
+$increment0-desktop: 0.3vw;  //4px 
+$increment1-desktop: 0.6vw;  //8px 
+$increment2-desktop: 1.3vw;  //16px 
+$increment3-desktop: 1.9vw;  //24px 
+$increment4-desktop: 2.5vw;  //32px 
+$increment5-desktop: 3.1vw;  //40px 
+$increment6-desktop: 3.8vw;  //48px 
+$increment7-desktop: 4.4vw;  //56px 
+$increment8-desktop: 5.0vw;  //64px 
+$increment9-desktop: 5.6vw;  //72px 
+$increment10-desktop: 6.3vw;  //80px 
+
+
+/**********************MOCKUP COLUMN PERCENT VARIABLES*******************************/
+
+//mockup column outside
+$mockup-column-outside-mobile-percent: 5.0%;  //16px 
+$mockup-column-outside-tablet-percent: 3.1%; //24px
+$mockup-column-outside-desktop-percent: 6.3%; //80px
+
+//mockup column small
+$mockup-column-small-mobile-percent: 7.5%; //24px
+$mockup-column-small-tablet-percent: 3.1%; //24px
+$mockup-column-small-desktop-percent: 1.9%; //24px
+
+
+//mockup column large
+$mockup-column-large-mobile-percent: 16.9%;  //54px 
+$mockup-column-large-tablet-percent: 13.0%; //100px 
+$mockup-column-large-desktop-percent: 5.3%; //68px 
+
+
+/*******************************INCREMENT PERCENTAGE*******************************/
+
+/*****************MOBILE INCREMENT PERCENT VARIABLES************/
+
+$increment0-mobile-percent: 1.3%;  //4px 
+$increment1-mobile-percent: 2.5%;  //8px 
+$increment2-mobile-percent: 5.0%;  //16px 
+$increment3-mobile-percent: 7.5%;  //24px 
+$increment4-mobile-percent: 10.0%;  //32px 
+$increment5-mobile-percent: 12.5%;  //40px 
+$increment6-mobile-percent: 15.0%;  //48px 
+$increment7-mobile-percent: 17.5%;  //56px 
+$increment8-mobile-percent: 20.0%;  //64px 
+$increment9-mobile-percent: 22.5%;  //72px 
+$increment10-mobile-percent: 25.0%;  //80px 
+
+
+/*****************TABLET INCREMENT PERCENT VARIABLES************/
+
+$increment0-tablet-percent: 0.5%;  //4px 
+$increment1-tablet-percent: 1.0%;  //8px 
+$increment2-tablet-percent: 2.1%;  //16px 
+$increment3-tablet-percent: 3.1%;  //24px 
+$increment4-tablet-percent: 4.2%;  //32px 
+$increment5-tablet-percent: 5.2%;  //40px 
+$increment6-tablet-percent: 6.3%;  //48px 
+$increment7-tablet-percent: 7.3%;  //56px 
+$increment8-tablet-percent: 8.3%;  //64px 
+$increment9-tablet-percent: 9.4%;  //72px 
+$increment10-tablet-percent: 10.4%;  //80px 
+
+
+/*****************DESKTOP INCREMENT PERCENT VARIABLES************/
+
+$increment0-desktop-percent: 0.3%;  //4px 
+$increment1-desktop-percent: 0.6%;  //8px 
+$increment2-desktop-percent: 1.3%;  //16px 
+$increment3-desktop-percent: 1.9%;  //24px 
+$increment4-desktop-percent: 2.5%;  //32px 
+$increment5-desktop-percent: 3.1%;  //40px 
+$increment6-desktop-percent: 3.8%;  //48px 
+$increment7-desktop-percent: 4.4%;  //56px 
+$increment8-desktop-percent: 5.0%;  //64px 
+$increment9-desktop-percent: 5.6%;  //72px 
+$increment10-desktop-percent: 6.3%;  //80px 
+
+/************OTHER COMMON INCREMENT VARIABLES *********/
+
+$increment20px-mobile: 6.3vw;  //20px 
+$increment54px-mobile: 16.9vw;  //54px 
+$increment68px-mobile: 21.3vw;  //68px 
+$increment100px-mobile: 31.3vw; //100px
+$increment20px-mobile-percent: 6.3%;  //20px 
+$increment54px-mobile-percent: 16.9%;  //54px
+$increment68px-mobile-percent: 21.3%;  //68px 
+$increment100px-mobile-percent: 31.3%; //100px
+
+$increment20px-tablet: 2.6vw;  //20px 
+$increment54px-tablet: 7.0vw;  //54px 
+$increment68px-mobile: 8.9vw;  //68px 
+$increment100px-tablet: 13.0vw; //100px
+$increment20px-tablet-percent: 2.6%;  //20px
+$increment54px-tablet-percent: 7.0%;  //54px
+$increment68px-mobile-percent: 8.9%;  //68px 
+$increment100px-tablet-percent: 13.0%; //100px
+
+$increment20px-desktop: 1.6vw;  //20px
+$increment54px-desktop: 4.2vw;  //54px 
+$increment68px-desktop: 5.3vw;  //68px
+$increment100px-desktop: 7.8vw; //100px
+$increment20px-desktop-percent: 1.6%;  //20px
+$increment54px-desktop-percent: 4.2%;  //54px 
+$increment68px-desktop-percent: 5.3%;  //68px
+$increment100px-desktop-percent: 7.8%; //100px
+
+
+/**********************************CALCULATION**DATA***********************/
+
+//{input: 4, rem: "0.3", mobileVW: "1.3", tabletVW: "0.5", desktopVW: "0.3"} 4px increment 0
+//{input: 8, rem: "0.5", mobileVW: "2.5", tabletVW: "1.0", desktopVW: "0.6"} 8px increment 1
+//{input: 16, rem: "1.0", mobileVW: "5.0", tabletVW: "2.1", desktopVW: "1.3"} 16px increment 2
+//{input: 24, rem: "1.5", mobileVW: "7.5", tabletVW: "3.1", desktopVW: "1.9"} 24px increment 3
+//{input: 32, rem: "2.0", mobileVW: "10.0", tabletVW: "4.2", desktopVW: "2.5"} 32px increment 4
+// {input: 40, rem: "2.5", mobileVW: "12.5", tabletVW: "5.2", desktopVW: "3.1"} 40px increment 5
+//{input: 48, rem: "3.0", mobileVW: "15.0", tabletVW: "6.3", desktopVW: "3.8"} 48px increment 6
+//{input: 56, rem: "3.5", mobileVW: "17.5", tabletVW: "7.3", desktopVW: "4.4"} 56px increment 7
+//{input: 64, rem: "4.0", mobileVW: "20.0", tabletVW: "8.3", desktopVW: "5.0"} 64px increment 8
+//{input: 72, rem: "4.5", mobileVW: "22.5", tabletVW: "9.4", desktopVW: "5.6"}  72px increment 9
+//{input: 80, rem: "5.0", mobileVW: "25.0", tabletVW: "10.4", desktopVW: "6.3"} 80px increment 10
+
+//{input: 20, rem: "1.3", mobileVW: "6.3", tabletVW: "2.6", desktopVW: "1.6"} 20px increment 20px
+//{input: 54, rem: "3.4", mobileVW: "16.9", tabletVW: "7.0", desktopVW: "4.2"} 54px increment 54px
+//{input: 68, rem: "4.3", mobileVW: "21.3", tabletVW: "8.9", desktopVW: "5.3"} 68px increment 68px 
+// {input: 100, rem: "6.3", mobileVW: "31.3", tabletVW: "13.0", desktopVW: "7.8"} 100px increment 100px
 
