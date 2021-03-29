@@ -16,6 +16,7 @@ import Contact from "./components/Contact/Contact";
 import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
+
 class App extends Component {
   state = {
     homeList: null,
@@ -54,6 +55,7 @@ axios.get('http://localhost:8080/home')
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
           <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} galleryList ={galleryList}/> } />
+        
         <Footer/>
           </Switch>
         </BrowserRouter>
