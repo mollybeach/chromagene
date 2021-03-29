@@ -7,6 +7,8 @@
 
 .header {
     display: flex;
+    &__nav{
+      position:fixed;
     background-color: $primary-background;
     max-height: 12.5rem;
     @include tablet {
@@ -17,6 +19,8 @@
     }
     @include desktop {
       padding: 0 5rem;
+    }
+   
     }
     &__company {
         display: inline;
@@ -39,6 +43,7 @@
     }
     &__logo {
       margin-left: 24px;
+      margin-top: $increment2-px;
       @include desktop{
       margin-left: none;
       width: 300%;

@@ -3,6 +3,8 @@ import chevronImg from '../../assets/Icons/chevron_right-24px.svg';
 import fb from '../../assets/Icons/Icon-facebook.svg';
 import tw from '../../assets/Icons/Icon-twitter.svg';
 import insta from '../../assets/Icons/Icon-instagram.svg';
+import ReactDOM from 'react-dom';
+//import Iframe from 'react-iframe'
 import '../Shader/Shader.scss';
 //import Shader from '../Shader/Shader';
 //import Pixel from './Pixel';
@@ -16,8 +18,20 @@ import './Home.scss';
 
 
 
-
 class Home extends Component {
+    /*
+    componentDidMount() {
+        const obj = ReactDOM.findDOMNode(this);
+        this.setState({iFrameHeight:  obj.contentWindow.document.body.scrollHeight + 'px'});
+      
+     }
+     */
+     constructor() {
+        super();
+        this.state = {
+            iFrameHeight: '0px'
+        }
+    }
     
     render() {
         return (
@@ -28,7 +42,7 @@ class Home extends Component {
             </div>
           
             <link type="text/css" rel="Stylesheet" href="../Shader.scss" />
-            <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWUpCisbIBWPq1Z08q3" frameBorder="0"  style={{position: 'fixed'}}></iframe>
+            <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWUpCisbIBWPq1Z08q3"frameBorder="0"  style={{position: 'fixed'}}></iframe>
             <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRDAljWc9zYg1Y_xK" frameBorder="0"  style={{position: 'fixed', 'margin-left': '0px'}}></iframe>
             <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRcsR3dfQV5mH_N8j" frameBorder="0"  style={{position: 'fixed', 'margin-left': '50%'}}></iframe>
             <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRyBzCS1JVqMQi3WK" frameBorder="0"  style={{position: 'fixed', 'margin-left': '75%'}}></iframe>

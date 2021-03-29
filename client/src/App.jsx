@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import axios from 'axios';
-import './App.css';
 import Home from './components/Home/Home';
 import Header from "./components/Header/Header";
 import Gallery from './components/Home/Home';
@@ -16,6 +15,7 @@ import Contact from "./components/Contact/Contact";
 import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
+import './App.scss'
 
 class App extends Component {
   state = {

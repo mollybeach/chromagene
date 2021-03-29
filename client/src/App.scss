@@ -1,0 +1,9 @@
+
+@use './partials/variables' as * ;
+@use './partials/colors' as * ;
+
+@use './partials/typography' as * ;
+@use './partials/mixins' as * ;
+app{ 
+  @include standard-padding-horizontal;
+}
