@@ -56,8 +56,9 @@ axios.get('http://localhost:8080/home')
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
           <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} galleryList ={galleryList}/> } />
         
-        <Footer/>
-          </Switch>
+
+          </Switch> 
+           <Footer/>
         </BrowserRouter>
       </div>
     );

@@ -7,8 +7,8 @@
 
 
 .footer{
-    background-color: $black;
-    @include standard-padding-horizontal;
+ 
+   align-items: center;
     &__binding {
         padding: 3rem 0; //48px top bottom 3rem {
     }
@@ -31,7 +31,8 @@
         }
     }
     &__title {
-        @include h1-page-header;
+        @include d-header;
+        color: $slate;
         @include tablet {
             width: 52.1vw; //400px 
         }
@@ -91,23 +92,23 @@
         }
     }
     &__partition-top {
-        @include h4-list-contact-information-white-bold;
+        @include d-paragraph-medium;
         margin: 0 0 1rem 0; //16px 
         width: 100%;
         @include tablet {
-            @include h3-subheader-white;
+            @include d-paragraph-medium;
         }
     }
     &__partition-bottom {
         margin: 0 0 1rem 0; //16px 
         width: 100%;
-        @include h4-list-contact-information-white;
+        @include d-paragraph-medium;
     }
     &__partition-base {
-        @include h4-list-contact-information-white;
+        @include d-paragraph-medium;
     }
     &__partition-base-last {
-        @include h4-list-contact-information-white;
+        @include d-paragraph-medium;
         padding: 0 0 3.0rem 0; //48px 
     }
 
