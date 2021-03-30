@@ -7,8 +7,7 @@
 
 
 .footer{
- 
-  
+    @include standard-padding-horizontal;
     &__binding {
         padding: 3rem 0; //48px top bottom 3rem {
     }
@@ -101,7 +100,7 @@
     }
     &__partition-bottom {
         margin: 0 0 1rem 0; //16px 
-        width: 100%;
+        //width: 100%;
         @include d-paragraph-medium;
     }
     &__partition-base {
@@ -111,6 +110,16 @@
         @include d-paragraph-medium;
         padding: 0 0 3.0rem 0; //48px 
     }
+    &__social{
+        display:flex;
+        @include increment-2-bottom;
+        
+      }
+      &__ico{
+          width: 30px; 
+          @include increment-3-horizontal;
+          
+      }
 
 }
 

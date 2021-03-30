@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/mollybeach/chromagene/#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "dna2json": "^1.0.7",
     "express": "^4.17.1",
     "fs": "*",
     "node": "^15.10.0",
@@ -25,6 +27,7 @@
     "react": "^17.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "txt-reader": "^1.4.5",
     "uuid4": "^2.0.2"
   }
 }

@@ -35,9 +35,10 @@ axios.get('http://localhost:8080/home')
    }
  )  
 }
+
   render() {
     const { galleryList, homeList} = this.state;
-
+   
     return (
       <div className = 'app'>
         <BrowserRouter>

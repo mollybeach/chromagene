@@ -6,7 +6,7 @@ import insta from '../../assets/Icons/Icon-instagram.svg';
 class Footer extends Component {
     render(){
     return (
-    <footer>
+    <footer className="footer">
         <div className="footer__directory">
             <div className="footer__partition-card">
 		         <div className="footer__partition-top">
@@ -19,9 +19,6 @@ class Footer extends Component {
                 <div>Molly Beach</div>
                      <div className="footer__partition-bottom">Toronto, Ontario M5V 1L7</div>
                       <div className="footer__email">info@thechromogene.com </div>
-                      <img alt='fb' className='home__ico'src={fb} />
-             <img alt='fb' className='home__ico'src={tw} />
-             <img alt='fb' className='home__ico'src={insta} />
                 </div>
             </div>
             <div className="footer__partition-card">
@@ -47,6 +44,11 @@ class Footer extends Component {
                 </div>
             </div>
            </div>
+           <div className="footer__social">
+             <img alt='fb' className='footer__ico'src={fb} />
+             <img alt='fb' className='footer__ico'src={tw} />
+             <img alt='fb' className='footer__ico'src={insta} />
+             </div>
            <div className="footer__partition-base">Copyright ChromeGene Inc. © 2021</div>
            <div className="footer__partition-base">All Rights Reserved</div>
    

@@ -3,6 +3,6 @@ import sphere from 'shader-park-core';
 
 
 export default function spCode()  {
-    //Put your Shader Park Code here
-      sphere(.3);
+
+  
     };
