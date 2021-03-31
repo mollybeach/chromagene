@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const fs = require("fs");
-let galleryData = require("../data/gallery.json");
+let uploadData = require("../data/upload.json");
 
 readcontactFile = (file) => {
     const fileToRead = fs.readFileSync(file);
@@ -9,9 +9,9 @@ readcontactFile = (file) => {
     return parsedData;
 }
 
-router.post("/gallery/add", (req, res) => {
+router.post("/Upload/add", (req, res) => {
     const { id, contactID, itemName, description, quantity, status, category, contactName } = req.body;
-    let newgalleryItem = {
+    let newUploadItem = {
         id: id,
         contactID: contactID,
         itemName: itemName,
@@ -31,11 +31,11 @@ router.post("/gallery/add", (req, res) => {
         ) {
             res.status(400).send("Please fill all required fields");
         } else {
-            let updatedGalleryData = galleryData = [newGalleryItem, ...galleryData];
-            updatedGalleryData = JSON.stringify(updatedGalleryData, null, 2);
-            fs.writeFileSync("./data/inventories.json", updatedGalleryData);
+            let updatedUpdateData = uploadData = [Upload, ...uploadData];
+            updatedUpdateData = JSON.stringify(updatedUploadData, null, 2);
+            fs.writeFileSync("./data/inventories.json", updatedUploadData);
 
-            res.status(200).send(newGalleryItem);
+            res.status(200).send(newUploadItem);
         }
     };
 

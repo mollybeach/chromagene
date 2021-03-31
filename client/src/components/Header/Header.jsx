@@ -15,16 +15,20 @@ function Header() {
         </div>
         <ul className="header__nav-list">
           <li>
-            <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Dashboard</NavLink>
+            <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/my23" className="header__nav-item" activeClassName="header__nav-item--active">My 23</NavLink>
           </li>
           <li>
             <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item--active">Gallery</NavLink>
           </li>
-          <li>
-            <NavLink to="/profile" className="header__nav-item" activeClassName="header__nav-item--active">Profile</NavLink>
-          </li>
+       
           <li>
             <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item--active">Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to="/upload" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
           </li>
           <li>
               

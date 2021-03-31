@@ -22,3 +22,5 @@ router.get("/gallery/:galleryId", (req, res) => {
 
 })
 module.exports = router;
+
+

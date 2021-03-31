@@ -4,18 +4,19 @@ import axios from 'axios';
 import Home from './components/Home/Home';
 import Header from "./components/Header/Header";
 import Gallery from './components/Gallery/Gallery';
-import Upload from './components/Upload/Upload';
+//import Upload from './components/Upload/Upload';
 import Profile from './components/Profile/Profile';
 import Email from './components/Email/Email';
 import GalleryDetails from "./components/GalleryDetails/GalleryDetails";
 import EditGallery from "./components/EditGallery/EditGallery";
 import ContactItemDetails from "./components/ContactItemDetails/ContactItemDetails";
-import NewGallery from "./components/NewGallery/NewGallery";
+import Upload from "./components/Upload/Upload";
 import Contact from "./components/Contact/Contact";
 import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
 import './App.scss'
+
 
 class App extends Component {
   state = {
@@ -34,6 +35,7 @@ componentDidMount(){
             galleryList:res.data
            })
          })
+         
      }
    )  
   }
@@ -57,12 +59,12 @@ componentDidMount(){
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
-          <Route exact path={[ `/Upload`]} render = {(props)=> <Upload galleryList = {galleryList} {...props} />} />
-          <Route exact path={[`/`, `/profile`]} render = {(props)=> <Profile galleryList = {galleryList} {...props} />} />
+    
+          <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile homeList = {homeList} {...props} />} />
           <Route exact path='/email' render={(props) => <Email galleryList={galleryList} {...props} />} />
           <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList}  {...props} />} />
           <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
-          <Route exact path = '/gallery/add' render = {(props)=> <NewGallery {...props}  />}  />
+          <Route exact path = '/upload' render = {(props)=> <Upload {...props}  />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
@@ -80,7 +82,7 @@ componentDidMount(){
 
 export default App;
 
-
+//      <Route exact path={[ `/Upload`]} render = {(props)=> <Upload/>} />
 /*   if(homeList===null ) {
       return <p className = "Home__loading">Loading...</p>
     }

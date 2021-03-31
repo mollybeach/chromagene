@@ -1,6 +1,5 @@
 //import React, { Component, useEffect} from 'react';
 import React, { Component} from 'react';
-import Honeydna from '../Honeydna/Honeydna'
 import chevronImg from '../../assets/Icons/chevron_right-24px.svg';
 //import ReactDOM from 'react-dom';
 //import Iframe from 'react-iframe'
@@ -57,31 +56,34 @@ class Home extends Component {
             <img className = 'home__arrow' src={chevronImg} alt=""/>
             </div>
 
-    
-            <canvas className="my-canvas" />
-            <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRDAljWc9zYg1Y_xK" frameBorder="0"  style={{ top:'15px'}}></iframe>
-       
+  
           
-            <div className ='home__table-body' >             
-                    {this.state.homeList.map(homeObj =>  <Honeydna key={homeObj.id} singleWar={homeObj} />)}
-                    </div>
-       
-            <div className='home__about'>About: Upload DNA .txt or .csv file create unique art.A SNP Single-Nucleotide Polymorphism is a variation of a single nucleotide (A, G, C or T). 
+       <div className="home__title">ChromeGene</div>
+       <div className="home__titleb">Welcome to ChromeGene!</div>
+            <div className='home__about'>Upload DNA .txt or .csv file create unique art to begin your journey! A SNP Single-Nucleotide Polymorphism is a variation of a single nucleotide (A, G, C or T). 
+            I find it fascinating that you can get a text file, roughly 25meg big that contains what is essentially a diff against a common shared genetic code, it's certainly millions of years of progress, but yet can be transferred to your computer in a matter of seconds. Maybe at some point in the future bad things could happen because of this. But it's worth it for this one simple line.Each line corresponds to a single SNP. For each SNP, we provide its identifier (an rsid or an internal id), its location on the reference human genome, and the genotype call oriented with respect to the plus strand on the human reference sequence.
              <div className='home__buttons'>
             <button className='home__button-upload' type='submit'> UPLOAD </button>
-           
+
+            <canvas style={{position: 'static',width: '300px', height: '300px'}}> </canvas>
+    <div className='iframeContainer'>
+            <iframe id="framey" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWUpCisbIBWPq1Z08q3" frameBorder="0"  style={{position: 'fixed'  }}></iframe>
+            <iframe id="framey" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRDAljWc9zYg1Y_xK" frameBorder="0" style={{position: 'fixed', 'margin-left': '25px'}}></iframe>
+            <iframe id="framey" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRcsR3dfQV5mH_N8j" frameBorder="0"  style={{position: 'fixed', 'margin-left': '50%'}}></iframe>
+            <iframe id="framey" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRyBzCS1JVqMQi3WK" frameBorder="0" style={{position: 'fixed',  'margin-left': '-23%'}}></iframe>
+       </div>
  
           </div>
 
              </div>
-             
+            
             </div>
         );
     }
 }
 
 export default Home;
-/*   <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRyBzCS1JVqMQi3WK" frameBorder="0"  style={{position: 'fixed', 'top': '25px'}}></iframe>
-     <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRcsR3dfQV5mH_N8j" frameBorder="0"  style={{position: 'fixed'}}></iframe>
+/*   <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRyBzCS1JVqMQi3WK" frameBorder="0"  style={{position: 'fixed', 'top': '25px'}}></iframe> 'height': '700px'
+     <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRcsR3dfQV5mH_N8j" frameBorder="0"  style={{position: 'fixed'}}></iframe>' 'margin-left': '25%' 'z-index': '3', 'margin-left': '0%' 'margin-left': '50%'
 
 */

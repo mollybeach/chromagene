@@ -3,7 +3,6 @@ import './Upload.scss';
 
 
 class Upload extends Component {
-    
 
     render() {
         return (

@@ -1,10 +1,109 @@
 
-@use '../../partials/variables' as *;
-@use '../../partials/breakpoints' as*;
-@use '../../partials/colors' as *;
-@use '../../partials/mixins' as *;
-@use '../../partials/typography' as *;
+@use '../../partials/variables' as * ;
+@use '../../partials/colors' as * ;
+
+@use '../../partials/typography' as * ;
+@use '../../partials/mixins' as * ;
 
 .profile{
+    @include standard-padding-horizontal;
+    @include increment-3-top;
     width: 100%;
+    height: 100vh;
+    background-color: $primary-background;
+    @include h1-page-header;
+    color: $slate;
+    &__subtitle{
+        @include h1-page-header;
+        color: $violet;
+       @include increment-2-bottom;
+    }
+    &__arrow{
+        width: 1vw;
+       padding-top: 2vw;
+    }
+    &__dna{
+        padding-left: 25%;
+    }
+    &__about{
+        padding-top:5%;
+        padding-left: 5%;
+    }
+    &__social{
+      display:flex;
+      justify-content: space-around; 
+      
+    }
+    &__ico{
+        width: 30px; 
+    }
+    &__buttons {
+        justify-content: center;
+		@include tablet {
+           flex-direction: row-reverse;
+			display: flex;
+			justify-content: left;
+            align-content: right;
+		}
+	}
+	&__button-cancel {
+        background-color: $secondary-color-grey;
+		justify-content: center;
+		width: 100%;
+		height: $increment6-px;
+		border-radius: $increment0-px;
+		border: 1px solid $slate;
+		color: $slate;
+        &:hover {
+            color: $secondary-color-indigo;
+          }
+		@include tablet {
+			width: 160px;
+		    margin-top:  $increment5-px;
+	}
+	}
+    &__button-upload {
+		background-color: $secondary-color-grey;
+		justify-content: center;
+        margin-right: 50%;
+		width: 100%;
+		height: $increment6-px;
+		border-radius: $increment0-px;
+		border: 1px solid $slate;
+		color: $slate;
+        &:hover {
+            color: $secondary-color-indigo;
+          }
+		@include tablet {
+			margin-top:$increment5-px;
+			width: 160px;
+		}
+	}
+}
+
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+canvas {
+ // width: 150px;
+ // height:150px;
+  margin : 0px;
+  padding : 0px;
+  border : 0px;
+  position:absolute;
+  background-color : transparent;
+  
+}
+#frame {
+  //border: 3px solid grey;
+
+  width: 500px;
+  height: 500px;
+  position:absolute;
+  margin-right:5px;
+  background-color : transparent;
+   // left: 1%;
 }

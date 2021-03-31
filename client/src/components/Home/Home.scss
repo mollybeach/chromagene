@@ -25,14 +25,33 @@
     &__dna{
         padding-left: 25%;
     }
-    &__about{
-        padding-top:5%;
+      &__title{
+        @include h1-page-header;
+        color: $violet;
+         padding-left: 5%;
+       @include increment-2-bottom;
+    }
+    &__titleb{
+        @include h1-page-header;
+        color: $violet;
         padding-left: 5%;
+       @include increment-2-bottom;
+    }
+    &__about{
+        padding-top:1%;
+        padding-left: 5%;
+        width: 70%;
     }
     &__social{
       display:flex;
       justify-content: space-around; 
       
+    }
+    &__iframeContainer{
+    
+        white-space: nowrap;
+        display: inline-block;
+       /// height: 350px;
     }
     &__ico{
         width: 30px; 
@@ -66,6 +85,7 @@
 		background-color: $secondary-color-grey;
 		justify-content: center;
         margin-right: 50%;
+        
 		width: 100%;
 		height: $increment6-px;
 		border-radius: $increment0-px;
@@ -80,7 +100,7 @@
 		}
 	}
 }
-
+/*
 
 h1 {
   font-style: italic;
@@ -93,7 +113,7 @@ canvas {
   margin : 0px;
   padding : 0px;
   border : 0px;
-  position:absolute;
+  //position:absolute;
   background-color : transparent;
 }
 #frame {
@@ -105,4 +125,27 @@ canvas {
   margin-right:5px;
   background-color : transparent;
    // left: 1%;
+}
+*/
+#framey {
+    margin: unset;
+    padding: unset;
+    border: 3px solid grey;
+    width: 350px;
+    height: 650px;
+      //margin-top: 20px;
+ // margin-bottom: 30px;
+ margin-left: 25%;
+ margin-top: 35%;
+ -moz-border-radius: 12px;
+ -webkit-border-radius: 12px;
+ border-radius: 12px;
+ -moz-box-shadow: 4px 4px 14px #000;
+ -webkit-box-shadow: 4px 4px 14px #000;
+ box-shadow: 4px 4px 14px #000;
+ //-moz-transform:rotate(20deg);
+// -webkit-transform:rotate(20deg);
+ //-o-transform:rotate(20deg);
+ //-ms-transform:rotate(20deg);
+ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
 }
