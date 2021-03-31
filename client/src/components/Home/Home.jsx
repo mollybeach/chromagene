@@ -1,6 +1,6 @@
 //import React, { Component, useEffect} from 'react';
 import React, { Component} from 'react';
-import HoneyDna from '../Honeydna/Shader'
+import Honeydna from '../Honeydna/Honeydna'
 import chevronImg from '../../assets/Icons/chevron_right-24px.svg';
 //import ReactDOM from 'react-dom';
 //import Iframe from 'react-iframe'
@@ -56,16 +56,20 @@ class Home extends Component {
             <div className="home__subtitle">Featured
             <img className = 'home__arrow' src={chevronImg} alt=""/>
             </div>
-           
-            <link type="text/css" rel="Stylesheet" />
-  
+
+    
+            <canvas className="my-canvas" />
+            <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRDAljWc9zYg1Y_xK" frameBorder="0"  style={{ top:'15px'}}></iframe>
+       
+          
+            <div className ='home__table-body' >             
+                    {this.state.homeList.map(homeObj =>  <Honeydna key={homeObj.id} singleWar={homeObj} />)}
+                    </div>
        
             <div className='home__about'>About: Upload DNA .txt or .csv file create unique art.A SNP Single-Nucleotide Polymorphism is a variation of a single nucleotide (A, G, C or T). 
              <div className='home__buttons'>
             <button className='home__button-upload' type='submit'> UPLOAD </button>
-            <div className ='home__table-body' >             
-                    {this.state.homeList.map(homeObj =>  <HoneyDna key={homeObj.id} singleWar={homeObj} />)}
-                    </div>
+           
  
           </div>
 
@@ -77,3 +81,7 @@ class Home extends Component {
 }
 
 export default Home;
+/*   <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRyBzCS1JVqMQi3WK" frameBorder="0"  style={{position: 'fixed', 'top': '25px'}}></iframe>
+     <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRcsR3dfQV5mH_N8j" frameBorder="0"  style={{position: 'fixed'}}></iframe>
+
+*/

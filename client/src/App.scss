@@ -6,4 +6,6 @@
 @use './partials/mixins' as * ;
 app{ 
   @include standard-padding-horizontal;
+
+  
 }

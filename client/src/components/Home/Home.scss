@@ -26,8 +26,8 @@
         padding-left: 25%;
     }
     &__about{
-        padding-top:25%;
-        padding-left: 25%;
+        padding-top:5%;
+        padding-left: 5%;
     }
     &__social{
       display:flex;
@@ -40,9 +40,9 @@
     &__buttons {
         justify-content: center;
 		@include tablet {
-            flex-direction: row-reverse;
+           flex-direction: row-reverse;
 			display: flex;
-			justify-content: right;
+			justify-content: left;
             align-content: right;
 		}
 	}
@@ -79,33 +79,30 @@
 			width: 160px;
 		}
 	}
- 
-    #wrap {
-  width: 750px;
-  height: 1500px;
-  padding: 0;
-  overflow: hidden;
 }
 
-#scaled-frame {
-  width: 1000px;
-  height: 2000px;
 
+h1 {
+  font-style: italic;
+  color: #373fff;
 }
 
-#scaled-frame {
-  zoom: 0.75;
-  -moz-transform: scale(0.75);
-  -moz-transform-origin: 0 0;
-  -o-transform: scale(0.75);
-  -o-transform-origin: 0 0;
-  -webkit-transform: scale(0.75);
-  -webkit-transform-origin: 0 0;
+canvas {
+ // width: 150px;
+ // height:150px;
+  margin : 0px;
+  padding : 0px;
+  border : 0px;
+  position:absolute;
+  background-color : transparent;
 }
+#frame {
+  //border: 3px solid grey;
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  #scaled-frame {
-    zoom: 1;
-  }
-}
+  width: 500px;
+  height: 500px;
+  position:absolute;
+  margin-right:5px;
+  background-color : transparent;
+   // left: 1%;
 }

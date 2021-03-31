@@ -1,106 +1,315 @@
 [
   {
-    "id": "2922c286-16cd-4d43-ab98-c79f698aeab0",
-    "name": "Manhattan",
-    "address": "503 Broadway",
-    "city": "New York",
-    "country": "USA",
+    "id": "2922c286-16cd-4d43-ab98-c698aeab0",
+    "name": "",
+    "address": "Chromosome 1",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Parmin Aujla",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "paujla@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   },
   {
-    "id": "5bf7bd6c-2b16-4129-bddc-9d37ff8539e9",
-    "name": "King West",
-    "address": "469 King Street West",
-    "city": "Toronto",
-    "country": "CAN",
+    "id": "2922c286-16cd-4d43-ab98-c79f698aeab",
+    "name": "",
+    "address": "Chromosome 2",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Greame Lyon",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "glyon@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+    
+  {
+    "id": "2922c286-16cd-4d43-ab98-c78aea",
+    "name": "",
+    "address": "Chromosome 3",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+
+    
+  {
+    "id": "2922c286-16cd-4d43-ab98-c79f698ae",
+    "name": "",
+    "address": "Chromosome 4",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   },
   {
-    "id": "90ac3319-70d1-4a51-b91d-ba6c2464408c",
-    "name": "Granville",
-    "address": "455 Granville Street",
-    "city": "Vancouver",
-    "country": "CAN",
+    "id": "2922c286-16cd-4d43-ab98-c79f698a",
+    "name": "",
+    "address": "Chromosome 5",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Brad MacDonald",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "bmcdonald@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   },
   {
-    "id": "bfc9bea7-66f1-44e9-879b-4d363a888eb4",
-    "name": "San Fran",
-    "address": "890 Brannnan Street",
-    "city": "San Francisco",
-    "country": "USA",
+    "id": "2922c26cd-4d43-ab98-c79f698",
+    "name": "",
+    "address": "Chromosome 6",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Gary Wong",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "gwong@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   },
   {
-    "id": "89898957-04ba-4bd0-9f5c-a7aea7447963",
-    "name": "Santa Monica",
-    "address": "520 Broadway",
-    "city": "Santa Monica",
-    "country": "USA",
+    "id": "2922c286-16d43-ab98-c79f68aea",
+    "name": "",
+    "address": "Chromosome 7",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Sharon Ng",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "sng@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+    
+  {
+    "id": "2922c286-16cd-4d43-a98-c79f698ae",
+    "name": "",
+    "address": "Chromosome 8",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+
+    
+  {
+    "id": "2922c286-16d-4d43-ab98-c79f98aeab2",
+    "name": "",
+    "address": "Chromosome 9",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   },
   {
-    "id": "ade0a47b-cee6-4693-b4cd-a7e6cb25f4b7",
-    "name": "Seattle",
-    "address": "1201 Third Avenue",
-    "city": "Seattle",
-    "country": "USA",
+    "id": "2922c286-16cd-4d43-ab98-c79f698ab3123",
+    "name": "",
+    "address": "Chromosome 10",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Daniel Bachu",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "dbachu@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   },
   {
-    "id": "bb1491eb-30e6-4728-a5fa-72f89feaf622",
-    "name": "Montreal",
-    "address": "1125 Stanley Street",
-    "city": "Montreal",
-    "country": "CAN",
+    "id": "2922c286-16cd-4d43-98-c79f698aeab5",
+    "name": "",
+    "address": "Chromosome 11",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Alana Thomas",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "athomas@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   },
   {
-    "id": "150a36cf-f38e-4f59-8e31-39974207372d",
-    "name": "Boston",
-    "address": "215 Essex Street",
-    "city": "Boston",
-    "country": "USA",
+    "id": "2922c286-16cd-4d43-ab98-c79f698aeab5",
+    "name": "",
+    "address": "Chromosome 12",
+    "city": "",
+    "country": "",
     "contact": {
-      "name": "Vanessa Mendoza",
-      "position": "Warehouse Manager",
-      "phone": "+1 (646) 123-1234",
-      "email": "vmendoza@instock.com"
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+    
+  {
+    "id": "2922c286-16cd-4d43-ab98-c79f6ab556",
+    "name": "",
+    "address": "Chromosome 13",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+
+    
+  {
+    "id": "2922c286-1cd-4d43-ab98-c79f698aeab7",
+    "name": "",
+    "address": "Chromosome 14",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+  {
+    "id": "2922c286-16cd-4d43-ab98-c7998ae6546",
+    "name": "",
+    "address": "Chromosome 15",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+  {
+    "id": "2922c286-16cd-4d-ab98-c79f698ae64",
+    "name": "",
+    "address": "Chromosome 16",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+  {
+    "id": "2922c2486-16cd-4d43-ab98-79f69ae654",
+    "name": "",
+    "address": "Chromosome 17",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+    
+  {
+    "id": "2922c28-16cd-44d43-ab98-c79f698aeab0",
+    "name": "",
+    "address": "Chromosome 18",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+
+    
+  {
+    "id": "29226-16cd-4d43-ab98-c79f698aeab5",
+    "name": "",
+    "address": "Chromosome 19",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+  {
+    "id": "2922c286-16d-4d43-ab8-c79f698aeab032d",
+    "name": "",
+    "address": "Chromosome 20",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+  {
+    "id": "2922c286-16cd-4d43-ab98-c79f6998aea34",
+    "name": "",
+    "address": "Chromosome 21",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+  {
+    "id": "2922c286-16cd-4d43-ab98-c799f698aeab0",
+    "name": "",
+    "address": "Chromosome 22",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
+    }
+  },
+    
+  {
+    "id": "2922c286-169cd-4d43-ab98-c79f698aeab34",
+    "name": "",
+    "address": "Chromosome 23",
+    "city": "",
+    "country": "",
+    "contact": {
+      "name": "Molly Beach",
+      "position": "of ",
+      "phone": "Genotypes:",
+      "email": " 1220230"
     }
   }
+
 ]

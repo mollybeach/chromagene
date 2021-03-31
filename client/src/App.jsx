@@ -51,7 +51,9 @@ componentDidMount(){
     return (
       <div className = 'app'>
         <BrowserRouter>
+
         <Header />
+      
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
@@ -69,6 +71,7 @@ componentDidMount(){
 
           </Switch> 
            <Footer/>
+   
         </BrowserRouter>
       </div>
     );

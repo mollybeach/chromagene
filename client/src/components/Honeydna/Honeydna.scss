@@ -1,0 +1,236 @@
+@use '../../partials/variables' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/typography' as *;
+
+
+.honeydna{display:flex;
+    padding-left: 125px;
+    flex-direction:row;
+}
+.honeydna__table-row{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display:flex;
+     width: 85%;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1.6875rem;
+    border-top:1px solid #BDC5D5;
+    &:hover{
+        background: rgba(46, 102, 230, 0.07);
+    }
+    @include tablet {
+       flex-wrap: nowrap;
+        align-items: center;
+        padding:1rem 2rem;
+    }
+}
+
+.honeydna__flex-col{
+    width:50%;
+    @include tablet{
+        display: flex;
+        width:auto;
+        flex-basis: 90%;   
+    }  
+}
+
+.honeydna__flex-col--box1{
+
+    @include tablet{
+        flex-basis: 42.33%;
+        align-items: center;
+    }
+    @include desktop{
+        flex-basis:51.275%;
+        align-items: center;
+    }
+}
+.honeydna__flex-col--box2{
+    @include tablet{
+        flex-basis:46.08%;
+        align-items: center;
+    }
+    @include desktop{
+        flex-basis:36.7%; 
+         align-items: center;
+       
+    }  
+}
+.honeydna__flex-col--box3{
+    @include tablet{
+        flex-basis:11.56%;
+        align-items: center;
+    }
+    @include desktop{ 
+        flex-basis:11.7%;
+         align-items: center;    
+    } 
+}
+
+.honeydna__table-data{
+    width:100%; 
+}
+
+.honeydna__top-title{
+    margin-bottom:4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: #5C667E;
+    @include tablet{
+     display: none;
+    }
+}
+
+.honeydna__flex{
+    display: flex;
+    align-items: center;  
+}
+
+.honeydna__top-name{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    color: #2E66E6;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+     
+    }
+    @include tablet {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        margin-right:4px;
+    }
+}
+
+.honeydna__top-img{
+    height:1.125rem;
+}
+
+.honeydna__para{
+    font-weight: normal;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    width:81.5%;
+    @include tablet{       
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    width:79%
+    }
+    @include desktop{
+        width:82%;
+    }
+}
+
+.honeydna__table-data--spacing{
+    margin-bottom:1rem;
+    @include tablet{
+        margin-bottom:0;
+    }
+}
+.honeydna__table-data--mb{
+    margin-bottom:1.1875rem;
+    @include tablet{
+        margin-bottom:0
+    }
+}
+
+.honeydna__table-data--action{
+    display: flex;
+    justify-content: space-between;
+    @include tablet{
+        justify-content: flex-start;
+        width: auto; 
+        display: flex;
+        justify-content: flex-end;    
+    }
+}
+
+.honeydna__delete{
+    margin-right:1.5rem;
+    cursor: pointer;
+}
+
+.honeydna__tbl-d1{
+    @include tablet{
+        width:55.35%;
+    }
+    @include desktop{
+        width:45.85%;
+    }
+}
+
+.honeydna__tbl-d2{
+       @include tablet{
+        width:44.65%;
+    }
+    @include desktop{
+        width:54.15%
+    }
+}
+
+.honeydna__tbl-d3{
+       @include tablet{
+        width:41.01%;
+    }
+    @include desktop{
+        width:50.42%;
+    }
+}
+
+.honeydna__tbl-d4{
+       @include tablet{
+        width:58.98%;
+    }
+    @include desktop{
+        width:49.58%;
+    }
+}
+
+.honeydna__para--width{
+    @include tablet {
+        width : 81.5%;
+    }
+}
+ 
+
+  iframe{
+      width:100px; 
+    justify-content: flex-start;
+    margin-right:43%;
+    top: 0.9%;
+    z-index: 1;
+    height: 100px;
+}
+.fram1{
+    width:100px; 
+    justify-content: flex-start;
+    margin-right:43%;
+    top: 0.9%;
+    z-index: 1;
+    height: 100px;
+}
+.fram2{
+    width:100px; 
+    justify-content: flex-start;
+    margin-right:43%;
+    top: 1.2%;
+    z-index: 1;
+    height: 100px;
+}
+.fram3{
+    width:100px; 
+    justify-content: flex-start;
+    margin-right:43%;
+    top: 1.4%;
+    z-index: 1;
+    height: 100px;
+}
