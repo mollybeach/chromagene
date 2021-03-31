@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import axios from 'axios';
 import Home from './components/Home/Home';
 import Header from "./components/Header/Header";
-import Gallery from './components/Home/Home';
+import Gallery from './components/Gallery/Gallery';
 import Upload from './components/Upload/Upload';
 import Profile from './components/Profile/Profile';
 import Email from './components/Email/Email';
@@ -28,7 +28,8 @@ componentDidMount(){
 axios.get('http://localhost:8080/home')
    .then(res=>{
        this.setState({
-           homeList :res.data
+           homeList :res.data,
+           galleryList:res.data
            
        })
     
@@ -45,8 +46,8 @@ axios.get('http://localhost:8080/home')
         <Header />
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home home = {homeList} {...props} />} />
-          <Route exact path={[`/`, `/gallery`]} render = {(props)=> <Gallery gallery = {galleryList} {...props} />} />
-          <Route exact path={[`/`, `/gallery`]} render = {(props)=> <Upload gallery = {galleryList} galleryList ={galleryList} {...props} />} />
+          <Route exact path={[`/gallery`]} render = {(props)=> <Gallery gallery = {galleryList} {...props} />} />
+          <Route exact path={[ `/Upload`]} render = {(props)=> <Upload gallery = {galleryList} galleryList ={galleryList} {...props} />} />
           <Route exact path={[`/`, `/profile`]} render = {(props)=> <Profile gallery = {galleryList} galleryList ={galleryList} {...props} />} />
           <Route exact path='/email' render={(props) => <Email galleryList={galleryList} {...props} />} />
           <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList}  {...props} />} />
