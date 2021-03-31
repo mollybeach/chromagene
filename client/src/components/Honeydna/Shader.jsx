@@ -26,7 +26,7 @@ class Shader extends Component {
             <div className="home" ref={el => (this.ele = el)}>  </div>
             <link rel="stylesheet" href="/style.scss" />
             <div className="glitchButton" style={{position: 'fixed', top: '20px', right: '20px'}} />
-            <canvas className="my-canvas" ></canvas>
+            <canvas className="my-canvas" />
             <div className="home" ref={el => (this.instance = el)}>  </div>
             <h1>Success</h1>
       </div>

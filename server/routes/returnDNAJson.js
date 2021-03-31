@@ -1,5 +1,5 @@
 const express = require("express");
-const galleryList = require("../data/dna.json");
+const galleryList = require("../data/userData.json");
 const router = express.Router();
 const fs = require("fs");
 
@@ -21,3 +21,4 @@ router.get("/gallery/:galleryId", (req, res) => {
       }
 
 })
+module.exports = router;

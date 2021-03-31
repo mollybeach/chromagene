@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const PORT = 8080;
 const cors = require("cors");
-const homeRoute = require("./routes/homeRoute");
-const dnaRoute = require("./routes/dnaRoute");
-const returnDnaJsonRoute = require("./routes/returnDnaJsonRoute");
+const home = require("./routes/home");
+const gallery = require("./routes/gallery");
 /*
+const dnaRoute = require("./routes/dnaRoute");
 const dnaRoute = require("./routes/dnaRoute");
 const contactRoute = require("./routes/contactRoute");
 const galleryRoute = require("./routes/galleryRoute");
@@ -33,9 +33,10 @@ app.use("/",singleContactactDetails);
 */
 app.use(cors());
 app.use(express.json());
-app.use("/", returnDnaJsonRoute);
-app.use("/", dnaRoute);
-app.use("/", homeRoute);
+app.use("/", home);
+app.use("/", gallery);
+//app.use("/", dnaRoute);
+
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

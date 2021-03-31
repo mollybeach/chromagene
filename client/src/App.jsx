@@ -21,34 +21,42 @@ class App extends Component {
   state = {
     homeList: null,
     galleryList : null,
-    contactList: null
 }
-
 componentDidMount(){
-axios.get('http://localhost:8080/home')
-   .then(res=>{
-       this.setState({
-           homeList :res.data,
-           galleryList:res.data
-           
-       })
-    
-   }
- )  
-}
+  axios.get('http://localhost:8080/home')
+     .then(res=>{
+         this.setState({
+          homeList:res.data
+         })
+         axios.get('http://localhost:8080/gallery')
+         .then(res=>{
+           this.setState({
+            galleryList:res.data
+           })
+         })
+     }
+   )  
+  }
+
 
   render() {
-    const { galleryList, homeList} = this.state;
+    const { homeList, galleryList} = this.state;
+    if(homeList===null ) {
+      return <p className = "gallery__loading">Loading...</p>
+    }
+    if( galleryList===null ) {
+      return <p className = "gallery__loading">Loading...</p>
+    }
    
     return (
       <div className = 'app'>
         <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path={[`/`, `/home`]} render = {(props)=> <Home home = {homeList} {...props} />} />
-          <Route exact path={[`/gallery`]} render = {(props)=> <Gallery gallery = {galleryList} {...props} />} />
-          <Route exact path={[ `/Upload`]} render = {(props)=> <Upload gallery = {galleryList} galleryList ={galleryList} {...props} />} />
-          <Route exact path={[`/`, `/profile`]} render = {(props)=> <Profile gallery = {galleryList} galleryList ={galleryList} {...props} />} />
+          <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
+          <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
+          <Route exact path={[ `/Upload`]} render = {(props)=> <Upload galleryList = {galleryList} {...props} />} />
+          <Route exact path={[`/`, `/profile`]} render = {(props)=> <Profile galleryList = {galleryList} {...props} />} />
           <Route exact path='/email' render={(props) => <Email galleryList={galleryList} {...props} />} />
           <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList}  {...props} />} />
           <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
