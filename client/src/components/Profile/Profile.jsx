@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import My23 from "../My23/My23";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import "./Profile.scss";
 import axios from "axios";
 import { API_URL } from "../../utils/utils";
 
-class Profile extends Component {
+class Profile extends React.Component {
   state = {
     homeList: this.props.homeList,
   };

@@ -1,195 +1,139 @@
+@use '../../partials/variables' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/mixins' as *;
 
-@use '../../partials/variables' as * ;
-@use '../../partials/colors' as * ;
-
-@use '../../partials/typography' as * ;
-@use '../../partials/mixins' as * ;
-
-.home{
-    @include standard-padding-horizontal;
-    @include increment-3-top;
-    width: 100%;
-    height: 100vh;
-    background-color: $primary-background;
+.home {
+  @include standard-padding-horizontal;
+  @include increment-3-top;
+  width: 100%;
+  height: 100vh;
+  background-color: $primary-background;
+  @include h1-page-header;
+  color: $slate;
+  &__subtitle {
     @include h1-page-header;
+    color: $violet;
+    @include increment-2-bottom;
+  }
+  &__arrow {
+    width: 1vw;
+    padding-top: 2vw;
+  }
+  &__dna {
+    padding-left: 25%;
+  }
+  &__title {
+    @include h1-page-header;
+    color: $violet;
+    padding-left: 5%;
+    @include increment-2-bottom;
+  }
+  &__titleb {
+    @include h1-page-header;
+    color: $violet;
+    padding-left: 5%;
+    @include increment-2-bottom;
+  }
+  &__about {
+    padding-top: 1%;
+    padding-left: 5%;
+    width: 70%;
+    background-image: src('../../assets/Icons/chevron_right-24px.svg');
+  }
+  &__social {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__iframeContainer {
+    white-space: nowrap;
+    display: inline-block;
+    /// height: 350px;
+  }
+  &__ico {
+    width: 30px;
+  }
+  &__buttons {
+    justify-content: center;
+    @include tablet {
+      flex-direction: row-reverse;
+      display: flex;
+      justify-content: left;
+      align-content: right;
+    }
+  }
+  &__button-cancel {
+    background-color: $secondary-color-grey;
+    justify-content: center;
+    width: 100%;
+    height: $increment6-px;
+    border-radius: $increment0-px;
+    border: 1px solid $slate;
     color: $slate;
-    &__subtitle{
-        @include h1-page-header;
-        color: $violet;
-       @include increment-2-bottom;
+    &:hover {
+      color: $secondary-color-indigo;
     }
-    &__arrow{
-        width: 1vw;
-       padding-top: 2vw;
+    @include tablet {
+      width: 160px;
+      margin-top: $increment5-px;
     }
-    &__dna{
-        padding-left: 25%;
-    }
-      &__title{
-        @include h1-page-header;
-        color: $violet;
-         padding-left: 5%;
-       @include increment-2-bottom;
-    }
-    &__titleb{
-        @include h1-page-header;
-        color: $violet;
-        padding-left: 5%;
-       @include increment-2-bottom;
-    }
-    &__about{
-        padding-top:1%;
-        padding-left: 5%;
-        width: 70%;
-        background-image:src('../../assets/Icons/chevron_right-24px.svg')
-    }
-    &__social{
-      display:flex;
-      justify-content: space-around; 
-      
-    }
-    &__iframeContainer{
-    
-        white-space: nowrap;
-        display: inline-block;
-       /// height: 350px;
-    }
-    &__ico{
-        width: 30px; 
-    }
-    &__buttons {
-        justify-content: center;
-		@include tablet {
-           flex-direction: row-reverse;
-			display: flex;
-			justify-content: left;
-            align-content: right;
-		}
-	}
-	&__button-cancel {
-        background-color: $secondary-color-grey;
-		justify-content: center;
-		width: 100%;
-		height: $increment6-px;
-		border-radius: $increment0-px;
-		border: 1px solid $slate;
-		color: $slate;
-        &:hover {
-            color: $secondary-color-indigo;
-          }
-		@include tablet {
-			width: 160px;
-		    margin-top:  $increment5-px;
-	}
-	}
-    &__button-upload {
-		background-color: $secondary-color-grey;
-		justify-content: center;
-        margin-right: 50%;
-        
-		width: 100%;
-		height: $increment6-px;
-		border-radius: $increment0-px;
-		border: 1px solid $slate;
-		color: $slate;
-        &:hover {
-            color: $secondary-color-indigo;
-          }
-		@include tablet {
-			margin-top:$increment5-px;
-			width: 160px;
-		}
-	}
+  }
+  &__button-upload {
+    background-color: $secondary-color-grey;
+    justify-content: center;
+    margin-right: 50%;
 
-
+    width: 100%;
+    height: $increment6-px;
+    border-radius: $increment0-px;
+    border: 1px solid $slate;
+    color: $slate;
+    &:hover {
+      color: $secondary-color-indigo;
+    }
+    @include tablet {
+      margin-top: $increment5-px;
+      width: 160px;
+    }
+  }
 }
-.my-canvas{
-  width: 100px;
-  height:100%;
-  margin : 0px;
-  padding : 0px;
-  border : 0px;
-  background-color : transparent;
-}
-
-#bigfram{
+.my-canvas {
   width: 400px;
   height: 300px;
-}
-/*
-
-h1 {
-  font-style: italic;
-  color: #373fff;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
 }
 
-canvas {
- // width: 150px;
- // height:150px;
-  margin : 0px;
-  padding : 0px;
-  border : 0px;
-  //position:absolute;
-  background-color : transparent;
+#bigfram {
+  width: 400px;
+  border: 3px solid grey;
+  height: 300px;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
 }
-#frame {
-  //border: 3px solid grey;
 
-  width: 500px;
-  height: 500px;
-  position:absolute;
-  margin-right:5px;
-  background-color : transparent;
-   // left: 1%;
-}
-*/
 #framey {
-    margin: unset;
-    padding: unset;
-    border: 3px solid grey;
-    width: 350px;
-    height: 650px;
-      //margin-top: 20px;
- // margin-bottom: 30px;
- margin-left: 25%;
- margin-top: 35%;
- -moz-border-radius: 12px;
- -webkit-border-radius: 12px;
- border-radius: 12px;
- -moz-box-shadow: 4px 4px 14px #000;
- -webkit-box-shadow: 4px 4px 14px #000;
- box-shadow: 4px 4px 14px #000;
- //-moz-transform:rotate(20deg);
-// -webkit-transform:rotate(20deg);
- //-o-transform:rotate(20deg);
- //-ms-transform:rotate(20deg);
- filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+  margin: unset;
+  padding: unset;
+  border: 3px solid grey;
+  width: 350px;
+  height: 650px;
+  //margin-top: 20px;
+  // margin-bottom: 30px;
+  margin-left: 25%;
+  margin-top: 35%;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+  //-moz-transform:rotate(20deg);
+  // -webkit-transform:rotate(20deg);
+  //-o-transform:rotate(20deg);
+  //-ms-transform:rotate(20deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
 }
-
-// SCSS files add styling rules to your content
-/*
-body {
-    font-family: helvetica, arial, sans-serif;
-    margin: 2em;
-    width: 100vw; 
-    height: 100vh; 
-    margin : 0px; 
-    padding : 0px; 
-    border : 0px; 
-    background-color : white;
-  }
-  
-  h1 {
-    font-style: italic;
-    color: #373fff;
-  }
-  
-  canvas {
-    width: 100vw;
-    height:100%;
-    margin : 0px;
-    padding : 0px;
-    border : 0px;
-    background-color : transparent;
-  }
-  */

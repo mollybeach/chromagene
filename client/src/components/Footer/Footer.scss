@@ -1,126 +1,118 @@
-
 @use '../../partials/variables' as *;
-//@use '../../partials/breakpoints' as*;
 @use '../../partials/colors' as *;
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
-
-.footer{
-    @include standard-padding-horizontal;
-    &__binding {
-        padding: 3rem 0; //48px top bottom 3rem {
+.footer {
+  @include standard-padding-horizontal;
+  &__binding {
+    padding: 3rem 0; //48px top bottom 3rem {
+  }
+  &__network-partition {
+    align-items: center;
+    display: flex;
+  }
+  &__banner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include tablet {
+      margin: 0 0 3.5rem 0; //56px
     }
-    &__network-partition {
-        align-items: center;
-        display: flex;
+  }
+  &__banner-left {
+    @include tablet {
+      display: flex;
     }
-    &__banner {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        @include tablet {
-            margin: 0 0 3.5rem 0; //56px
-        }
+  }
+  &__title {
+    @include d-header;
+    color: $slate;
+    @include tablet {
+      width: 52.1vw; //400px
     }
-    &__banner-left {
-        @include tablet {
-            display: flex;
-        }
+    @include desktop {
+      width: 31.3vw; //400px
     }
-    &__title {
-        @include d-header;
-        color: $slate;
-        @include tablet {
-            width: 52.1vw; //400px 
-        }
-        @include desktop {
-            width: 31.3vw; //400px 
-        }
+  }
+  &__network-partition {
+    width: 79%; //256px
+    margin: 2rem 0; //32px
+    @include tablet {
+      margin: 0;
     }
-    &__network-partition {
-        width: 79%; //256px 
-        margin: 2rem 0; //32px
-        @include tablet {
-            margin: 0;
-        }
+  }
+  &__network-icon {
+    width: 5vw; //16px
+    height: 5vw; //16px
+    @include tablet {
+      min-width: 3.1vw; //24px
+      min-height: 3.1vw; //24px
+      max-width: 1.9vw; //24px
+      max-height: 1.9vw; //24px
     }
-    &__network-icon {
-        width: 5.0vw; //16px 
-        height: 5.0vw; //16px 
-        @include tablet {
-            min-width: 3.1vw; //24px 
-            min-height: 3.1vw; //24px  
-            max-width: 1.9vw; //24px 
-            max-height: 1.9vw; //24px 
-        }
-        @include desktop {
-            min-width: 1.9vw; //24px 
-            min-height: 1.9vw; //24px  
-            max-width: 1.9vw; //24px  
-            max-height: 1.9vw; //24px  
-        }
-        &--margin {
-            margin-left: 32px;
-        }
+    @include desktop {
+      min-width: 1.9vw; //24px
+      min-height: 1.9vw; //24px
+      max-width: 1.9vw; //24px
+      max-height: 1.9vw; //24px
     }
-    &__trademark {
-        display: none;
-        background-image: url("../../assets/images/loupe.png");
-        @include tablet {
-            display: flex;
-            margin-left: auto;
-        }
+    &--margin {
+      margin-left: 32px;
     }
-    &__directory {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include tablet {
-            flex-direction: row;
-            width: 100%;
-            align-items: flex-start;
-        }
+  }
+  &__trademark {
+    display: none;
+    background-image: url('../../assets/images/loupe.png');
+    @include tablet {
+      display: flex;
+      margin-left: auto;
     }
-    &__partition-card {
-        margin: 0 0 1rem 0; //16px
-        width: 100%;
-        @include tablet {
-            width: 32.6vw; //{input: 250, rem: "15.6", mobileVW: "78.1", tabletVW: "32.6", desktopVW: "19.5"}
-        }
+  }
+  &__directory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      width: 100%;
+      align-items: flex-start;
     }
-    &__partition-top {
-        @include d-paragraph-medium;
-        margin: 0 0 1rem 0; //16px 
-        width: 100%;
-        @include tablet {
-            @include d-paragraph-medium;
-        }
+  }
+  &__partition-card {
+    margin: 0 0 1rem 0;
+    width: 100%;
+    @include tablet {
+      width: 32.6vw;
     }
-    &__partition-bottom {
-        margin: 0 0 1rem 0; //16px 
-        //width: 100%;
-        @include d-paragraph-medium;
+  }
+  &__partition-top {
+    @include d-paragraph-medium;
+    margin: 0 0 1rem 0;
+    width: 100%;
+    @include tablet {
+      @include d-paragraph-medium;
     }
-    &__partition-base {
-        @include d-paragraph-medium;
-    }
-    &__partition-base-last {
-        @include d-paragraph-medium;
-        padding: 0 0 3.0rem 0; //48px 
-    }
-    &__social{
-        display:flex;
-        @include increment-2-bottom;
-        
-      }
-      &__ico{
-          width: 30px; 
-          @include increment-3-horizontal;
-          
-      }
-
+  }
+  &__partition-bottom {
+    margin: 0 0 1rem 0; //16px
+    //width: 100%;
+    @include d-paragraph-medium;
+  }
+  &__partition-base {
+    @include d-paragraph-medium;
+  }
+  &__partition-base-last {
+    @include d-paragraph-medium;
+    padding: 0 0 3rem 0; //48px
+  }
+  &__social {
+    display: flex;
+    @include increment-2-bottom;
+  }
+  &__ico {
+    width: 30px;
+    @include increment-3-horizontal;
+  }
 }
-
-

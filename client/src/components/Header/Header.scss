@@ -1,4 +1,3 @@
-
 @use '../../partials/variables' as *;
 //@use '../../partials/breakpoints' as*;
 @use '../../partials/colors' as *;
@@ -6,152 +5,150 @@
 @use '../../partials/typography' as *;
 
 .header {
-    display: flex;
-    &__nav{
-      position:fixed;
+  display: flex;
+  &__nav {
+    position: fixed;
     background-color: $primary-background;
     max-height: 12.5rem;
     @include tablet {
       height: $increment10-px;
       flex-direction: row;
       padding: 0 0rem;
-      border: 0.75px #D5D7DB solid;
+      border: 0.75px #d5d7db solid;
     }
     @include desktop {
       padding: 0 5rem;
     }
-   
+  }
+  &__company {
+    display: inline;
+    @include d-header;
+    color: #5a5a5a;
+    border-radius: nullpx;
+    position: absolute;
+    width: 76px;
+    height: 35px;
+    left: 100px;
+    top: $increment3-px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    @include desktop {
+      left: 165px;
     }
-    &__company {
-        display: inline;
-        @include d-header;
-        color: #5A5A5A;
-        border-radius: nullpx;
-        position: absolute;
-        width: 76px;
-        height: 35px;
-        left: 100px;
-        top: $increment3-px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 35px;
-        @include desktop{  
-          left: 165px;
-        }
-    }
-    &__logo {
-      margin-left: 24px;
-      margin-top: $increment2-px;
-      @include desktop{
+  }
+  &__logo {
+    margin-left: 24px;
+    margin-top: $increment2-px;
+    @include desktop {
       margin-left: none;
       width: 300%;
-      }
     }
-    &__nav {
-      margin-top: 8px;
-      width: 100%;
-      max-height: 8.5rem;
-      display: flex;
-      flex-direction: column;
-  
-      @include tablet {
-        flex-direction: row;
-        height: 5.75rem;
-      }
+  }
+  &__nav {
+    margin-top: 8px;
+    width: 100%;
+    max-height: 8.5rem;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      height: 5.75rem;
     }
-    &__nav-list {
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      margin-left: 50px;
-      list-style: none;
-      @include tablet {
-        justify-content: flex-end;
-      }
+  }
+  &__nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    list-style: none;
+    @include tablet {
+      justify-content: flex-end;
     }
-    &__nav-item {
-      display: flex; 
-      justify-content: center;
-      align-items: center;
+  }
+  &__nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 8px;
+    font-size: 20px;
+    width: 71px;
+    height: 23px;
+    left: 1147px;
+    top: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #5a5a5a;
+    &:hover {
+      cursor: pointer;
+      color: #3a88f0;
       text-decoration: none;
-      border-radius: 20px;
-      margin-top:  8px;
-      font-size: 20px;
-      width: 71px;
-      height: 23px;
-      left: 1147px;
-      top: 18px;
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 23px;
-      text-align: center;
-      color: #5A5A5A;
-      &:hover {
-        cursor: pointer;
-        color: #3A88F0;
-        text-decoration: none;
-        transform: scale(1.04);
-      }
-      &:active {
-        //background-color: #FFFFFF;
-        color: #3A88F0;
-      }
-  
-      @include tablet {
-     width: 150px;
-      }
-      
-      &--active {
-        color: #3A88F0;
-      }
+      transform: scale(1.04);
     }
-    &__partition-input{
-      margin-top: 16px;
-      background-color: #3A88F0;
+    &:active {
+      //background-color: #FFFFFF;
+      color: #3a88f0;
     }
-    &__search-input {
-      //display: none;
-    
-        display:contents;
-        width: 300px;
-	    	background-image: url("../../assets/images/loupe.png");
-	    	background-repeat: no-repeat;
-	    	background-size: $increment20px-rem;
-	    	background-position-y: center;
-		    background-position-x: $increment2-rem;
-	    	padding-left: $increment5-rem;
-		    border-radius: $increment0-rem;
-		    border: solid 1px #C4C4C4;
-		    background-color: white;
-		    width: 391px; //252-40= 212/320=66.25vw
-		   height:44px;
-     
-		justify-content: right;
-		&:active {
-			border-color: blue;
-		}
-		&:hover {
-			border-color:blue;
-		}
-  
-	}
+
+    @include tablet {
+      width: 150px;
+    }
+
+    &--active {
+      color: #3a88f0;
+    }
+  }
+  &__partition-input {
+    margin-top: 16px;
+    background-color: #3a88f0;
+  }
+  &__search-input {
+    //display: none;
+
+    display: contents;
+    width: 300px;
+    background-image: url('../../assets/images/loupe.png');
+    background-repeat: no-repeat;
+    background-size: $increment20px-rem;
+    background-position-y: center;
+    background-position-x: $increment2-rem;
+    padding-left: $increment5-rem;
+    border-radius: $increment0-rem;
+    border: solid 1px #c4c4c4;
+    background-color: white;
+    width: 391px; //252-40= 212/320=66.25vw
+    height: 44px;
+
+    justify-content: right;
+    &:active {
+      border-color: blue;
+    }
+    &:hover {
+      border-color: blue;
+    }
+  }
   &__avi {
-    width:  40px;
-    height:  40px;
+    width: 40px;
+    height: 40px;
     border-radius: 33.3px; //circle
     margin-right: $increment2-px;
     position: relative;
     @include tablet {
-        margin-top: $increment2-px 1.3vw 0 0;
+      margin-top: $increment2-px 1.3vw 0 0;
     }
-}
-&__dna{
-padding-right: 10px;
-  width: 2vw;
-  height: 2vw;
-}
   }
+  &__dna {
+    padding-right: 10px;
+    width: 2vw;
+    height: 2vw;
+  }
+}
