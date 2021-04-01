@@ -4,7 +4,6 @@ import axios from 'axios';
 import Home from './components/Home/Home';
 import Header from "./components/Header/Header";
 import Gallery from './components/Gallery/Gallery';
-//import Upload from './components/Upload/Upload';
 import Profile from './components/Profile/Profile';
 import Email from './components/Email/Email';
 import GalleryDetails from "./components/GalleryDetails/GalleryDetails";

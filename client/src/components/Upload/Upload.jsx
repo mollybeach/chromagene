@@ -1,7 +1,7 @@
 
 
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 import { uuid } from 'uuidv4';
 import axios from 'axios';
 
@@ -11,7 +11,7 @@ import "./Upload.scss";
 
 
 // ASSET IMPORTS
-import backArrowIcon from '../../assets/Icons/arrow_back-24px.svg';
+//import backArrowIcon from '../../assets/Icons/arrow_back-24px.svg';
 import { API_URL } from "../../utils/utils";
 
 class Upload extends Component {

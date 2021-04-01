@@ -4,11 +4,11 @@
 @use '../../partials/typography' as *;
 
 
-.honeydna{display:flex;
+.my23{display:flex;
     padding-left: 125px;
     flex-direction:row;
 }
-.honeydna__table-row{
+.my23__table-row{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     display:flex;
@@ -27,7 +27,7 @@
     }
 }
 
-.honeydna__flex-col{
+.my23__flex-col{
     width:50%;
     @include tablet{
         display: flex;
@@ -36,7 +36,7 @@
     }  
 }
 
-.honeydna__flex-col--box1{
+.my23__flex-col--box1{
 
     @include tablet{
         flex-basis: 42.33%;
@@ -47,7 +47,7 @@
         align-items: center;
     }
 }
-.honeydna__flex-col--box2{
+.my23__flex-col--box2{
     @include tablet{
         flex-basis:46.08%;
         align-items: center;
@@ -58,7 +58,7 @@
        
     }  
 }
-.honeydna__flex-col--box3{
+.my23__flex-col--box3{
     @include tablet{
         flex-basis:11.56%;
         align-items: center;
@@ -69,11 +69,11 @@
     } 
 }
 
-.honeydna__table-data{
+.my23__table-data{
     width:100%; 
 }
 
-.honeydna__top-title{
+.my23__top-title{
     margin-bottom:4px;
     font-family: Roboto;
     font-style: normal;
@@ -87,12 +87,12 @@
     }
 }
 
-.honeydna__flex{
+.my23__flex{
     display: flex;
     align-items: center;  
 }
 
-.honeydna__top-name{
+.my23__top-name{
     font-family: Roboto;
     font-style: normal;
     font-weight: 600;
@@ -111,11 +111,11 @@
     }
 }
 
-.honeydna__top-img{
+.my23__top-img{
     height:1.125rem;
 }
 
-.honeydna__para{
+.my23__para{
     font-weight: normal;
     font-size: 0.8125rem;
     line-height: 1.25rem;
@@ -130,20 +130,20 @@
     }
 }
 
-.honeydna__table-data--spacing{
+.my23__table-data--spacing{
     margin-bottom:1rem;
     @include tablet{
         margin-bottom:0;
     }
 }
-.honeydna__table-data--mb{
+.my23__table-data--mb{
     margin-bottom:1.1875rem;
     @include tablet{
         margin-bottom:0
     }
 }
 
-.honeydna__table-data--action{
+.my23__table-data--action{
     display: flex;
     justify-content: space-between;
     @include tablet{
@@ -154,12 +154,12 @@
     }
 }
 
-.honeydna__delete{
+.my23__delete{
     margin-right:1.5rem;
     cursor: pointer;
 }
 
-.honeydna__tbl-d1{
+.my23__tbl-d1{
     @include tablet{
         width:55.35%;
     }
@@ -168,7 +168,7 @@
     }
 }
 
-.honeydna__tbl-d2{
+.my23__tbl-d2{
        @include tablet{
         width:44.65%;
     }
@@ -177,7 +177,7 @@
     }
 }
 
-.honeydna__tbl-d3{
+.my23__tbl-d3{
        @include tablet{
         width:41.01%;
     }
@@ -186,7 +186,7 @@
     }
 }
 
-.honeydna__tbl-d4{
+.my23__tbl-d4{
        @include tablet{
         width:58.98%;
     }
@@ -195,7 +195,7 @@
     }
 }
 
-.honeydna__para--width{
+.my23__para--width{
     @include tablet {
         width : 81.5%;
     }
