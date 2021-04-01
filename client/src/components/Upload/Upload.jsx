@@ -11,12 +11,8 @@ class Upload extends Component {
    state=({
         current: false
     })
-    addNewUpload= (event) =>{
-       event.preventDefault();
-       //const { updateList } = this.props;
-       //const updateId = uuid();
-        //const warehouseID = warehouseList.find(warehouse => warehouse.name === event.target.itemWarehouse.value);
-
+      addNewUpload= (event) =>{
+         event.preventDefault();
         if(!event.target.uploadName.value || 
           !event.target.uploadAddress.value ||
           !event.target.uploadCity.value ||

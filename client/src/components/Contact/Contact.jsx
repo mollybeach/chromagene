@@ -1,8 +1,36 @@
 import React, { Component } from 'react';
+//import Uploads from './Uploads';
+//import { NavLink } from "react-router-dom";
+import { uuid } from 'uuidv4';
+import axios from 'axios';
+import { API_URL } from "../../utils/utils";
 import './Contact.scss';
 
 
 class Contact extends Component {
+  state=({
+    current: false
+})
+  addNewUpload= (event) =>{
+     event.preventDefault();
+    if(!event.target.contactName.value || 
+      !event.target.contactAddress.value ||
+      !event.target.contactCity.value ||
+      !event.target.contactCountry.value) {
+          alert("Please fill in all fields to udpate item");
+          return;
+      }
+     
+     axios.post(`${API_URL}/contact`, {
+      id: 20390123901,
+      name: event.target.contactName.value,
+      address: event.target.contactAddress.value,
+      city: event.target.contactCity.value,
+      country: event.target.contactCountry.value,
+  })
+    event.target.reset();
+    alert("Item successfully added!");
+}
 
     render() {
 

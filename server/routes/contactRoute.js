@@ -1,40 +1,40 @@
 const express = require("express");
-const contactList = require("../data/contact.json");
 const router = express.Router();
 const fs = require("fs");
+let bigData = require("../data/contact.json");
+/*********************POST Upload**************/
 
+readUpdateFile = (file) => {
+    const fileToRead = fs.readFileSync(file);
+    const parsedData = JSON.parse(fileToRead);
+    return parsedData;
+}
 
-//get list of contact items from data
-router.get("/contact", (req, res) => {
-        res.status(200).json(contactList);
-  });
+router.post("/contact", (req, res) => {
+    const { id, contactName, contactAddress, contactCity, contactCountry} = req.body;
+    let newUploadItem = {
+        id: id,
+        name: contactName,
+        address: contactAddress,
+        city: contactCity,
+        country: contactCountry,
+    }
+    const validateForm = () => {
+        if ((req.body.contactName === "") ||
+            (req.body.contactAddress === "") ||
+            (req.body.contactCity === "") ||
+            (req.body.contactCountry === "")
+        ) {
+            res.status(400).send("Please fill all required fields");
+        } else {
+            let refreshedData = bigData = [newUploadItem, ...bigData];
+            refreshedData = JSON.stringify(refreshedData, null, 2);
+            fs.writeFileSync('./data/contact.json', refreshedData);
+            res.status(200).send(newUploadItem);
+            console.log(newUploadItem);
+        }
+    };
+    validateForm();
+});
 
-
-  router.get("/contact/:contactId", (req, res) => {
-    let targetcontactId = req.params.contactId;
-    let contact = contactList.find(item => {
-    return targetcontactId === item.id;
-    });
-    if(contact){
-        res.status(200).json(contact);
-    } else {
-        res.status(400).send({ error: "Item does not exist" });
-      }
-
-})
-/*
-const express = require("express");
-const router = express.Router();
-const fs = require("fs");
-
-
-
-router.get('/contacts',(req,res)=>{
-    const contactArr = fs.readFileSync("./data/contacts.json");
-    const parsedData = JSON.parse(contactArr);
-    res.status(201).json(parsedData)
-})
-
-*/
 module.exports = router;
-
