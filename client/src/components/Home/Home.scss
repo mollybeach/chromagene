@@ -100,10 +100,12 @@
 .my-canvas {
   width: 400px;
   height: 300px;
-  margin: 0px;
+  border: 3px solid black;
+  margin-left: 300px;
+  margin-bottom: 100px;
   padding: 0px;
   border: 0px;
-  background-color: transparent;
+  background-color: $primary-background;
 }
 
 #bigfram {
@@ -112,7 +114,7 @@
   height: 300px;
   padding: 0px;
   border: 0px;
-  background-color: transparent;
+  background-color: $primary-background;
 }
 
 #framey {
