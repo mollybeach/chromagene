@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
-import Framie from "./Framie";
+//import Framie from "./Framie";
 import "./Home.scss";
 import { API_URL } from "../../utils/utils";
 
@@ -63,11 +63,13 @@ class Home extends Component {
             </div>
           </div>
         </div>
-      <Framie/>
+    
       </>
     );
   }
 }
 
 export default Home;
+
+//  <Framie/>
 

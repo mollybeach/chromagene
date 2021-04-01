@@ -38,14 +38,7 @@ class Profile extends React.Component {
         <div className="profile__subtitle">My 23
         <img className="profile__arrow" src={chevronImg} alt="" />
         </div>
-        <canvas id="kanvas" />
-        <iframe
-          id="phrame"
-          title="playbox3"
-          src="https://shaderpark.netlify.com/embed/-MWzRDAljWc9zYg1Y_xK"
-          frameBorder="0"
-          style={{ top: "15px" }}
-        ></iframe>
+       
         <div className="profile__table-body">
           {this.state.homeList.map((profileObj) => (
             <My23 key={profileObj.id} single23={profileObj} />
@@ -68,7 +61,12 @@ class Profile extends React.Component {
 }
 
 export default Profile;
-/*   <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRyBzCS1JVqMQi3WK" frameBorder="0"  style={{position: 'fixed', 'top': '25px'}}></iframe>
-     <iframe id="frame" title='playbox3'src="https://shaderpark.netlify.com/embed/-MWzRcsR3dfQV5mH_N8j" frameBorder="0"  style={{position: 'fixed'}}></iframe>
+/*  <canvas id="kanvas" />
+        <iframe
+          id="phrame"
+          title="playbox3"
+          src="https://shaderpark.netlify.com/embed/-MWzRDAljWc9zYg1Y_xK"
+          frameBorder="0"
+          style={{ top: "15px" }}
+        ></iframe>*/
 
-*/

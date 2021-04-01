@@ -14,34 +14,36 @@ import Contact from "./components/Contact/Contact";
 import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
+import Uploads from "./components/Upload/Uploads";
 import './App.scss'
-
 
 class App extends Component {
   state = {
     homeList: null,
     galleryList : null,
+    updateList: null
 }
 componentDidMount(){
   axios.get('http://localhost:8080/home')
-     .then(res=>{
-         this.setState({
-          homeList:res.data
-         })
-         axios.get('http://localhost:8080/gallery')
-         .then(res=>{
-           this.setState({
-            galleryList:res.data
-           })
-         })
-         
-     }
-   )  
-  }
-
+    .then(res=>{
+      this.setState({
+        homeList:res.data
+      })
+    axios.get('http://localhost:8080/gallery').then(res=>{
+        this.setState({
+          galleryList:res.data
+        })
+    axios.get('http://localhost:8080/gallery').then(res=>{
+        this.setState({
+          updateList:res.data
+    })
+    })
+    })
+    })
+}
 
   render() {
-    const { homeList, galleryList} = this.state;
+    const { homeList, galleryList, updateList} = this.state;
     if(homeList===null ) {
       return <p className = "gallery__loading">Loading...</p>
     }
@@ -52,9 +54,7 @@ componentDidMount(){
     return (
       <div className = 'app'>
         <BrowserRouter>
-
         <Header />
-      
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
@@ -62,16 +62,14 @@ componentDidMount(){
           <Route exact path='/email' render={(props) => <Email galleryList={galleryList} {...props} />} />
           <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList}  {...props} />} />
           <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
-          <Route exact path = '/upload' render = {(props)=> <Upload {...props}  />}  />
+          <Route exact path = '/upload' render = {(props)=> <Upload {...props} updateList = {updateList} {...props} />}  />
+          <Route exact path = '/uploads' render = {(props)=> <Uploads {...props} updateList = {updateList} />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
           <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} galleryList ={galleryList}/> } />
-        
-
           </Switch> 
            <Footer/>
-   
         </BrowserRouter>
       </div>
     );

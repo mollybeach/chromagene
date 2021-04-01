@@ -29,6 +29,6 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "txt-reader": "^1.4.5",
-    "uuid4": "^2.0.2"
+    "uuidv4": "^6.2.7"
   }
 }
