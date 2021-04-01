@@ -2,23 +2,22 @@ import React, { useEffect, useRef} from 'react';
 import {sculptToMinimalRenderer} from 'shader-park-core';
 import {spCode} from './spCode.js';
 
-const Framie = ({src}) => {
+const Framie = ({ref}) => {
   const shadeRef= useRef(null);
   useEffect(() => {
-  
     if (shadeRef.current) {
-      const canvas = shadeRef.current.getElementById('.my-canvas');
+      const canvas = document.querySelector('.my-canvas');
       console.log(canvas);
     sculptToMinimalRenderer(canvas, spCode);
     }
- }, [src])
+ }, [ref])
 
     return (
       <div>
-         <canvas id="my-canvas" ></canvas>
-        <iframe id="bigfram" title='miframie'
-     >  </iframe>
-      src={src}</div>
+         <canvas className="my-canvas" ></canvas>
+        <iframe id="bigfram" title='miframie' ref={shadeRef}
+     > </iframe>
+      </div>
 
     )
   }
