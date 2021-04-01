@@ -3,8 +3,9 @@ import {sculptToMinimalRenderer} from 'shader-park-core';
 import {spCode} from './spCode.js';
 
 let canvas = document.querySelector('.my-canvas');
+let shadie = sculptToMinimalRenderer(canvas, spCode);
 
-
+console.log(canvas);
 
 const Framie = () => {
   
@@ -12,7 +13,7 @@ const Framie = () => {
       <div>
        <canvas id="my-canvas" ></canvas>
         <iframe id="bigfram" title='miframie'
-         > {sculptToMinimalRenderer(canvas, spCode)} </iframe>
+        src={shadie}>  </iframe>
     
       </div>
 
