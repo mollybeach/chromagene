@@ -35,9 +35,8 @@ class Profile extends React.Component {
       <div className="profile">
         {" "}
         Welcome to ChromaGene
-        <div className="profile__subtitle">
-          My 23
-          <img className="profile__arrow" src={chevronImg} alt="" />
+        <div className="profile__subtitle">My 23
+        <img className="profile__arrow" src={chevronImg} alt="" />
         </div>
         <canvas id="kanvas" />
         <iframe
