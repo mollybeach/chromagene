@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import closeImg from '../../assets/Icons/close-24px.svg'; 
 import axios from 'axios';
 import './DeletePopup.scss';
-let API_URL = "http://localhost:8080";
+import { API_URL } from "../../utils/utils";
 
 class DeletePopup extends Component {
 /**********************DELETE ITEM*************/

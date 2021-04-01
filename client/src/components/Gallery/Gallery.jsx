@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './Gallery.scss';
 import chevronImg from '../../assets/Icons/chevron_right-24px.svg';
 import axios from 'axios';
-
-let API_URL = "http://localhost:8080";
+import { API_URL } from "../../utils/utils";
 
 class Gallery extends Component {
       state = {

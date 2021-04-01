@@ -17,11 +17,11 @@ class My23 extends Component {
         });
     }
     render() {
-        const {singleWar} = this.props;
-        const {name,phone,email} = singleWar.contact;
+        const {single23} = this.props;
+        const {name,phone,email} = single23.contact;
 
  
-        //const selectedWareId = singleWar.id;
+        //const selectedWareId = single23.id;
 
         return (
             <div className="my23">
@@ -32,7 +32,7 @@ class My23 extends Component {
                     <h4 className = 'my23__top-title'>my23</h4>
                     <div className = 'my23__flex'>
                     
-                                <Link to={`/my23s/${singleWar.id}`}>
+                                <Link to={`/my23s/${single23.id}`}>
                             <h3 className = 'my23__top-name'>
                            </h3>
                         </Link>
@@ -42,7 +42,7 @@ class My23 extends Component {
               
                 <div className = 'my23__table-data my23__table-data--mb my23__tbl-d2'>
                         <h4 className = 'my23__top-title ' >ADDRESS</h4> 
-                        <p className = 'my23__para'>{singleWar.address}, {singleWar.city}, {singleWar.country} </p>
+                        <p className = 'my23__para'>{single23.address}, {single23.city}, {single23.country} </p>
                 </div>
             </div>
             <div className = 'my23__flex-col my23__flex-col--box2' >
@@ -63,13 +63,13 @@ class My23 extends Component {
             </div>
         </div>
         {this.state.displayPopup ? (
-          <DeletePopup closePopup={this.togglePopup.bind(this)} clickedId={singleWar.id} clickedName={singleWar.name} path="/"type="my23" kind="item"/>
+          <DeletePopup closePopup={this.togglePopup.bind(this)} clickedId={single23.id} clickedName={single23.name} path="/"type="my23" kind="item"/>
           ) : null}
         </div>
     );
     }
 }
 export default My23;
-//{singleWar.name}
+//{single23.name}
 //src={chevronImg} 
 //    <Link to = {`/my23s/${selectedWareId}/edit`} ><img className = 'my23__para' src= {editImg} alt=""/></Link>

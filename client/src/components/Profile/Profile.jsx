@@ -3,8 +3,7 @@ import My23 from "../My23/My23";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import "./Profile.scss";
 import axios from "axios";
-
-let API_URL = "http://localhost:8080";
+import { API_URL } from "../../utils/utils";
 
 class Profile extends Component {
   state = {
