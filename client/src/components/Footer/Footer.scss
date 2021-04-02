@@ -4,6 +4,7 @@
 @use '../../partials/typography' as *;
 
 .footer {
+  color: $raspberrypi;
   position:absolute;
   margin-top:100%;
   @include standard-padding-horizontal;
@@ -11,11 +12,13 @@
     padding: 3rem 0; //48px top bottom 3rem {
   }
   &__network-partition {
+    color: $raspberrypi;
     align-items: center;
     display: flex;
   }
   &__banner {
     align-items: center;
+    color: $raspberrypi;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -29,8 +32,9 @@
     }
   }
   &__title {
+   
     @include d-header;
-    color: $slate;
+    color: $raspberrypi;
     @include tablet {
       width: 52.1vw; //400px
     }
@@ -91,22 +95,27 @@
   }
   &__partition-top {
     @include d-paragraph-medium;
+    color: $raspberrypi;
     margin: 0 0 1rem 0;
     width: 100%;
     @include tablet {
       @include d-paragraph-medium;
+      color: $raspberrypi;
     }
   }
   &__partition-bottom {
     margin: 0 0 1rem 0; //16px
     //width: 100%;
     @include d-paragraph-medium;
+    color: $raspberrypi;
   }
   &__partition-base {
     @include d-paragraph-medium;
+     color: $raspberrypi;
   }
   &__partition-base-last {
     @include d-paragraph-medium;
+     color: $raspberrypi;
     padding: 0 0 3rem 0; //48px
   }
   &__social {
@@ -116,5 +125,55 @@
   &__ico {
     width: 30px;
     @include increment-3-horizontal;
+  }
+  &__company {
+    width: 500px;
+    display: inline;
+    //@include d-header;
+    //color: $maroon;
+    //border-radius: nullpx;
+    //position: absolute;
+    //color: rgb(248, 248, 28);
+    //width: 76px;
+    //height: 35px;
+    //left: 100px;
+    //top: $increment3-px;
+    //font-family: Roboto;
+    //font-style: normal;
+    //font-weight: 600;
+    //font-size: 40px;
+    //line-height: 35px;
+    //@include desktop {
+     // left: 165px;
+    //}
+  }
+  
+  &__rainbow {
+   // display:flex;
+    //height: 150px;
+
+    position:absolute;
+    left:215px;
+  
+    
+  }
+  &__rainbow2 {
+    //display:flex;
+    //height: 150px;
+   // width:200px;
+    position:absolute;
+    left:0px;
+    
+  }
+  &__basicmarginadna{
+ 
+    //margin-left: 50px;
+  }
+  &__basicDna{
+    //display:flex;
+    //position:absolute;
+    //left:60px;
+   // z-index:3;
+  // border: 20px transparent solid;
   }
 }

@@ -3,6 +3,10 @@ import './Footer.scss';
 import fb from '../../assets/Icons/Icon-facebook.svg';
 import tw from '../../assets/Icons/Icon-twitter.svg';
 import insta from '../../assets/Icons/Icon-instagram.svg';
+import { Link} from 'react-router-dom';
+import company from '../../assets/Icons/company.svg';
+import company2 from '../../assets/Icons/company2.svg';
+import basicdna from '../../assets/Icons/basicdna.svg';
 class Footer extends Component {
     render(){
     return (
@@ -10,7 +14,13 @@ class Footer extends Component {
         <div className="footer__directory">
             <div className="footer__partition-card">
 		         <div className="footer__partition-top">
-                        <div>ChromoGene</div>
+                 <Link to="/" className="header__logo" alt="ChromaGene Logo">   
+          <div className='footer__company'>  
+          <img className ="footer__rainbow"src={company2} alt=''></img>
+          <img className="footer__basicdna"src={basicdna} alt=''></img>
+          <img className ="footer__rainbow2"src={company} alt=''></img>
+          </div>
+          </Link>
                         <div> Directory</div>
 
                 </div>

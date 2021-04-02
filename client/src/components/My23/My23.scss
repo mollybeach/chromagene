@@ -5,7 +5,7 @@
 
 
 .my23{
- 
+    position:static;
     display:flex;
     padding-left: 125px;
     flex-direction:row;
@@ -83,7 +83,7 @@
     font-size: 0.6875rem;
     line-height: 1rem;
     text-transform: uppercase;
-    color: #5C667E;
+    color: $raspberrypi;
     @include tablet{
      display: none;
     }
@@ -100,7 +100,7 @@
     font-weight: 600;
     font-size: 0.8125rem;
     line-height: 1.25rem;
-    color: #2E66E6;
+    color: $raspberrypi;
     cursor: pointer;
     &:hover{
         text-decoration: underline;

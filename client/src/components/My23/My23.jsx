@@ -21,14 +21,17 @@ class My23 extends Component {
         const {name,phone,email} = single23.contact;
         //const selectedWareId = single23.id;
         return (
+       
             <div className="my23">
+          
         <div className = 'my23__table-row'>
             <div className = 'my23__flex-col  my23__flex-col--box1'>
                 <div className = 'my23__table-data my23__table-data--spacing my23__tbl-d1' >
                     <h4 className = 'my23__top-title'>my23</h4>
+                    
                     <div className = 'my23__flex'>
                                 <Link to={`/my23s/${single23.id}`}>
-                            <h3 className = 'my23__top-name'></h3>
+                            <div className = 'my23__top-name'></div>
                         </Link>
                         <img className = 'my23__top-img' alt=""/>
                     </div>
@@ -53,10 +56,12 @@ class My23 extends Component {
                 <img className = 'my23__delete' src= {deleteImg} alt="" onClick={this.togglePopup.bind(this)}/>
             </div>
         </div>
+     
         {this.state.displayPopup ? (
           <DeletePopup closePopup={this.togglePopup.bind(this)} clickedId={single23.id} clickedName={single23.name} path="/"type="my23" kind="item"/>
           ) : null}
         </div>
+          
     );
     }
 }

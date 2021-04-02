@@ -44,35 +44,35 @@ class Home extends Component {
             </div>
           <div className='home__inside hero-container__text'>
           <div className="home__subtitle hero-container__text">
-          ChromeGene
+          ChromaGene
             <img className="home__arrow hero-container__text" src={chevronImg} alt="img" />
           </div>
     
-          <div className="home__titleb hero-container__text">Welcome to ChromeGene!</div>
+          <div className="home__titleb hero-container__text">Welcome to ChromaGene!</div>
           <div className="home__about hero-container__text" >
-            Upload DNA .txt or .csv file create unique art to begin your
+            Upload DNA .txt or .csv file to create unique art and begin your
             journey! A SNP Single-Nucleotide Polymorphism is a variation of a
-            single nucleotide (A, G, C or T). I find it fascinating that you can
-            get a text file, roughly 25meg big that contains what is essentially
-            a diff against a common shared genetic code, it's certainly millions
-            of years of progress, but yet can be transferred to your computer in
-            a matter of seconds. Maybe at some point in the future bad things
-            could happen because of this. But it's worth it for this one simple
-            line.Each line corresponds to a single SNP. For each SNP, we provide
+            single nucleotide (A, G, C or T). a text file, roughly 25meg big that 
+            contains what is essentially a diff against a common shared genetic code, 
+            it's certainly millionsof years of progress, but yet can be 
+            transferred to your computer in a matter of seconds. 
+            Each line corresponds to a single SNP. For each SNP, we provide
             its identifier (an rsid or an internal id), its location on the
             reference human genome, and the genotype call oriented with respect
             to the plus strand on the human reference sequence.
             <div className="home__buttons">
-            <Link to="/Upload">   <button className="home__button-upload" type="submit">
-                {" "}
-                UPLOAD{" "}
-              </button> 
+            <Link to="/Upload">  <button class="btn btn--delta" type="submit"><span>Get Started</span></button>
               </Link>
+             
             </div>
           </div>
           </div>
+          
         </div>
-    
+        <div className="content"></div>
+        <div className="content"></div>
+
+
       </>
     );
   }

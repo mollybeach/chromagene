@@ -4,11 +4,9 @@
 @use '../../partials/mixins' as *;
 
 .home {
- // @include standard-padding-horizontal;
-  //@include increment-4-top;
   display:flex;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: $primary-background;
   @include h1-page-header;
   color: $slate;
@@ -25,8 +23,9 @@
   &__subtitle {
     @include standard-padding-horizontal;
     @include h1-page-header;
-    color: $maroon;
+    color: $raspberrypi;
     @include increment-2-bottom;
+    font-size:40px;
   }
   &__arrow {
     width: 1vw;
@@ -38,16 +37,18 @@
   &__title {
     @include standard-padding-horizontal;
     @include h1-page-header;
-    color: $maroon;
+    color: $raspberrypi;
     padding-left: 5%;
     @include increment-2-bottom;
+    font-size:40px;
   }
   &__titleb {
     @include standard-padding-horizontal;
     @include h1-page-header;
-    color: $maroon;
+    color: $raspberrypi;
     padding-left: 5%;
     @include increment-2-bottom;
+    font-size:40px;
   }
   &__about {
     @include standard-padding-horizontal;
@@ -150,8 +151,6 @@
   margin-top: 8%;
   display: flex;
   position: relative;
-  //background-image: url("../../assets/images/pinkbaby.jpg");
-   //background-image: url("../../assets/Icons/DNA-Circle.svg");
   background-image: url( '../../assets/Icons/fancydna.svg');
   background-position: left;
   background-size: cover;
@@ -163,7 +162,7 @@
       right: 0rem;
       bottom: 0rem;
       left: 0rem;
-      background-color: rgba(0, 0, 0, 0.05);
+     // background-color: rgba(0, 0, 0, 0.05);
       z-index: -1;
   }
   min-height: 147.5vw; //472px
@@ -253,4 +252,110 @@
       }
   }
  
+}
+.content{
+  height: 1120px;
+  font-size: 50px;
+  position: relative;
+  background-image: url( '../../assets/Icons/fancydna.svg');
+  background-position: left;
+  margin-top: 3%;
+  //margin-left:10%;
+  background-size: cover;
+}
+$time: 330ms;
+
+$btns: (
+  alpha: (
+    gstart: #21D4FD,
+    gend: #B721FF,
+    tstart: #B721FF,
+    tend: #21D4FD
+  ),
+  beta: (
+    gstart: #08AEEA,
+    gend: #2AF598,
+    tstart: #2AF598,
+    tend: #08AEEA
+  ),
+  gamma: (
+    gstart: #FEE140,
+    gend: #FA709A,
+    tstart: #FA709A,
+    tend: #FEE140
+  ),
+  delta: (
+    gstart: #3EECAC,
+    gend: #EE74E1,
+    tstart: #EE74E1,
+    tend: #3EECAC
+  )
+);
+
+
+.btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  padding: 1.25rem 2rem;
+  font-size: 1rem;
+  border-radius: 3.5rem / 100%;
+  position: relative;
+  min-width: 15rem;
+  max-width: 90vw;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all $time;
+
+  
+  & + & {
+    margin-top: 1rem;
+  }
+  
+  span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  &:before {
+    content: "";
+    background-color: #21D4FD;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(4) translateX(-100%);
+    transition: all $time * 1.5 ease-out;
+  }
+  
+  &:hover,
+  &:focus,
+  &:active {    
+    &:before {
+      transform: scale(4) translate(37%);
+    } 
+  }
+}
+
+
+@each $bname, $bcolors in $btns {
+  .btn--#{$bname} {
+    background-color: map-get($bcolors, gstart);
+    color: map-get($bcolors, tstart);
+  
+    &:before {
+      background-color: map-get($bcolors, gend);
+      background-image: linear-gradient(to right, map-get($bcolors, gend) 30%, map-get($bcolors, gstart) 100%);
+      position: absolute;
+    }
+    
+    &:hover,
+    &:focus,
+    &:active {    
+      color: map-get($bcolors, tend);
+    }
+  }
 }

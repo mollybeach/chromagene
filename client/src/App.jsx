@@ -9,7 +9,6 @@ import Email from './components/Email/Email';
 import GalleryDetails from "./components/GalleryDetails/GalleryDetails";
 import EditGallery from "./components/EditGallery/EditGallery";
 import ContactItemDetails from "./components/ContactItemDetails/ContactItemDetails";
-//import Upload from "./components/Upload/Upload";
 import Contact from "./components/Contact/Contact";
 import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';

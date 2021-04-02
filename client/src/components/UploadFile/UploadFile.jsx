@@ -51,10 +51,10 @@ function FileUpload() {
             reference human genome, and the genotype call oriented with respect
             to the plus strand on the human reference sequence.
         </div>
-            <div className="upload-file">
+            <div className="upload-file__box">
                 <input type="file" ref={el} onChange={changeEvent} />                
 				<div className="upload-file__progessBar" style={{ width: progress }}>{progress}</div>
-                <button onClick={uploadFile} className="upload-file__upload-button">Upload</button>
+                <button onClick={uploadFile} className="btn btn--gamma"><span>Upload</span></button>
             <hr/>
             {data.path && <img src={data.path} alt={data.name} />}
             </div>

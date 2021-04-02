@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className="header">
       <nav className="header__nav">
-      <Link to="/" className="header__logo" alt="Health Logo">   
+      <Link to="/" className="header__logo" alt="ChromaGene Logo">   
           <div className='header__company'>  
           <img className ="header__rainbow"src={company2} alt=''></img>
           <img className="header__basicdna"src={basicdna} alt=''></img>
