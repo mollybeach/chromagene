@@ -45,7 +45,7 @@ class Home extends Component {
           <div className='home__inside hero-container__text'>
           <div className="home__subtitle hero-container__text">
           ChromaGene
-            <img className="home__arrow hero-container__text" src={chevronImg} alt="img" />
+            <img className="home__arrow hero-container__title" src={chevronImg} alt="img" />
           </div>
     
           <div className="home__titleb hero-container__text">Welcome to ChromaGene!</div>

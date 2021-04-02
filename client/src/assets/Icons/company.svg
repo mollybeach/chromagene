@@ -30,14 +30,14 @@
                  attributeName="x"
                  from="0" to="150%"
                  dur="0s"
-                 repeatCount="2"/>
+                 repeatCount="indefinite"/>
       </rect>
       <rect x="-150%" y="0" width="150%" height="100%" fill="url(#gradient)">
         <animate attributeType="XML"
                  attributeName="x"
                  from="-150%" to="0"
                  dur="7s"
-                 repeatCount="2"/>
+                 repeatCount="indefinite"/>
       </rect>
     </pattern>
 

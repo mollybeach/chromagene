@@ -22,10 +22,10 @@
 
   &__subtitle {
     @include standard-padding-horizontal;
-    @include h1-page-header;
+   // @include h1-page-header;
     color: $raspberrypi;
     @include increment-2-bottom;
-    font-size:40px;
+    font-size:45px;
   }
   &__arrow {
     width: 1vw;
@@ -40,21 +40,35 @@
     color: $raspberrypi;
     padding-left: 5%;
     @include increment-2-bottom;
-    font-size:40px;
+    font-size:45px;
   }
   &__titleb {
     @include standard-padding-horizontal;
-    @include h1-page-header;
+    //@include h1-page-header;
     color: $raspberrypi;
     padding-left: 5%;
     @include increment-2-bottom;
-    font-size:40px;
+    font-size:45px;
   }
   &__about {
     @include standard-padding-horizontal;
     padding-top: 1%;
     padding-left: 5%;
     width: 50%;
+  
+      @include h1-desktop-size-that-should-be-available-on-mobile; 
+      @include tablet {
+        @include h1-main-header;
+        color: $text-grey;
+        font-size:45px;
+    }
+    @include desktop {
+      @include h1-main-header;
+        font-size:45px;
+        color: $text-grey;
+    }
+      
+    
     background-image: src('../../assets/Icons/chevron_right-24px.svg');
   }
 
@@ -224,33 +238,17 @@
       }
   }
   &__title {
-      margin: 0 0 24px 0;
-      @include h3-subheader-white;
+     // margin: 0 0 24px 0;
+      //@include h3-subheader-white;
+      font-size:45px;
       @include tablet {
-          @include h2-header-white;
-          margin: 0 0 48px 0;
+          //@include h2-header-white;
+          //margin: 0 0 48px 0;
+          color:$raspberrypi;
+          font-size:45px;
       }
   }
-  &__text {
-      
-      &--font-size-shows {
-          @include h1-desktop-size-that-should-be-available-on-mobile; //based on the mockup this is the ideal size for the mobile hero heading looks perfect color: $white;
-          color: $white;
-          @include tablet {
-              @include h1-main-header;
-          }
-          @include desktop {
-              @include h1-main-header;
-          }
-      }
-      &--font-size-biography {
-          @include h1-main-header;
-          @include tablet {
-              @include h1-main-header;
-              //564px 74.1
-          }
-      }
-  }
+
  
 }
 .content{
@@ -308,6 +306,7 @@ $btns: (
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: all $time;
+  border:none;
 
   
   & + & {
@@ -329,6 +328,7 @@ $btns: (
     left: 0;
     transform: scale(4) translateX(-100%);
     transition: all $time * 1.5 ease-out;
+    border: none;
   }
   
   &:hover,

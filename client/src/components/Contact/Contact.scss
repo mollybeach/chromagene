@@ -55,12 +55,13 @@
 
   &__title {
     margin-left: 50%;
-    font-family: TitilliumWebSemiBold600;
     color: $raspberrypi;
+    font-family: TitilliumWebSemiBold600;
     font-size: 1.75rem;
     @include tablet {
       font-size: 2rem;
       margin-left: 50%;
+      color: $raspberrypi;
     }
   }
   &__forms-container {
@@ -95,6 +96,7 @@
     width: 40%;
   }
   &__title {
+    color: $text-grey;
     font-size: 1.25rem;
     margin: 1rem 1.5rem 1.5rem;
     @include tablet {
@@ -104,6 +106,7 @@
   &__title-label-container {
     display: flex;
     flex-direction: column;
+    color: $text-grey;
     margin: 0 1.5rem 1rem;
     @include tablet {
       margin: 0 2rem 1.5rem;

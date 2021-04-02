@@ -82,8 +82,6 @@ render(){
         </div>
         <div className="form-footer">
               <div className="form-footer__btn-container">
-               
-               
                 <button className="btn btn--gamma"><span>Cancel</span></button>
                 <button className="btn btn--delta" type="submit"><span>Enter</span></button>
               </div>
