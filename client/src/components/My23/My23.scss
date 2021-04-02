@@ -4,7 +4,9 @@
 @use '../../partials/typography' as *;
 
 
-.my23{display:flex;
+.my23{
+ 
+    display:flex;
     padding-left: 125px;
     flex-direction:row;
 }

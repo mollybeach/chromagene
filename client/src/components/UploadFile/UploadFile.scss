@@ -4,6 +4,8 @@
 @use '../../partials/typography' as *;
 
 .upload-file{
+  position:absolute;
+  margin-top: 20%;
     margin-left: 5%;
     padding: 2rem;
     display: flex;

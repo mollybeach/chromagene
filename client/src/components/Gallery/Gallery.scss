@@ -3,7 +3,9 @@
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
-.galley {
+.gallery {
+  position:absolute;
+  margin-top: 10%;
   margin: 0 auto;
   width: 21.4375rem;
   background: #ffffff;

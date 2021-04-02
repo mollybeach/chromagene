@@ -4,6 +4,8 @@
 @use '../../partials/typography' as *;
 
 .footer {
+  position:absolute;
+  margin-top:100%;
   @include standard-padding-horizontal;
   &__binding {
     padding: 3rem 0; //48px top bottom 3rem {
