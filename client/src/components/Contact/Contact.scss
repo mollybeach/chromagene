@@ -80,9 +80,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 0.5rem;
-  border-top: 1px solid $cloud;
-  border-right: 1px solid $cloud;
-  border-left: 1px solid $cloud;
+  border: 1px solid $cloud;
   @include tablet {
     width: 50%;
   }
@@ -152,7 +150,6 @@
   justify-content: center;
   align-items: center;
   height: 4.25rem;
-  background-color: $light-grey;
   &__btn-container {
     width: 300px;
     margin: 0 1rem;
@@ -160,7 +157,8 @@
     justify-content: space-around;
     @include tablet {
       justify-content: flex-end;
-      margin: 0 2rem;
+      justify-content: space-between;
+      margin: 0 5rem;
     }
   }
 }
@@ -170,7 +168,6 @@
   font-size: 0.8125rem;
   width: 8.75rem;
   height: 2.25rem;
-  color: $slate;
   background-color: $white;
   border: 1px solid $cloud;
   border-radius: 20px;
