@@ -21,7 +21,8 @@ class App extends Component {
   state = {
     homeList: null,
     galleryList : null,
-    updateList: null
+    updateList: null,
+    contactList : null,
 }
 componentDidMount(){
   axios.get('http://localhost:8080/home')
@@ -33,17 +34,22 @@ componentDidMount(){
         this.setState({
           galleryList:res.data
         })
-    axios.get('http://localhost:8080/gallery').then(res=>{
+    axios.get('http://localhost:8080/update').then(res=>{
         this.setState({
           updateList:res.data
     })
     })
+    axios.get('http://localhost:8080/contact').then(res=>{
+      this.setState({
+        contactList:res.data
+  })
+  })
     })
     })
 }
 
   render() {
-    const { homeList, galleryList, updateList} = this.state;
+    const { homeList, galleryList, updateList, contactList} = this.state;
     if(homeList===null ) {
       return <p className = "gallery__loading">Loading...</p>
     }
@@ -63,7 +69,7 @@ componentDidMount(){
           <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
           <Route exact path = '/upload' render = {(props)=> <Upload {...props} updateList = {updateList} {...props} />}  />
         
-          <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} />} />
+          <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
           <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} galleryList ={galleryList}/> } />
