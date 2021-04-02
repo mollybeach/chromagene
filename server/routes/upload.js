@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 let bigData = require("../data/upload.json");
-/*********************POST Upload**************/
+/*********************POST UPLOAD**************/
 
 readUpdateFile = (file) => {
     const fileToRead = fs.readFileSync(file);

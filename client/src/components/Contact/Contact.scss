@@ -1,82 +1,185 @@
-
 @use '../../partials/variables' as *;
-//@use '../../partials/breakpoints' as*;
 @use '../../partials/colors' as *;
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
-.contact{
+.contact {
+  margin-left: 50%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+  padding: 0 1rem;
+  background-color: $light-grey;
+  @include tablet {
+    padding: 0 2rem;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__full-container {
+    margin-left: 50%;
+    margin-top: -4rem;
+    margin-bottom: 6rem;
+    box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
+    @include tablet {
+      margin-left: 50%;
+      margin-top: -5.75rem;
+      max-width: 63.75rem;
+      flex-grow: 1;
+    }
+  }
+  &__header-container {
+    margin-left: 50%;
+    background-color: $white;
+    height: 5.75rem;
+    padding: 0 1.5rem;
+    border-radius: 3px 3px 0 0;
+  }
+
+  &__arrow-title-container {
+    margin-left: 50%;
+    display: flex;
+    //@at-root: center;
+    height: 100%;
+  }
+
+  &__back-arrow {
+    margin-left: 50%;
+    // margin-right: .75rem;
+    margin-left: 50%;
+
+    @include tablet {
+      margin-left: 50%;
+      margin-right: 0.75rem;
+    }
+  }
+
+  &__title {
+    margin-left: 50%;
+    font-family: TitilliumWebSemiBold600;
+    color: $black;
+    font-size: 1.75rem;
+    @include tablet {
+      font-size: 2rem;
+      margin-left: 50%;
+    }
+  }
+  &__forms-container {
+    @include tablet {
+      margin-left: 50%;
+      display: flex;
+      position: relative;
+    }
+  }
+}
+
+
+.contact-form {
   margin-top: 10%;
   margin-left: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid $cloud;
+  border-right: 1px solid $cloud;
+  border-left: 1px solid $cloud;
+  @include tablet {
+    width: 50%;
+  }
+  &__title {
+    font-size: 1.25rem;
+    margin: 1rem 1.5rem 1.5rem;
+    @include tablet {
+      margin: 1.5rem 0 2rem 2rem;
+    }
+  }
+  &__title-label-container {
     display: flex;
     flex-direction: column;
-   border-top: 1px solid $cloud;
-   border-right: 1px solid $cloud;
-   border-left: 1px solid $cloud;
-
-    padding-bottom: .5rem;
-  
+    margin: 0 1.5rem 1rem;
     @include tablet {
-      width: 50%;
-      padding-bottom: 1rem;
-  
-      &::after {
-        content: '';
-        position: absolute;
-        top: 1.5rem;
-        // left: 50%;
-        height: 24rem;
-        width: 1px;
-       // background-color: $cloud;
-      }
+      margin: 0 2rem 1.5rem;
     }
-  
-    &__title {
-      font-size: 1.25rem;
-      margin: 1rem 1.5rem 1.5rem;
-  
-      @include tablet {
-        margin: 1.5rem 0 2rem 2rem;
-      }
+  }
+  &__label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    line-height: 1.25rem;
+  }
+  &__input {
+    height: 2.25rem;
+    border-radius: 20px;
+    border: 1px solid $cloud;
+    padding: 0 1rem;
+    @include tablet {
+      height: 2.375rem;
     }
-  
-    &__title-label-container {
-      display: flex;
-      flex-direction: column;
-      margin: 0 1.5rem 1rem;
-  
-      @include tablet {
-        margin: 0 2rem 1.5rem;
-      }
-    }
-  
-    &__label {
+    &::placeholder {
+      font-family: TitilliumWebRegular400;
       font-size: 0.8125rem;
-      font-weight: 600;
-      margin-bottom: .25rem;
-      line-height: 1.25rem;
     }
-  
-    &__input {
-      height: 2.25rem;
-      border-radius: 20px;
-      //border: 1px solid $cloud;
-      padding: 0 1rem;
-  
-      @include tablet {
-        height: 2.375rem;
-      }
-  
-      &::placeholder {
-        font-family: TitilliumWebRegular400;
-        font-size: 0.8125rem;
-      }
-  
-      &:focus {
-        border: 1px solid blue;
-        outline: none;
-      }
+    &:focus {
+      border: 1px solid $indigo;
+      outline: none;
     }
-  
+  }
 }
+
+
+// FORM BUTTONS
+.action-btn {
+  font-family: TitilliumWebRegular400;
+  font-size: 0.8125rem;
+  width: 18.75rem;
+  height: 2.25rem;
+  color: $slate;
+  background-color: $white;
+  border: 1px solid $cloud;
+  border-radius: 20px;
+  padding: .5rem 3.1875rem;
+  @include tablet {
+    font-size: 0.875rem;
+    height: 2.375rem;
+    width: 4.5rem;
+    padding: .675rem 1rem .25rem 1rem;
+  }
+}
+
+
+.form-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.25rem;
+  background-color: $light-grey;
+  &__btn-container {
+    width: 300px;
+    margin: 0 1rem;
+    display: flex; 
+    justify-content: space-around;
+    @include tablet {
+      justify-content: flex-end;
+      margin: 0 2rem;
+    }
+  }
+}
+
+.cancel-btn {
+  font-family: TitilliumWebRegular400;
+  font-size: 0.8125rem;
+  width: 8.75rem;
+  height: 2.25rem;
+  color: $slate;
+  background-color: $white;
+  border: 1px solid $cloud;
+  border-radius: 20px;
+  padding: .5rem 3.1875rem;
+  @include tablet {
+    font-size: 0.875rem;
+    height: 2.375rem;
+    width: 4.5rem;
+    padding: .675rem 1rem .25rem 1rem;
+  }
+}
+

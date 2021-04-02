@@ -9,12 +9,12 @@ import Email from './components/Email/Email';
 import GalleryDetails from "./components/GalleryDetails/GalleryDetails";
 import EditGallery from "./components/EditGallery/EditGallery";
 import ContactItemDetails from "./components/ContactItemDetails/ContactItemDetails";
-import Upload from "./components/Upload/Upload";
+//import Upload from "./components/Upload/Upload";
 import Contact from "./components/Contact/Contact";
 import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
-import Uploads from "./components/Upload/Uploads";
+import Upload from "./components/UploadFile/UploadFile";
 import './App.scss'
 
 class App extends Component {
@@ -50,7 +50,6 @@ componentDidMount(){
     if( galleryList===null ) {
       return <p className = "gallery__loading">Loading...</p>
     }
-   
     return (
       <div className = 'app'>
         <BrowserRouter>
@@ -63,13 +62,13 @@ componentDidMount(){
           <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList}  {...props} />} />
           <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
           <Route exact path = '/upload' render = {(props)=> <Upload {...props} updateList = {updateList} {...props} />}  />
-          <Route exact path = '/uploads' render = {(props)=> <Uploads {...props} updateList = {updateList} />}  />
+        
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
           <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} galleryList ={galleryList}/> } />
           </Switch> 
-           <Footer/>
+          <Footer/>
         </BrowserRouter>
       </div>
     );
@@ -78,20 +77,5 @@ componentDidMount(){
 
 export default App;
 
-//      <Route exact path={[ `/Upload`]} render = {(props)=> <Upload/>} />
-/*   if(homeList===null ) {
-      return <p className = "Home__loading">Loading...</p>
-    }
-    if( contactList===null ) {
-      return <p className = "Contact__loading">Loading...</p>
-    }
-   axios.get('http://localhost:8080/contact')
-       .then(res=>{
-         this.setState({
-           conrtactList :res.data
-         })
-       })
-/*     
-     */
 
 

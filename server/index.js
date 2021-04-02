@@ -5,12 +5,13 @@ const cors = require("cors");
 const home = require("./routes/home");
 const gallery = require("./routes/gallery");
 const upload= require("./routes/upload");
-//const uploadfile= require("./routes/uploadfile");
+const uploadfile= require("./routes/uploadfile");
+const contact = require("./routes/contactRoute");
 //const upload = require('./routes/upload');
 /*
 const dnaRoute = require("./routes/dnaRoute");
 const dnaRoute = require("./routes/dnaRoute");
-const contactRoute = require("./routes/contactRoute");
+
 const galleryRoute = require("./routes/galleryRoute");
 const createContactactRoute = require("./routes/createContactRoute");
 const editContactactRoute = require("./routes/editContactactRoute");
@@ -39,7 +40,8 @@ app.use(express.json());
 app.use("/", home);
 app.use("/", gallery);
 app.use("/", upload);
-//app.use("/", uploadfile);
+app.use("/", uploadfile);
+app.use("/", contact);
 //app.use("/", upload);
 //app.use("/", dnaRoute);
 

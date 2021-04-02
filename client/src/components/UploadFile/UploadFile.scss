@@ -1,0 +1,50 @@
+@use '../../partials/variables' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/typography' as *;
+
+.upload-file{
+    margin-top: 30%;
+    margin-left: 30%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1rem;
+    &__upload-button{
+     background-color: $secondary-color-grey;
+    justify-content: center;
+    margin-right: 50%;
+
+    width: 100%;
+    height: $increment6-px;
+    border-radius: $increment0-px;
+    border: 1px solid $slate;
+    color: $slate;
+    &:hover {
+      color: $secondary-color-indigo;
+    }
+    @include tablet {
+      margin-top: $increment5-px;
+      width: 160px;
+     }
+    }
+     &__progessBar{
+        height: 1rem;
+        width: 0%;
+        background-color: rgb(68, 212, 231);
+        color: white;
+        padding:2px
+      }
+  }
+  
+  input , div {
+    margin-top: 2rem;
+  }
+  img{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+  }
+
+  
