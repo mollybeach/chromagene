@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import fancydna from '../../assets/Icons/fancydna.svg';
+import basicdna from '../../assets/Icons/basicdna.svg';
 //import Framie from "./Framie";
 import "./Home.scss";
 import { API_URL } from "../../utils/utils";
@@ -62,10 +63,12 @@ class Home extends Component {
             to the plus strand on the human reference sequence.
             <div className="home__buttons">
               <button className="home__button-upload" type="submit">
+              <img className="home__basicdna"src={basicdna} alt=''></img>
                 {" "}
                 UPLOAD{" "}
               </button>
-              <img src={fancydna} alt=''></img>
+            
+         
             </div>
           </div>
           </div>
@@ -79,4 +82,5 @@ class Home extends Component {
 export default Home;
 
 //  <Framie/>      <div className="home__title hero-container__text">ChromeGene</div>
+//  <img src={fancydna} alt=''></img>
 

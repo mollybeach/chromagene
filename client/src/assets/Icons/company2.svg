@@ -4,7 +4,7 @@
   <rect x="0" y="0" fill="transparent" width="50%" height="1%" />
   
   <!-- Text using the #pattern in defs as the fill -->
-  <text x="20%" text-anchor="top" y="25%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="35vh">Chroma</text>
+  <text x="19%" text-anchor="top" y="26%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">ene</text>
   
   <defs>  
     <!-- Da gradient -->

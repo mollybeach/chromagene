@@ -12,12 +12,16 @@
   background-color: $primary-background;
   @include h1-page-header;
   color: $slate;
+  &__basicDna{
+    margin-left:300px;
+  }
   &__inside{
-    padding-top: 15%;
+    padding-top: 8%;
     //z-index: 2;
     position:absolute;
     color: $text-grey;
   }
+
   &__subtitle {
     @include standard-padding-horizontal;
     @include h1-page-header;

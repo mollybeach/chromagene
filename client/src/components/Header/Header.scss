@@ -20,35 +20,61 @@
       border: 0.75px #d5d7db solid;
     }
     @include desktop {
-      padding: 0 5rem;
+      padding: 0 15rem;
     }
   }
   &__company {
+    width: 500px;
     display: inline;
     //@include d-header;
-    color: $maroon;
-    border-radius: nullpx;
-    position: absolute;
+    //color: $maroon;
+    //border-radius: nullpx;
+    //position: absolute;
+    //color: rgb(248, 248, 28);
     //width: 76px;
     //height: 35px;
     //left: 100px;
     //top: $increment3-px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 35px;
-    @include desktop {
+    //font-family: Roboto;
+    //font-style: normal;
+    //font-weight: 600;
+    //font-size: 40px;
+    //line-height: 35px;
+    //@include desktop {
      // left: 165px;
-    }
+    //}
   }
+  
   &__rainbow {
-    display:flex;
-    height: 150px;
+   // display:flex;
+    //height: 150px;
+
     position:absolute;
+    left:215px;
+  
+    
+  }
+  &__rainbow2 {
+    //display:flex;
+    //height: 150px;
+   // width:200px;
+    position:absolute;
+    left:0px;
+    
+  }
+  &__basicmarginadna{
+ 
+    //margin-left: 50px;
+  }
+  &__basicDna{
+    //display:flex;
+    //position:absolute;
+    //left:60px;
+   // z-index:3;
+  // border: 20px transparent solid;
   }
   &__logo {
-    margin-left: 24px;
+    margin-left: 40px;
     margin-top: $increment2-px;
     @include desktop {
       margin-left: none;
