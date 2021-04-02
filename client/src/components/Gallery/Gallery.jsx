@@ -5,17 +5,17 @@ import axios from 'axios';
 import { API_URL } from "../../utils/utils";
 
 class Gallery extends Component {
-      state = {
+    state = {
         galleryList : this.props.galleryList
     }
    componentDidMount(){
-       this.setState({galleryList: this.props.galleryList})
+    this.setState({galleryList: this.props.galleryList})
 
    }
    componentDidUpdate(prevProps){
-       axios.get(`${API_URL}/gallery`)
-       .then((response) => {
-         if(this.state.galleryList!==  prevProps.match.params) {
+    axios.get(`${API_URL}/gallery`)
+    .then((response) => {
+    if(this.state.galleryList!==  prevProps.match.params) {
          axios.get(`${API_URL}/Gallery`)
            .then((res) => {
                this.setState({

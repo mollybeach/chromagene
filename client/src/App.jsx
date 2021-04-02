@@ -68,7 +68,6 @@ componentDidMount(){
           <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList}  {...props} />} />
           <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
           <Route exact path = '/upload' render = {(props)=> <Upload {...props} updateList = {updateList} {...props} />}  />
-        
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />

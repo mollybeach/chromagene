@@ -11,9 +11,9 @@ readUpdateFile = (file) => {
 }
 
 router.post("/contact", (req, res) => {
-    const { id, contactName, contactAddress, contactCity, contactCountry} = req.body;
+    const { contactId, contactName, contactAddress, contactCity, contactCountry} = req.body;
     let newUploadItem = {
-        id: id,
+        id: contactId,
         name: contactName,
         address: contactAddress,
         city: contactCity,

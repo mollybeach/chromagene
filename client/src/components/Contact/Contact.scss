@@ -82,6 +82,7 @@
   flex-direction: column;
   padding-bottom: 0.5rem;
   border: 1px solid $cloud;
+  margin-bottom: 10%;
   @include tablet {
     width: 50%;
   }

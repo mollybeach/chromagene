@@ -39,11 +39,11 @@ class Contact extends React.Component {
           return;
           }
         axios.post(`${API_URL}/contact`, {
-          id: 20390123901,
-          name: event.target.contactName.value,
-          address: event.target.contactAddress.value,
-          city: event.target.contactCity.value,
-          country: event.target.contactCountry.value,
+          contactId: 20390123901,
+          contactName: event.target.contactName.value,
+          contactAddress: event.target.contactAddress.value,
+          contactCity: event.target.contactCity.value,
+          contactCountry: event.target.contactCountry.value,
       })
         event.target.reset();
         alert("Item successfully added!");
