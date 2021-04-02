@@ -4,7 +4,7 @@ import React from 'react';
 const Glitch= () => {
   
     return (
-        <div class="glitch-embed-wrap"  style={{'height': '420px', 'width': '100%', 'border': '0'}}>
+        <div className="glitch-embed-wrap"  style={{'height': '420px', 'width': '100%', 'border': '0'}}>
         <iframe
           src="https://glitch.com/embed/#!/embed/florentine-honey-snickerdoodle?path=index.html&previewSize=0"
           title="florentine-honey"

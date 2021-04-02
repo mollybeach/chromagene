@@ -22,7 +22,7 @@
 
   &__subtitle {
     @include standard-padding-horizontal;
-   // @include h1-page-header;
+    @include h1-page-header;
     color: $raspberrypi;
     @include increment-2-bottom;
     font-size:45px;
