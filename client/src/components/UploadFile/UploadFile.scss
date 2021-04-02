@@ -4,18 +4,58 @@
 @use '../../partials/typography' as *;
 
 .upload-file{
-    margin-top: 30%;
-    margin-left: 30%;
+    margin-left: 5%;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     font-size: 1rem;
+    &__subtitle {
+      @include h1-page-header;
+      color: $violet;
+      @include increment-2-bottom;
+    }
+    &__arrow {
+      width: 1vw;
+      padding-top: 2vw;
+    }
+    &__dna {
+      padding-left: 25%;
+    }
+    &__title {
+      @include h1-page-header;
+      color: $violet;
+      padding-left: 5%;
+      @include increment-2-bottom;
+    }
+    &__titleb {
+      @include h1-page-header;
+      color: $violet;
+      padding-left: 5%;
+      @include increment-2-bottom;
+    }
+    &__about {
+      padding-top: 1%;
+      padding-left: 5%;
+      width: 70%;
+      background-image: src('../../assets/Icons/chevron_right-24px.svg');
+    }
+    &__social {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__iframeContainer {
+      white-space: nowrap;
+      display: inline-block;
+      /// height: 350px;
+    }
+    &__ico {
+      width: 30px;
+    }
     &__upload-button{
      background-color: $secondary-color-grey;
     justify-content: center;
     margin-right: 50%;
-
     width: 100%;
     height: $increment6-px;
     border-radius: $increment0-px;
@@ -38,13 +78,9 @@
       }
   }
   
-  input , div {
+  input{
     margin-top: 2rem;
   }
-  img{
-    width: 500px;
-    height: 500px;
-    object-fit: contain;
-  }
+
 
   

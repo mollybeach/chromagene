@@ -8,10 +8,9 @@ class Gallery extends Component {
       state = {
         galleryList : this.props.galleryList
     }
-   
    componentDidMount(){
        this.setState({galleryList: this.props.galleryList})
-          
+
    }
    componentDidUpdate(prevProps){
        axios.get(`${API_URL}/gallery`)
@@ -20,7 +19,7 @@ class Gallery extends Component {
          axios.get(`${API_URL}/Gallery`)
            .then((res) => {
                this.setState({
-                   galleryList : res.data
+            galleryList : res.data
                   })
            })
            .catch((error) => {
@@ -29,7 +28,7 @@ class Gallery extends Component {
          }
       });
      }
-     
+
    render() {
        if(this.state.galleryList===null) {
          return <p className = "gallery__loading">Loading...</p>
@@ -37,7 +36,6 @@ class Gallery extends Component {
         return (
             <section className='gallery'> 
                 <div className='gallery__side'>
-                 
                 </div>
                 <div className='gallery__table' >
                     <div  className='gallery__table-head'>
@@ -62,7 +60,6 @@ class Gallery extends Component {
                         </div>                 
                     </div>
                     <div className ='gallery__table-body' >             
-                 
                     </div>
                 </div>
             </section>

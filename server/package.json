@@ -27,6 +27,7 @@
     "node": "^15.10.0",
     "nodemon": "^2.0.7",
     "react": "^17.0.2",
+    "react-image-gallery": "^1.0.9",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "txt-reader": "^1.4.5",
