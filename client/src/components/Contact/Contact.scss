@@ -138,6 +138,12 @@
   border: 1px solid $cloud;
   border-radius: 20px;
   padding: .5rem 3.1875rem;
+  &:hover {
+    cursor: pointer;
+    color: $apple;
+    text-decoration: none;
+    transform: scale(1.04);
+  }
   @include tablet {
     font-size: 0.875rem;
     height: 2.375rem;
@@ -174,6 +180,12 @@
   border: 1px solid $cloud;
   border-radius: 20px;
   padding: .5rem 3.1875rem;
+  &:hover {
+    cursor: pointer;
+    color: $apple;
+    text-decoration: none;
+    transform: scale(1.04);
+  }
   @include tablet {
     font-size: 0.875rem;
     height: 2.375rem;

@@ -4,16 +4,24 @@
 @use '../../partials/mixins' as *;
 
 .home {
-  @include standard-padding-horizontal;
-  @include increment-3-top;
+ // @include standard-padding-horizontal;
+  //@include increment-4-top;
+  display:flex;
   width: 100%;
   height: 100vh;
   background-color: $primary-background;
   @include h1-page-header;
   color: $slate;
+  &__inside{
+    padding-top: 15%;
+    //z-index: 2;
+    position:absolute;
+    color: $text-grey;
+  }
   &__subtitle {
+    @include standard-padding-horizontal;
     @include h1-page-header;
-    color: $violet;
+    color: $maroon;
     @include increment-2-bottom;
   }
   &__arrow {
@@ -24,35 +32,28 @@
     padding-left: 25%;
   }
   &__title {
+    @include standard-padding-horizontal;
     @include h1-page-header;
-    color: $violet;
+    color: $maroon;
     padding-left: 5%;
     @include increment-2-bottom;
   }
   &__titleb {
+    @include standard-padding-horizontal;
     @include h1-page-header;
-    color: $violet;
+    color: $maroon;
     padding-left: 5%;
     @include increment-2-bottom;
   }
   &__about {
+    @include standard-padding-horizontal;
     padding-top: 1%;
     padding-left: 5%;
-    width: 70%;
+    width: 50%;
     background-image: src('../../assets/Icons/chevron_right-24px.svg');
   }
-  &__social {
-    display: flex;
-    justify-content: space-around;
-  }
-  &__iframeContainer {
-    white-space: nowrap;
-    display: inline-block;
-    /// height: 350px;
-  }
-  &__ico {
-    width: 30px;
-  }
+
+
   &__buttons {
     justify-content: center;
     @include tablet {
@@ -137,4 +138,115 @@
   //-o-transform:rotate(20deg);
   //-ms-transform:rotate(20deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+}
+
+/************************************HERO CONTAINER****************************/
+
+.hero-container {
+  margin-top: 8%;
+  display: flex;
+  position: relative;
+  //background-image: url("../../assets/images/pinkbaby.jpg");
+   //background-image: url("../../assets/Icons/DNA-Circle.svg");
+  background-image: url( '../../assets/Icons/fancydna.svg');
+  background-position: left;
+  background-size: cover;
+  //background-color: rgba(50, 50, 50, 0.50);
+   ::before {
+      content: "";
+      position: absolute;
+      top: 0rem;
+      right: 0rem;
+      bottom: 0rem;
+      left: 0rem;
+      background-color: rgba(0, 0, 0, 0.05);
+      z-index: -1;
+  }
+  min-height: 147.5vw; //472px
+  max-height: 87.2vw; //670px tablets 
+  &__mobile-size-biography {
+      min-height: 183px; //183px 
+      max-height: 57.2vw; //183px
+  }
+  @include tablet {
+      min-height: 670px; //670px
+      max-height: 52.3vw; //670px
+      &--sizing {
+          min-height: 400px; //400px 
+          max-height: 52.1vw; //400px
+      }
+  }
+  @include desktop {
+      //margin: 0 0 3rem 0; //48px
+  }
+  &--scale {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  &__box {
+      margin: 4.0rem 0; //64px 
+      //z-index: 1;
+      margin-left: 5.0vw;
+      &--mobile-box-size-biography {
+          min-width: 224px; //224px 
+          max-width: 30.0vw; //224px
+      }
+      &--mobile-box-size-shows {
+          min-width: 288px; //288px 
+          max-width: 90.0vw; //288px 
+      }
+      @include tablet {
+          margin: 6.0rem 0; //96px 
+          margin-left: 3.1vw;
+          &--tablet-box-size-biography {
+              min-width: 510px; //apx 500px
+              max-width: 39.8vw; //apx 500px
+          }
+          &--tablet-box-size-shows {
+              min-width: 569px; //564px 74.1
+              max-width: 74.1vw; //564px 
+          }
+      }
+      @include desktop {
+          margin: 10.0rem 0; //160px
+          margin-left: 6.25vw;
+          &--desktop-box-size-biography {
+              width: 41%;
+          }
+          &--desktop-box-size-shows {
+              min-width: 568px; //552px 484px
+              max-width: 30.8vw; //552px  484px 37.8
+          }
+      }
+  }
+  &__title {
+      margin: 0 0 24px 0;
+      @include h3-subheader-white;
+      @include tablet {
+          @include h2-header-white;
+          margin: 0 0 48px 0;
+      }
+  }
+  &__text {
+      
+      &--font-size-shows {
+          @include h1-desktop-size-that-should-be-available-on-mobile; //based on the mockup this is the ideal size for the mobile hero heading looks perfect color: $white;
+          color: $white;
+          @include tablet {
+              @include h1-main-header;
+          }
+          @include desktop {
+              @include h1-main-header;
+          }
+      }
+      &--font-size-biography {
+          @include h1-main-header;
+          @include tablet {
+              @include h1-main-header;
+              //564px 74.1
+          }
+      }
+  }
+ 
 }

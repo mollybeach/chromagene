@@ -5,8 +5,11 @@
 @use '../../partials/typography' as *;
 
 .header {
+  z-index: 10;
+  position: absolute;
   display: flex;
   &__nav {
+    z-index: 10;
     position: fixed;
     background-color: $primary-background;
     max-height: 12.5rem;
@@ -22,22 +25,27 @@
   }
   &__company {
     display: inline;
-    @include d-header;
-    color: #5a5a5a;
+    //@include d-header;
+    color: $maroon;
     border-radius: nullpx;
     position: absolute;
-    width: 76px;
-    height: 35px;
-    left: 100px;
-    top: $increment3-px;
+    //width: 76px;
+    //height: 35px;
+    //left: 100px;
+    //top: $increment3-px;
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 40px;
     line-height: 35px;
     @include desktop {
-      left: 165px;
+     // left: 165px;
     }
+  }
+  &__rainbow {
+    display:flex;
+    height: 150px;
+    position:absolute;
   }
   &__logo {
     margin-left: 24px;
@@ -90,13 +98,13 @@
     color: #5a5a5a;
     &:hover {
       cursor: pointer;
-      color: #3a88f0;
+      color: $apple;
       text-decoration: none;
       transform: scale(1.04);
     }
     &:active {
       //background-color: #FFFFFF;
-      color: #3a88f0;
+      color: $apple;
     }
 
     @include tablet {
@@ -104,12 +112,12 @@
     }
 
     &--active {
-      color: #3a88f0;
+      color: $apple;
     }
   }
   &__partition-input {
     margin-top: 16px;
-    background-color: #3a88f0;
+    background-color: $apple;
   }
   &__search-input {
     //display: none;
@@ -130,10 +138,10 @@
 
     justify-content: right;
     &:active {
-      border-color: blue;
+      border-color: $apple;
     }
     &:hover {
-      border-color: blue;
+      border-color: $apple;
     }
   }
   &__avi {

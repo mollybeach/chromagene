@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
+import fancydna from '../../assets/Icons/fancydna.svg';
 //import Framie from "./Framie";
 import "./Home.scss";
 import { API_URL } from "../../utils/utils";
@@ -32,16 +33,21 @@ class Home extends Component {
   render() {
     return (
       <>
+      
         <div className="home">
-          {" "}
-          Welcome to ChromaGene
-          <div className="home__subtitle">
-            Featured
-            <img className="home__arrow" src={chevronImg} alt="img" />
+            <div className="hero-container hero-container__mobile-size-biography  hero-container--sizing hero-container--scale">
+                <div className="hero-container__box hero-container__box--mobile-box-size-biography hero-container__box--tablet-box-size-biography hero-container__box--desktop-box-size-biography">
+                    <h1 className="hero-container__text  hero-container__text--font-size-biography"> </h1>
+                </div>
+            </div>
+          <div className='home__inside hero-container__text'>
+          <div className="home__subtitle hero-container__text">
+          ChromeGene
+            <img className="home__arrow hero-container__text" src={chevronImg} alt="img" />
           </div>
-          <div className="home__title">ChromeGene</div>
-          <div className="home__titleb">Welcome to ChromeGene!</div>
-          <div className="home__about">
+    
+          <div className="home__titleb hero-container__text">Welcome to ChromeGene!</div>
+          <div className="home__about hero-container__text" >
             Upload DNA .txt or .csv file create unique art to begin your
             journey! A SNP Single-Nucleotide Polymorphism is a variation of a
             single nucleotide (A, G, C or T). I find it fascinating that you can
@@ -59,7 +65,9 @@ class Home extends Component {
                 {" "}
                 UPLOAD{" "}
               </button>
+              <img src={fancydna} alt=''></img>
             </div>
+          </div>
           </div>
         </div>
     
@@ -70,5 +78,5 @@ class Home extends Component {
 
 export default Home;
 
-//  <Framie/>
+//  <Framie/>      <div className="home__title hero-container__text">ChromeGene</div>
 
