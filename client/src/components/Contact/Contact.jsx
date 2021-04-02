@@ -53,7 +53,11 @@ class Contact extends React.Component {
     }
 render(){
     return (
+      
       <main className="new-contact">
+          <img className="new-contact__ring" src={ring} alt=''></img>
+        
+          <img src={company} alt=''></img>
         <div className="new-contact__full-container">
           <section className="new-contact__header-container">
           <form onSubmit={this.addNewContact}>
@@ -85,13 +89,7 @@ render(){
             </div>
             </div>
           </form>
-          <img src={ring} alt=''></img>
-          <img src={fancydna} alt=''></img>
-          <img src={company} alt=''></img>
-    
-
-
-
+      
           </section>
         </div>
       

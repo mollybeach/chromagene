@@ -16,7 +16,6 @@ function Header() {
           <img className ="header__rainbow"src={company2} alt=''></img>
           <img className="header__basicdna"src={basicdna} alt=''></img>
           <img className ="header__rainbow2"src={company} alt=''></img>
-        
           </div>
           </Link>
         <div className="header__partition-input">
@@ -32,7 +31,6 @@ function Header() {
           <li>
             <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item--active">Gallery</NavLink>
           </li>
-       
           <li>
             <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item--active">Contact</NavLink>
           </li>
@@ -41,9 +39,6 @@ function Header() {
           </li>
             <NavLink to="/About" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
           <li>
-              
-         
-       
           </li>
         </ul>
       </nav>

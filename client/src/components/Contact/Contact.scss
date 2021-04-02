@@ -4,6 +4,7 @@
 @use '../../partials/typography' as *;
 
 .contact {
+ 
   margin-left: 50%;
   display: flex;
   flex-direction: column;
@@ -72,19 +73,27 @@
   }
   
 }
-
+.new-contact{
+  &__ring{
+    position:absolute;
+    margin-top:5%;
+    margin-left: 20%;
+   
+  }
+}
 
 .contact-form {
-  margin-top: 10%;
-  margin-left: 10%;
+  //margin-top: 10%;
+  margin-left: 30%;
   margin-bottom: 1%;
   display: flex;
   flex-direction: column;
   padding-bottom: 0.5rem;
-  border: 1px solid $cloud;
-  margin-bottom: 10%;
+  //border: 1px solid $cloud;
+  margin-top: 10%;
+  margin-bottom: 25%;
   @include tablet {
-    width: 50%;
+    width: 40%;
   }
   &__title {
     font-size: 1.25rem;

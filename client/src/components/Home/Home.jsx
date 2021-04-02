@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import { Link } from 'react-router-dom';
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import fancydna from '../../assets/Icons/fancydna.svg';
 import basicdna from '../../assets/Icons/basicdna.svg';
@@ -62,13 +63,11 @@ class Home extends Component {
             reference human genome, and the genotype call oriented with respect
             to the plus strand on the human reference sequence.
             <div className="home__buttons">
-              <button className="home__button-upload" type="submit">
-              <img className="home__basicdna"src={basicdna} alt=''></img>
+            <Link to="/Upload">   <button className="home__button-upload" type="submit">
                 {" "}
                 UPLOAD{" "}
-              </button>
-            
-         
+              </button> 
+              </Link>
             </div>
           </div>
           </div>
@@ -80,7 +79,7 @@ class Home extends Component {
 }
 
 export default Home;
-
+//
 //  <Framie/>      <div className="home__title hero-container__text">ChromeGene</div>
 //  <img src={fancydna} alt=''></img>
 
