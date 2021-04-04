@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mollybeach/chromagene/#readme",
   "dependencies": {
+    "@react-firebase/auth": "^0.2.10",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "dna2json": "^1.0.7",

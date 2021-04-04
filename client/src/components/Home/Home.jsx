@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import fancydna from '../../assets/Icons/fancydna.svg';
 import basicdna from '../../assets/Icons/basicdna.svg';
-//import Framie from "./Framie";
+import Framie from "./Framie";
 import "./Home.scss";
 import { API_URL } from "../../utils/utils";
 
@@ -48,8 +48,8 @@ class Home extends Component {
             <img className="home__arrow hero-container__title" src={chevronImg} alt="img" />
           </div>
     
-          <div className="home__titleb hero-container__text">Welcome to ChromaGene!</div>
-          <div className="home__about hero-container__text" >
+          <div className="home__titleb  ">Welcome to ChromaGene!</div>
+          <div className="home__about hero-container__text " >
             Upload DNA .txt or .csv file to create unique art and begin your
             journey! A SNP Single-Nucleotide Polymorphism is a variation of a
             single nucleotide (A, G, C or T). a text file, roughly 25meg big that 
@@ -69,7 +69,9 @@ class Home extends Component {
           </div>
           
         </div>
-        <div className="content"></div>
+        <div className="content">
+        <Framie/>    
+        </div>
         <div className="content"></div>
 
 
@@ -80,6 +82,7 @@ class Home extends Component {
 
 export default Home;
 //
-//  <Framie/>      <div className="home__title hero-container__text">ChromeGene</div>
+//  <Framie/>     
+// <div className="home__title hero-container__text">ChromeGene</div>
 //  <img src={fancydna} alt=''></img>
 

@@ -1,13 +1,13 @@
 import { useEffect, useRef } from 'react';
-import { sculptToMinimalRenderer } from 'shader-park-core';
-import { spCode } from "./spCode.js";
-/****************USE HOOKS TO LOAD SHADER **********************/
+import { glslToMinimalRenderer } from 'shader-park-core';
+import { spCode } from "./spCodeGLSL.js";
+/****************USE HOOKS TO LOAD SHADER ***********************/
 const Framie = ({ src }) => {
   const shadeRef = useRef(null);
   useEffect(() => {
     if (shadeRef.current) {
       const canvas = document.querySelector(".my-canvas");
-      sculptToMinimalRenderer(canvas, spCode);
+      glslToMinimalRenderer(canvas, spCode);
     }
   }, [src]);
 

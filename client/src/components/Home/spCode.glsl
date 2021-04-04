@@ -1,4 +1,4 @@
-export default spCode(){
+
 float cap(vec3 p, vec3 a, vec3 b) {
     float sep = 0.03;
     float rad = 0.01;
@@ -55,4 +55,4 @@ vec3 shade(vec3 p, vec3 normal) {
     vec3 color = vec3(0.9, 0.0, 0.9);
 	return color*light;
 }
-}
+

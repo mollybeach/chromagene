@@ -14,6 +14,7 @@ import EditContactItem from "./components/EditContactItem/EditContactItem";
 import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
 import UploadFile from "./components/UploadFile/UploadFile";
+
 import './App.scss'
 
 class App extends Component {
