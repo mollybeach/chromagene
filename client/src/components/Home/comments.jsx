@@ -1,5 +1,6 @@
 /*      
  /*******************DOUBLE HEXLIX OPTIONAL**********************
+  * 
     /********SPHERES FOR DOUBLE HELIX**********
     let pos9 = vec3(positiveTopSphere, negativeTopSphere, zed); //x, -y
     let pos10 = vec3(negativeTopSphere, positiveTopSphere, 0.0); //-x, y
@@ -12,6 +13,27 @@
     let pos16 = vec3(negativeBottomHalf2, positiveBottomHalf2, 0.0); //-x, y
     /***********WAVY DNA****OPTIONAL******
     let pos17 = vec3(negativeBottomHalf2, positiveBottomHalf2 + 0.6, 0.0); //-x, y
+
+        if (j % 2 == 0) {
+          change = 2.5;
+        } else if (j % 3 == 0) {
+          change = 2;
+        } else if (j % 5 == 0) {
+          change = 4;
+        } else if (j % 7 == 0) {
+          change = 5;
+        } else {
+          change = 0.1;
+        }
+
+         if (s < 0 == 0) {
+          change = 0.5;
+        } else if (s < 0 == 0) {
+          change = 0.3;
+        } 
+        } else {
+          change = 1.0;
+        }
        let doubleHelixBall = function () {
           // line(pos9, pos10, thickness)
           //line(pos11, pos12, thickness)
