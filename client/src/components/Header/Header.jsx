@@ -17,11 +17,24 @@ function Header() {
       <nav className="header__nav">
       <Link to="/" className="header__logo" alt="ChromaGene Logo">   
           <img className ="header__rainbow"src={company} alt=''></img>
-       
           </Link>
-        <div className="header__partition-input">
-        <input className="header__search-input" placeholder="Search"></input>
-        </div>
+          <ul className="header__nav-list-mobile">
+          <li>
+            <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Home</NavLink>
+            <NavLink to="/my23" className="header__nav-item" activeClassName="header__nav-item--active">My 23</NavLink>
+          </li>
+          <li>
+            <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item--active">Gallery</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item--active">Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to="/upload" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
+       
+          </li>
+         
+        </ul>
         <ul className="header__nav-list">
           <li>
             <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Home</NavLink>
@@ -41,6 +54,8 @@ function Header() {
           </li>
          
         </ul>
+
+   
       </nav>
       
 
@@ -49,5 +64,8 @@ function Header() {
 }
 //  <img className ="header__rainbow"src={company2} alt=''></img>
 //  <img className ="header__rainbow2"src={company} alt=''></img>
+/*   <div className="header__partition-input">
+<input className="header__search-input" placeholder="Search"></input>
+</div> */ 
 
 export default Header;

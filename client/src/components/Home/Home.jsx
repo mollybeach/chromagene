@@ -37,20 +37,16 @@ class Home extends Component {
       <>
       
         <div className="home">
-            <div className="hero-container ">
-                <div className="hero-container__box ">
-                    <h1 className="hero-container__text "> </h1>
-                </div>
-            </div>
+            <div className="hero-container "></div>
             <div className="content"></div>
-          <div className='home__inside hero-container__text'>
-          <div className="home__subtitle hero-container__text">
+          <div className='home__inside '>
+          <div className="home__subtitle ">
           ChromaGene
-            <img className="home__arrow hero-container__title" src={chevronImg} alt="img" />
+            <img className="home__arrow" src={chevronImg} alt="img" />
           </div>
     
-          <div className="home__titleb  ">Welcome to ChromaGene!</div>
-          <div className="home__about hero-container__text " >
+          <div className="home__titleb ">Welcome to ChromaGene!</div>
+          <div className="home__about " >
             Upload DNA .txt or .csv file to create unique art and begin your
             journey! A SNP Single-Nucleotide Polymorphism is a variation of a
             single nucleotide (A, G, C or T). a text file, roughly 25meg big that 
