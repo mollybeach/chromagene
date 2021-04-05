@@ -146,7 +146,8 @@
 }
 
 $time: 330ms;
-$btns: ( alpha: ( gstart: #21D4FD,
+$btns: ( 
+alpha: ( gstart: #21D4FD,
 gend: #B721FF,
 tstart: #B721FF,
 tend: #21D4FD),
@@ -163,7 +164,8 @@ gend: #EE74E1,
 tstart: #EE74E1,
 tend: #3EECAC));
 .btn {
-
+	outline: none;;
+	margin-right: 30px;
 	margin-top: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 900;
@@ -179,15 +181,18 @@ tend: #3EECAC));
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	transition: all $time;
-	border: none;
+	outline: none;;
 	&+& {
+		outline: none;;
 		margin-top: 1rem;
 	}
 	span {
+		outline: none;;
 		position: relative;
 		z-index: 1;
 	}
 	&:before {
+		outline: none;;
 		content: "";
 		background-color: #21D4FD;
 		position: absolute;
@@ -197,12 +202,13 @@ tend: #3EECAC));
 		left: 0;
 		transform: scale(4) translateX(-100%);
 		transition: all $time * 1.5 ease-out;
-		border: none;
+		outline: none;;
 	}
 	&:hover,
 	&:focus,
 	&:active {
 		&:before {
+			outline: none;;
 			transform: scale(4) translate(37%);
 		}
 	}
@@ -211,6 +217,7 @@ tend: #3EECAC));
 @each $bname,
 $bcolors in $btns {
 	.btn--#{$bname} {
+		outline: none;;
 		background-color: map-get($bcolors, gstart);
 		color: map-get($bcolors, tstart);
 		&:before {
@@ -221,13 +228,16 @@ $bcolors in $btns {
 		&:hover,
 		&:focus,
 		&:active {
+			outline: none;;
 			color: map-get($bcolors, tend);
 		}
 	}
 }
 
 .btn-form {
-
+	outline: none;;
+	outline: none;;
+	margin-right: 30px;
 	margin-top: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 900;
@@ -243,13 +253,15 @@ $bcolors in $btns {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	transition: all $time;
-	border: none;
+	 ;
 	&+& {
 		margin-top: 1rem;
+		 ;
 	}
 	span {
 		position: relative;
 		z-index: 1;
+		 ;
 	}
 	&:before {
 		content: "";
@@ -261,14 +273,16 @@ $bcolors in $btns {
 		left: 0;
 		transform: scale(4) translateX(-100%);
 		transition: all $time * 1.5 ease-out;
-		border: none;
+		 ;
 	}
 	&:hover,
 	&:focus,
 	&:active {
 		&:before {
+			 
 			//transform: scale(4) translate(37%);
 		  //  color: map-get($bcolors, tstart);
+		  background-color:#B721FF;;
 		}
 	}
 }

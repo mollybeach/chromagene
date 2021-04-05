@@ -37,7 +37,7 @@ class My23 extends Component {
                     </div>
                 </div>
                     <div className='my23__img-div' > 
-                    <img  className='my23__img' src={single23.img}></img></div>
+                    <img  alt='' className='my23__img' src={single23.img}></img></div>
                 <div className = 'my23__table-data my23__table-data--mb my23__tbl-d2'>
                         <h4 className = 'my23__top-title ' >ADDRESS</h4> 
                     

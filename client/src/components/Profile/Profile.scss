@@ -13,10 +13,20 @@
   //height: 100vh;
   background-color: #FFFFFF;
   @include h1-page-header;
-  color: $raspberrypi;
+  color: $raspberrypi; 
+  &__title {
+    @include h1-page-header;
+    color: $raspberrypi; 
+    @include increment-2-bottom;
+  }
   &__subtitle {
     @include h1-page-header;
-    color: $raspberrypi;
+    color: $raspberrypi; 
+    @include increment-2-bottom;
+  }
+  &__words {
+    @include h1-page-header;
+    color: $text-grey; 
     @include increment-2-bottom;
   }
   &__arrow {

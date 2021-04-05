@@ -32,14 +32,13 @@ class Profile extends React.Component {
 
   render() {
     return (
-      <div className="profile">
-        {" "}
+      <div className="profile__title profile">
         Welcome to ChromaGene
         <div className="profile__subtitle">My 23
         <img className="profile__arrow" src={chevronImg} alt="" />
         </div>
        
-        <div className="profile__table-body">
+        <div className="profile__table-body profile__words">
           {this.state.homeList.map((profileObj) => (
             <My23 key={profileObj.id} single23={profileObj} />
           ))}
