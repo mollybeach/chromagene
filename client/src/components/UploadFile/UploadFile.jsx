@@ -6,7 +6,8 @@ import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 
 function FileUpload() {
     const [file, storeFile] = useState(''); // storing the uploaded file    // storing the recived file from backend
-    const [data, getFile] = useState({ name: "", path: "" });    const [progress, setProgess] = useState(0); // progess bar
+    const [data, getFile] = useState({ name: "", path: "" });    
+    const [progress, setProgess] = useState(0); // progess bar
     const el = useRef(); // accesing input element
     const changeEvent = (event) => {
         setProgess(0)
@@ -43,8 +44,10 @@ function FileUpload() {
     
           <div className="upload__titleb ">Upload Your DNA file!</div>
           <div className="upload__about " > Upload DNA .txt or .csv file to create unique art and begin your journey!
-                <input type="file" ref={el} onChange={changeEvent} />                
+                    
                 <div className="upload__progessBar" style={{ width: progress }}>{progress}</div>
+                <input type="file" ref={el} onChange={changeEvent} id="mod-button" hidden/> 
+                <label for="mod-button"  className="btn-form btn-form--delta" ><span>Choose File</span></label>   
                 <button onClick={uploadFile} className="btn btn--gamma"><span>Upload</span></button>
             {data.path && <img src={data.path} alt={data.name} />}
        
