@@ -57,7 +57,7 @@ export function snpCode()  {
     }
   };
   
-  displace(0.0, -0.8, 0.0); //position of entire strand
+  displace(0.0, -0.4, 0.0); //position of entire strand
   strand();
 
 
