@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Gallery.scss';
-//import chevronImg from '../../assets/Icons/chevron_right-24px.svg';
+import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import axios from 'axios';
 import { API_URL } from "../../utils/utils";
 import Framie from "../Home/Framie";
@@ -11,7 +11,6 @@ class Gallery extends Component {
     }
    componentDidMount(){
     this.setState({galleryList: this.props.galleryList})
-
    }
    componentDidUpdate(prevProps){
     axios.get(`${API_URL}/gallery`)
@@ -32,15 +31,23 @@ class Gallery extends Component {
 
    render() {
         return (
-            <section className='gallery gallery__content-background'> 
-              <Framie/>   
-              
-            </section>
-            
+               <>
+        <div className="gallery">
+            <div className="hero-container "></div>
+            <div className="content"></div>
+          <div className='gallery__inside '>
+          <div className="gallery__subtitle "> ChromaGene
+            <img className="gallery__arrow" src={chevronImg} alt="img" />
+          </div>
+          <div className="gallery__titleb ">Welcome to ChromaGene!</div>
+          <div className="gallery__about " >
+            <Framie/>   
+          </div>
+          </div>
+        </div>
+      </>   
         );
     }
 }
 
 export default Gallery;
-//<Form/>
-//   {this.state.galleryList.map(warObj => <Card key={galObj.id} singleWar={galObj} />)}
