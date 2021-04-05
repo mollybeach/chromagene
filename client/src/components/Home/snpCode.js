@@ -1,8 +1,16 @@
 
 /* eslint-disable */
 
-export function spCode()  {
-
+export function snpCode()  {
+  let mi = {
+    rs369202065: { chromosome: 1, genotype: '??' },
+    rs199476136: { chromosome: 1, genotype: '??' },
+    rs190214723: { chromosome: 1, genotype: '??' },
+    rs3131972: { chromosome: 1, genotype: 'GG' },
+    rs12562034: { chromosome: 1, genotype: '??' },
+    rs115093905: { chromosome: 1, genotype: 'GG' },
+  }
+  console.log(mi);
   let thickness = 0.02;
   let zed = 0.0;
   let change;
@@ -38,21 +46,21 @@ export function spCode()  {
   let strand = function () {
     rotateX(PI / 2);
     let j = 0;
-    for (j = 0; j < 50; j++) {
+    for (j = 0; j < 10; j++) {
     
       let pairSpheres = function () {
         color(1.0, 1.0, 1.0);
         line(pos1, pos2, thickness * 2);
-        line(pos3, pos4, thickness * 2);
+        //line(pos3, pos4, thickness * 2);
       };
       let pairSNPs = function () {
       //  mirrorX();
         colorBook(Math.random());
-        rotateZ(3);
+        rotateZ(4);
         displace(0.0, 0.0, 0.0);
       line(pos5, pos6, thickness);
         
-        line(pos7, pos8, thickness);
+        //line(pos7, pos8, thickness);
       }
       pairSNPs();
       pairSpheres();
