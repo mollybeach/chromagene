@@ -1,10 +1,10 @@
 
   let dnaList = {
     rs369202065: { chromosome: 1, genotype: 'AA' },
-    rs199476136: { chromosome: 2, genotype: '??' },
+    rs199476136: { chromosome: 2, genotype: 'AC' },
     rs190214723: { chromosome: 1, genotype: 'CC' },
     rs3131972: { chromosome: 3, genotype: 'GG' },
-    rs12562034: { chromosome: 1, genotype: '??' },
+    rs12562034: { chromosome: 1, genotype: 'GB' },
     rs115093905: { chromosome: 1, genotype: 'GG' },
   }
   
@@ -13,13 +13,34 @@ let filled = (dataAll) => {
 }
 
 let filledC = (dataC) => {
-    console.log(dataC)
-    console.log(dataC[0])
- 
+//console.log(dataC);
+ //console.log(dataC[0])
+
 }
 let filledG = (dataG) => {
- console.log(dataG);
-}
+      let newG = new Array(1).fill(dataG);
+     console.log(newG);
+     let valInt = newG.values();
+     for(let snp of valInt){
+            if(snp === 'AA'){
+              console.log('red');
+            }
+             else if(snp === 'GG'){
+              console.log('yellow');
+            }
+             else if(snp === 'CC'){
+              console.log('green');
+            }
+              else if(snp === 'TT'){
+              console.log('orange');
+            }
+              else{
+                console.log('purple');
+              }
+            }
+     
+       }
+     
 
 
 
