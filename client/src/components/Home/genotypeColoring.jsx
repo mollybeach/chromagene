@@ -1,5 +1,4 @@
-
-/* eslint-disable */
+   /* eslint-disable */
 export function snpCode()  {
     let current;
     let filledG = (dataG) => {
@@ -85,12 +84,12 @@ export function snpCode()  {
         let change;
         /*****************SPHERE VARIABLES**********/
         let positiveTopSphere = 0.1;
-        let negativeTopSphere = 0.1;
-        let positiveBottomSphere = -0.1;
+        let negativeTopSphere = 0.1; //0.1
+        let positiveBottomSphere = -0.1; //-0.1
         let negativeBottomSphere = -0.1;
         /**************SNP VARIABLES***********/
         let positiveTopSNP1 = 0.1;
-        let negativeTopSNP1 = 0.021;//0.0
+        let negativeTopSNP1 = -0.1;//0.021
         let positiveBottomSNP2 = -0.1;
         let negativeBottomSNP2 = -0.02; //0.0
         /****************OUTER SPHERES**************/
@@ -118,7 +117,7 @@ export function snpCode()  {
               rotateZ(3);
               displace(0.0, 0.0, 0.0);
               line(pos5, pos6, thickness);
-            line(pos7, pos8, thickness);
+            //line(pos7, pos8, thickness);
             }
             pairSNPs();
             pairSpheres();
@@ -129,7 +128,7 @@ export function snpCode()  {
       /*************DATA FUNCTIONS****************/
       let dnaList = {
         rs369202065: { chromosome: 1, genotype: "AA" },
-        rs199476136: { chromosome: 1, genotype: "AC" },
+        rs199476136: { chromosome: 2, genotype: "AC" },
         rs190214723: { chromosome: 1, genotype: "CC" },
         rs3131972: { chromosome: 1, genotype: "GG" },
         rs12562034: { chromosome: 1, genotype: "GB" },
@@ -137,7 +136,6 @@ export function snpCode()  {
         rs11888922: { chromosome: 2, genotype: 'TC' },
         rs730402: { chromosome: 2, genotype: 'AG' },
         rs763297: { chromosome: 2, genotype: 'TC' },
-         /*
         rs9653546: { chromosome: 2, genotype: 'AG' },
         rs6545760: { chromosome: 2, genotype: 'AG' },
         rs17400093: { chromosome: 2, genotype: 'TT' },
@@ -148,8 +146,8 @@ export function snpCode()  {
         rs7648041: { chromosome: 3, genotype: 'TC' },
         rs4678029: { chromosome: 3, genotype: 'TT' },
         rs1501900: { chromosome: 3, genotype: '??' },
-       
         rs1814740: { chromosome: 3, genotype: 'AG' },
+        /*
         rs16832787: { chromosome: 3, genotype: 'GG' },
         rs1405687: { chromosome: 4, genotype: 'GG' },
         rs2851057: { chromosome: 4, genotype: 'TG' },
@@ -171,8 +169,7 @@ export function snpCode()  {
         rs7733194: { chromosome: 5, genotype: 'GG' },
         rs1025291: { chromosome: 5, genotype: 'AG' },
         rs902522: { chromosome: 5, genotype: 'GG' },
-        rs13175786: { chromosome: 5, genotype: 'TT' },
-        */
+        rs13175786: { chromosome: 5, genotype: 'TT' },*/
       };
       let makeOrganized = () => {
         Object.values(dnaList).forEach((vul) => {
@@ -182,20 +179,5 @@ export function snpCode()  {
           filledG(dataG);
         });
       };
-      makeOrganized();   
-}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+      makeOrganized();  
+} 

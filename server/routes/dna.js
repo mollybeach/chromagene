@@ -7,8 +7,11 @@ const stringDna = dnatxt.toString();
 console.log(typeof stringDna);
 dna.parse(stringDna, function(err, snps){
   if (err) throw err;
- fs.writeFileSync(dataJSONPath, JSON.stringify(stringDna, null, 2));
+ let x = fs.writeFileSync(dataJSONPath, JSON.stringify(stringDna, null, 2));
+
   //fs.writeFileSync(stringDna.join(__dirname, dataJSONPath), JSON.stringify(snps));
+
+  
 });
 
 module.exports = router;

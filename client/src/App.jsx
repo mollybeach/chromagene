@@ -11,7 +11,7 @@ import EditGallery from "./components/EditGallery/EditGallery";
 import ContactItemDetails from "./components/ContactItemDetails/ContactItemDetails";
 import Contact from "./components/Contact/Contact";
 import EditContactItem from "./components/EditContactItem/EditContactItem";
-import Footer from './components/Footer/Footer';
+//import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
 import UploadFile from "./components/UploadFile/UploadFile";
 
@@ -73,7 +73,7 @@ componentDidMount(){
           <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
           <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} galleryList ={galleryList}/> } />
           </Switch> 
-          <Footer/>
+        
         </BrowserRouter>
       </div>
     );
@@ -81,6 +81,8 @@ componentDidMount(){
 }
 
 export default App;
+
+//  <Footer/>
 
 
 

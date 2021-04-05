@@ -36,9 +36,12 @@ class My23 extends Component {
                         <img className = 'my23__top-img' alt=""/>
                     </div>
                 </div>
+                    <div className='my23__img-div' > 
+                    <img  className='my23__img' src={single23.img}></img></div>
                 <div className = 'my23__table-data my23__table-data--mb my23__tbl-d2'>
                         <h4 className = 'my23__top-title ' >ADDRESS</h4> 
-                        <p className = 'my23__para'>{single23.address}, {single23.city}, {single23.country} </p>
+                    
+                        <p className = 'my23__para'>{single23.address}, {single23.city}, {single23.country}</p>
                 </div>
             </div>
             <div className = 'my23__flex-col my23__flex-col--box2' >
