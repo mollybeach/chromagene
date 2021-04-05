@@ -32,7 +32,6 @@ function FileUpload() {
         }).catch(err => console.log(err))}
     return (
         <>
-      
         <div className="upload">
             <div className="hero-container "></div>
             <div className="content"></div>
@@ -49,7 +48,8 @@ function FileUpload() {
                 <input type="file" ref={el} onChange={changeEvent} id="mod-button" hidden/> 
                 <label for="mod-button"  className="btn-form btn-form--delta" ><span>Choose File</span></label>   
                 <button onClick={uploadFile} className="btn btn--gamma"><span>Upload</span></button>
-            {data.path && <img src={data.path} alt={data.name} />}
+                 <hr />
+                {data.path && <img src={data.path} alt={data.name} />}
        
           </div>
           </div>

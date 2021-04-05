@@ -151,9 +151,6 @@ export function snpCode()  {
   
   };
   
-  class Home extends Component {
-      
-  }
   
   
   

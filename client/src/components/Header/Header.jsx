@@ -30,7 +30,7 @@ function Header() {
             <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item--active">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/upload" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
+            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
        
           </li>
          
@@ -49,7 +49,7 @@ function Header() {
             <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item--active">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/upload" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
+            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
        
           </li>
          

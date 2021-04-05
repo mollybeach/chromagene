@@ -30,9 +30,9 @@ componentDidMount(){
         this.setState({
           galleryList:res.data
         })
-    axios.get('http://localhost:8080/update').then(res=>{
+    axios.get('http://localhost:8080/uploadfile').then(res=>{
         this.setState({
-          updateList:res.data
+          uploadFileList:res.data
     })
     })
     axios.get('http://localhost:8080/contact').then(res=>{
@@ -45,7 +45,7 @@ componentDidMount(){
 }
 
   render() {
-    const { homeList, galleryList, updateList, contactList} = this.state;
+    const { homeList, galleryList, uploadFileList, contactList} = this.state;
     if(homeList===null ) {  return <> <p className = "gallery__loading">Loading...</p>
     <img className ="header__rainbow"src={company} alt=''></img> </>
      
@@ -61,8 +61,8 @@ componentDidMount(){
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
-          <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile homeList = {homeList} {...props} />} />
-          <Route exact path = '/upload' render = {(props)=> <UploadFile {...props} updateList = {updateList} {...props} />}  />
+          <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile  uploadFileList = {uploadFileList} {...props} />} />
+          <Route exact path = '/uploadfile' render = {(props)=> <UploadFile  uploadFileList = {uploadFileList} {...props} />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
           </Switch> 
