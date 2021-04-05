@@ -4,7 +4,7 @@
   <rect x="0" y="0" fill="transparent" width="50%" height="1%" />
   
   <!-- Text using the #pattern in defs as the fill -->
-  <text x="19%" text-anchor="top" y="20%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">ene</text>
+  <text x="80px" text-anchor="top" y="20px" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="30vh">ene</text>
   
   <defs>  
     <!-- Molly's Custom Rainbow gradient -->

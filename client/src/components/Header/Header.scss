@@ -8,6 +8,7 @@
   z-index: 10;
   position: absolute;
   display: flex;
+  margin-bottom: 30px;
   &__nav {
     z-index: 10;
     position: fixed;
@@ -23,69 +24,66 @@
       padding: 0 15rem;
     }
   }
-  &__company {
-    width: 500px;
-    display: inline;
-  }
-  &__rainbow {
+  &__logo {
+    display:contents;
+   }
 
-    position:absolute;
-    left:215px;
-    
-  }
-  &__rainbow2 {
+  &__rainbow {
     position:absolute;
     left:0px;
-    
-  }
-  &__basicmarginadna{
-    display:contents;
-  }
-  &__basicDna{
-    display:contents;
+    margin-left:16px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    @include tablet {
+  margin-left: 3.125%;
    
   }
-  &__logo {
-    margin-left: 40px;
-    margin-top: $increment2-px;
-    @include desktop {
-      margin-left: none;
-      width: 300%;
-    }
+  @include desktop {
+    margin-left: 80px;
+  
+  }
+    
   }
   &__nav {
    padding-top: 12px;
     width: 100%;
-    max-height: 8.5rem;
     display: flex;
     flex-direction: column;
-
     @include tablet {
       flex-direction: row;
+      height: 120px;
+    }
+    @include desktop {
       height: 5.75rem;
     }
   }
   &__nav-list {
-    width: 100%;
-    display: flex;
+    width: 50%;
     justify-content: space-evenly;
-    margin-right: 100px;
+    margin-left: 25%;
+    padding-top:65px;
     list-style: none;
     @include tablet {
+     margin-top: 0.01px;
+    margin-left:250px;
+      display: flex;
       justify-content: flex-end;
     }
+    @include desktop {
+    padding-top: 20px;
+    margin-left:29vw;
+  
+   }
   }
-  &__nav-item {
+  &__nav-item {    
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     border-radius: 20px;
     margin-top: 8px;
-    font-size: 20px;
     width: 71px;
     height: 23px;
-    left: 1147px;
     top: 18px;
     font-family: Roboto;
     font-style: normal;
@@ -93,7 +91,7 @@
     font-size: 24px;
     line-height: 23px;
     text-align: center;
-    color: #5a5a5a;
+    color: $apple;
     &:hover {
       cursor: pointer;
       color: $apple;
@@ -101,7 +99,6 @@
       transform: scale(1.04);
     }
     &:active {
-      //background-color: #FFFFFF;
       color: $apple;
     }
 
@@ -118,8 +115,6 @@
     background-color: $apple;
   }
   &__search-input {
-    //display: none;
-
     display: contents;
     width: 300px;
     background-image: url('../../assets/images/loupe.png');

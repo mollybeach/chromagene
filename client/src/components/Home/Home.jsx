@@ -37,11 +37,12 @@ class Home extends Component {
       <>
       
         <div className="home">
-            <div className="hero-container hero-container__mobile-size-biography  hero-container--sizing hero-container--scale">
-                <div className="hero-container__box hero-container__box--mobile-box-size-biography hero-container__box--tablet-box-size-biography hero-container__box--desktop-box-size-biography">
-                    <h1 className="hero-container__text  hero-container__text--font-size-biography"> </h1>
+            <div className="hero-container ">
+                <div className="hero-container__box ">
+                    <h1 className="hero-container__text "> </h1>
                 </div>
             </div>
+            <div className="content"></div>
           <div className='home__inside hero-container__text'>
           <div className="home__subtitle hero-container__text">
           ChromaGene
@@ -70,7 +71,7 @@ class Home extends Component {
           
         </div>
         <div className="content">
-        <Framie/>    
+    
         </div>
         <div className="content"></div>
 
@@ -86,3 +87,4 @@ export default Home;
 // <div className="home__title hero-container__text">ChromeGene</div>
 //  <img src={fancydna} alt=''></img>
 
+//    <Framie/>    
