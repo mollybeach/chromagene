@@ -36,10 +36,10 @@ class Gallery extends Component {
             <div className="hero-container "></div>
             <div className="content"></div>
           <div className='gallery__inside '>
-          <div className="gallery__subtitle "> ChromaGene
+          <div className="gallery__subtitle "> ChromaGene Genotype Display: Each color represents one of the 16 SNPs
             <img className="gallery__arrow" src={chevronImg} alt="img" />
           </div>
-          <div className="gallery__titleb ">Welcome to ChromaGene!</div>
+          <div className="gallery__titleb "> Results Are Ready: </div>
           <div className="gallery__about " >
             <Framie/>   
           </div>

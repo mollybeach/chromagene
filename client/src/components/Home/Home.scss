@@ -104,7 +104,7 @@
 .content {
 	height: 1120px;
 	font-size: 50px;
-  margin-top: 20px;
+    margin-top: 20px;
 	position: relative;
 	z-index: -1;
 	background-image: url('../../assets/Icons/fancydna.svg');
@@ -112,9 +112,8 @@
 }
 
 .my-canvas {
-	width: 50vw;
-	height: 50vw;
-
+	width: 40vw;
+	height: 40vw;
 	border: 40px solid lavender;
 	margin-left: 16px;
 	@include tablet{
