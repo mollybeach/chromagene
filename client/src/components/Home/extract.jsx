@@ -84,7 +84,6 @@ export function snpCode()  {
     //console.log(dataC[0])
   
   };
-  let current;
   let filledG = (dataG) => {
     let newG = new Array(1).fill(dataG);
     console.log(newG);
@@ -92,7 +91,8 @@ export function snpCode()  {
     for (let snp of valInt) {
       if (snp === "AA") {
         console.log(" 1 red");
-       current = 0.5;
+        let r = 0.5;
+        rainbow(r);
       } else if (snp === "AT") {
         console.log("red green");
       } else if (snp === "AG") {
@@ -151,9 +151,22 @@ export function snpCode()  {
   
   };
   
-  class Home extends Component {
-      
+
+  /*
+  class Sender extends Component {
+
+    render() {
+  
+      return (
+        <div className = 'app'>
+         
+           <Pracitce color={} />
+   
+   
+        </div>
+      );
+    }
   }
   
-  
-  
+  export default Sender;
+  */

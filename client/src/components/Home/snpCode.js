@@ -2,16 +2,8 @@
 /* eslint-disable */
 
 export function snpCode()  {
-  let mi = {
-    rs369202065: { chromosome: 1, genotype: '??' },
-    rs199476136: { chromosome: 1, genotype: '??' },
-    rs190214723: { chromosome: 1, genotype: '??' },
-    rs3131972: { chromosome: 1, genotype: 'GG' },
-    rs12562034: { chromosome: 1, genotype: '??' },
-    rs115093905: { chromosome: 1, genotype: 'GG' },
-  }
-  console.log(mi);
-  let thickness = 0.02;
+  
+  let thickness = 0.05;
   let zed = 0.0;
   let change;
   /*************COLORING FUNCTION*****************/
@@ -19,8 +11,12 @@ export function snpCode()  {
         let colorX = 0.9 * Math.random();
         let colorY = colorX - Math.random();
         let colorZ = colorY - 0.2;
-        let rainbow = color(colorX, colorY, colorZ);
-        return rainbow;
+        let rainbowy = color(colorX, colorY, colorZ);
+        return rainbowy;
+      };
+      let rainbow = (varient) => {
+        let shade = color(varient, varient, varient);
+        return shade;
       };
   /*****************SPHERE VARIABLES**********/
   let positiveTopSphere = 0.1;
@@ -46,7 +42,7 @@ export function snpCode()  {
   let strand = function () {
     rotateX(PI / 2);
     let j = 0;
-    for (j = 0; j < 10; j++) {
+    for (j = 0; j < 1; j++) {
     
       let pairSpheres = function () {
         color(1.0, 1.0, 1.0);
@@ -54,11 +50,10 @@ export function snpCode()  {
         //line(pos3, pos4, thickness * 2);
       };
       let pairSNPs = function () {
-      //  mirrorX();
-        colorBook(Math.random());
+        rainbow();
         rotateZ(4);
         displace(0.0, 0.0, 0.0);
-      line(pos5, pos6, thickness);
+        line(pos5, pos6, thickness);
         
         //line(pos7, pos8, thickness);
       }
@@ -70,8 +65,125 @@ export function snpCode()  {
   
   displace(0.0, -0.8, 0.0); //position of entire strand
   strand();
+/*************DATA FUNCTIONS****************/
+let dnaList = {
+  rs369202065: { chromosome: 1, genotype: "AA" },
+  rs199476136: { chromosome: 2, genotype: "AC" },
+  rs190214723: { chromosome: 1, genotype: "CC" },
+  rs3131972: { chromosome: 3, genotype: "GG" },
+  rs12562034: { chromosome: 1, genotype: "GB" },
+  rs115093905: { chromosome: 1, genotype: "GG" },
+};
+
+let filled = (dataAll) => {
+  //console.log(data);
+};
+  //AA, AT, AG, AC, TA, TT, TG, TC, GA, GT, GG, GC, CA, CT, CG, CC
+let filledC = (dataC) => {
+  //console.log(dataC);
+  //console.log(dataC[0])
+
+};
+let filledG = (dataG) => {
+  let newG = new Array(1).fill(dataG);
+  console.log(newG);
+  let valInt = newG.values();
+  for (let snp of valInt) {
+    if (snp === "AA") {
+      console.log(" 1 red");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "AT") {
+      console.log("red green");
+       let r = 0.5;
+      rainbow(r);
+    } else if (snp === "AG") {
+      console.log("red orange");
+       let r = 0.5;
+      rainbow(r);
+    } else if (snp === "AC") {
+      let r = 0.5;
+      rainbow(r);
+      console.log("red green");
+    } else if (snp === "TA") {
+      let r = 0.5;
+      rainbow(r);
+      console.log("green");
+    } else if (snp === "TT") {
+       let r = 0.5;
+      rainbow(r);
+      console.log(" light green");
+    } else if (snp === "TG") {
+      console.log("green blue");
+       let r = 0.5;
+      rainbow(r);
+    } else if (snp === "TC") {
+      console.log("green red");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "GA") {
+      console.log("blue red");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "GT") {
+      console.log("blue green");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "GG") {
+      console.log("blue");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "GC") {
+      console.log("blue pink");
+       let r = 0.5;
+      rainbow(r);
+    } else if (snp === "CA") {
+      console.log("pink red");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "CT") {
+      console.log("pink green");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "CG") {
+      console.log("pink blue");
+      let r = 0.5;
+      rainbow(r);
+    } else if (snp === "CC") {
+      console.log("pink");
+    } else {
+      /*********IF COME ACCROSS A ?? GENOTYPE */
+      console.log("grey");
+      let r = 0.5;
+      rainbow(r);
+    }
+  }
+};
+
+let makeOrganized = () => {
+  Object.values(dnaList).forEach((vul) => {
+    let filledArray = new Array(1).fill(vul);
+    let dataAll = filledArray[0];
+    filled(dataAll);
+    let dataG = dataAll.genotype;
+    filledG(dataG);
+    let dataC = dataAll.chromosome;
+    filledC(dataC);
+  });
+};
+
+makeOrganized();
+//filled();
+filledG();
+//filledC();
+
+
+
+
+
 
 
 };
+
 
 
