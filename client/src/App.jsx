@@ -61,7 +61,7 @@ componentDidMount(){
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
-          <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile  uploadFileList = {uploadFileList} {...props} />} />
+          <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile  homeList = {homeList} {...props} />} />
           <Route exact path = '/uploadfile' render = {(props)=> <UploadFile  uploadFileList = {uploadFileList} {...props} />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
