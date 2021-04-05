@@ -6,14 +6,11 @@ import Header from "./components/Header/Header";
 import Gallery from './components/Gallery/Gallery';
 import Profile from './components/Profile/Profile';
 import Email from './components/Email/Email';
-import GalleryDetails from "./components/GalleryDetails/GalleryDetails";
-import EditGallery from "./components/EditGallery/EditGallery";
-import ContactItemDetails from "./components/ContactItemDetails/ContactItemDetails";
 import Contact from "./components/Contact/Contact";
-import EditContactItem from "./components/EditContactItem/EditContactItem";
 //import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
 import UploadFile from "./components/UploadFile/UploadFile";
+import company from './assets/Icons/company.svg';
 
 import './App.scss'
 
@@ -50,11 +47,13 @@ componentDidMount(){
 
   render() {
     const { homeList, galleryList, updateList, contactList} = this.state;
-    if(homeList===null ) {
-      return <p className = "gallery__loading">Loading...</p>
+    if(homeList===null ) {  return <> <p className = "gallery__loading">Loading...</p>
+    <img className ="header__rainbow"src={company} alt=''></img> </>
+     
     }
     if( galleryList===null ) {
-      return <p className = "gallery__loading">Loading...</p>
+      return <> <p className = "gallery__loading">Loading...</p>
+      <img className ="header__rainbow"src={company} alt=''></img> </>
     }
     return (
       <div className = 'app'>
@@ -65,13 +64,9 @@ componentDidMount(){
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
           <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile homeList = {homeList} {...props} />} />
           <Route exact path='/email' render={(props) => <Email galleryList={galleryList} {...props} />} />
-          <Route exact path='/gallery/:id' render={(props) => <GalleryDetails galleryList={galleryList}  {...props} />} />
-          <Route exact path = '/gallery/:id/edit' render = {(props)=> <EditGallery galleryList = {galleryList} {...props} />} />
           <Route exact path = '/upload' render = {(props)=> <UploadFile {...props} updateList = {updateList} {...props} />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
-          <Route exact path = '/contct/:id'  render={(props)=> <ContactItemDetails {...props} />} />
-          <Route exact path = '/contact/:id/edit' render = {(props)=> <EditContactItem  {...props} galleryList ={galleryList}/> } />
           </Switch> 
         
         </BrowserRouter>

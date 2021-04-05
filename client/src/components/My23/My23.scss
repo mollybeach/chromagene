@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     padding-top: 1rem;
     padding-bottom: 1.6875rem;
-    border-top:1px solid #BDC5D5;
+   //-top:1px solid #BDC5D5;
   
     @include tablet {
        flex-wrap: nowrap;

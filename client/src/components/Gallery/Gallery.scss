@@ -3,101 +3,22 @@
 @use '../../partials/mixins' as *;
 @use '../../partials/typography' as *;
 
+
 .gallery {
-  position:absolute;
-  margin-top: 10%;
-  margin: 0 auto;
-  width: 21.4375rem;
-  background: #ffffff;
-  box-shadow: 0px 2px 5px rgba(19, 24, 44, 0.1);
-  border-radius: 3px;
-  margin-top: -4rem;
-  @include tablet {
-    width: 44rem;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-top: -6rem;
-  }
-  @include desktop {
-    width: 63.75rem;
-  }
-  &__table-head {
-    display: none;
-    @include tablet {
-      display: block;
-      display: flex;
-      background: rgba(247, 248, 249, 0.7);
-      padding: 0 2rem;
-      height: 2.5rem;
-    }
-  }
 
-  &__info {
-    width: 20%;
-    display: flex;
-    align-items: center;
-  }
 
-  &__title {
-    font-family: TitilliumWebRegular400, sans-serif;
-    font-weight: 600;
-    font-size: 0.6875rem;
-    line-height: 1rem;
-    text-transform: uppercase;
-    color: #5c667e;
-    @include tablet {
-      font-size: 0.75rem;
-      line-height: 1.125rem;
-    }
-  }
-  &__img {
-    height: 1.125rem;
-  }
 
-  &__info--box1 {
-    @include tablet {
-      width: 23.43%;
-    }
-    @include desktop {
-      width: 23.51%;
-    }
-  }
 
-  &__info--box2 {
-    @include tablet {
-      width: 18.9%;
-    }
-    @include desktop {
-      width: 27.76%;
-    }
-  }
 
-  &__info--box3 {
-    @include tablet {
-      width: 18.9%;
-    }
-    @include desktop {
-      width: 18.51%;
-    }
-  }
+&__content-background {
+  
+  position: relative;
+  background-image: url('../Home/crrrr.jpeg');
+  background-size: 21%;
+  height: 2000px;
 
-  &__info--box4 {
-    @include tablet {
-      width: 27.18%;
-    }
-    @include desktop {
-      width: 18.19%;
-    }
-  }
+ 
 
-  &__info--box5 {
-    @include tablet {
-      display: flex;
-      justify-content: flex-end;
-      width: 11.56%;
-    }
-    @include desktop {
-      width: 11.7%;
-    }
-  }
+
+}
 }

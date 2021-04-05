@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from 'react-router-dom';
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
-import fancydna from '../../assets/Icons/fancydna.svg';
-import basicdna from '../../assets/Icons/basicdna.svg';
-import Framie from "./Framie";
+//import fancydna from '../../assets/Icons/fancydna.svg';
+//import Framie from "./Framie";
 import "./Home.scss";
 import { API_URL } from "../../utils/utils";
 
@@ -80,7 +79,6 @@ class Home extends Component {
 export default Home;
 //
 //  <Framie/>     
-// <div className="home__title hero-container__text">ChromeGene</div>
-//  <img src={fancydna} alt=''></img>
+
 
 //    <Framie/>    

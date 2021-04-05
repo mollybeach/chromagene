@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 //import { NavLink } from "react-router-dom";
-import { uuid } from 'uuidv4';
+//import { uuid } from 'uuidv4';
 import axios from 'axios';
 import { API_URL } from "../../utils/utils";
 import ring from '../../assets/Icons/DNA-Circle.svg';
-import fancydna from '../../assets/Icons/fancydna.svg';
+//import fancydna from '../../assets/Icons/fancydna.svg';
 import company from '../../assets/Icons/company.svg';
 import "./Contact.scss";
-class Button extends React.Component {
+/*class Button extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -28,6 +28,7 @@ class Button extends React.Component {
     );
   }  
 }
+*/
 class Contact extends React.Component {
   state=({
         current: false
@@ -54,15 +55,17 @@ class Contact extends React.Component {
 render(){
     return (
       
-      <main className="new-contact">
+      <main className="new-contact content-background">
           <img className="new-contact__ring" src={ring} alt=''></img>
         
           <img src={company} alt=''></img>
         <div className="new-contact__full-container">
           <section className="new-contact__header-container">
+         
           <form onSubmit={this.addNewContact}>
             <div className="new-contact__forms-container">
-            <div className="contact-form">
+            <div className="contact-form ">
+         
         <h2 className="contact-form__title">Contact Details</h2>
         <div className="contact-form__title-label-container">
           <label htmlFor="contactName" className="contact-form__label">Name</label>
@@ -80,6 +83,7 @@ render(){
           <label htmlFor="contactCountry" className="contact-form__label">Country</label>
           <input type="text" id="contactCountry" className="contact-form__input" name="contactCountry" placeholder="Country"/>
         </div>
+     
         <div className="form-footer">
               <div className="form-footer__btn-container">
                 <button className="btn btn--gamma"><span>Cancel</span></button>

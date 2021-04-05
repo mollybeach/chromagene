@@ -31,13 +31,6 @@
 	&__dna {
 		padding-left: 25%;
 	}
-	&__title {
-		@include standard-padding-horizontal;
-		@include h1-page-header;
-		color: $raspberrypi;
-		@include increment-2-bottom;
-		font-size: 45px;
-	}
   &__title {
 		font-size: 45px;
 		@include tablet {
@@ -57,6 +50,7 @@
 		padding-top: 1%;
 		padding-left: 5%;
 		width: 100%;
+    margin-bottom: 30px;
 		@include h1-desktop-size-that-should-be-available-on-mobile;
 		color: $text-grey;
 		@include tablet {
@@ -72,6 +66,7 @@
 		}
 	}
   &__progessBar{
+    margin-top: 30px;
     height: 1rem;
     width: 0%;
     background-color: rgb(68, 212, 231);
