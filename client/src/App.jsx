@@ -5,7 +5,6 @@ import Home from './components/Home/Home';
 import Header from "./components/Header/Header";
 import Gallery from './components/Gallery/Gallery';
 import Profile from './components/Profile/Profile';
-import Email from './components/Email/Email';
 import Contact from "./components/Contact/Contact";
 //import Footer from './components/Footer/Footer';
 import AddContactItem from "./components/AddContactItem/AddContactItem";
@@ -63,7 +62,6 @@ componentDidMount(){
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
           <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile homeList = {homeList} {...props} />} />
-          <Route exact path='/email' render={(props) => <Email galleryList={galleryList} {...props} />} />
           <Route exact path = '/upload' render = {(props)=> <UploadFile {...props} updateList = {updateList} {...props} />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
           <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
