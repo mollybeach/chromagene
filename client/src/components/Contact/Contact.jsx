@@ -56,7 +56,7 @@ render(){
     return (
       
       <main className="new-contact content-background">
-          <img className="new-contact__ring" src={ring} alt=''></img>
+        
         
           <img src={company} alt=''></img>
         <div className="new-contact__full-container">
@@ -102,6 +102,8 @@ render(){
   }
 }
 export default Contact;
+
+//  <img className="new-contact__ring" src={ring} alt=''></img>
 /* <div>
         <Button onClick={this.handleClick} />
         {this.state.clicked ? <Uploads /> : null}
