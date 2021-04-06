@@ -4,6 +4,7 @@
 @use '../../partials/typography' as *;
 
 .contact {
+  position:absolute;
   margin-left: 50%;
   display: flex;
   flex-direction: column;
@@ -41,7 +42,21 @@
     //@at-root: center;
     height: 100%;
   }
+  &__footer {
+    display:contents;
+  }
 
+  &__buttoncenter {
+  //  margin-left: 10%;
+    align-items: left;
+
+      width: 100%;
+   
+    
+  }
+&__buttontext{
+  margin-left:40%;
+}
   &__back-arrow {
     margin-left: 50%;
     // margin-right: .75rem;
@@ -83,7 +98,8 @@
 }
 
 .contact-form {
-  //margin-top: 10%;
+  position:absolute;
+  top: 5%;
   margin-left: 30%;
   margin-bottom: 1%;
   display: flex;
@@ -119,6 +135,7 @@
     line-height: 1.25rem;
   }
   &__input {
+    width: 110%;
     height: 2.25rem;
     border-radius: 20px;
     border: 1px solid $cloud;
@@ -137,29 +154,7 @@
   }
 }
 
-
-
-.form-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4.25rem;
-  &__btn-container {
-    width: 300px;
-    margin: 0 1rem;
-    display: flex; 
-    justify-content: space-around;
-    @include tablet {
-      justify-content: flex-end;
-      justify-content: space-between;
-      margin: 0 5rem;
-    }
-  }
-}
-
-
 .content-background {
-  
     position: relative;
     background-image: url('../../assets/Icons/fancydna.svg');
     background-size: 21%;

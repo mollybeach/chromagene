@@ -56,16 +56,11 @@ render(){
     return (
       
       <main className="new-contact content-background">
-        
-        
-          <img src={company} alt=''></img>
         <div className="new-contact__full-container">
           <section className="new-contact__header-container">
-         
           <form onSubmit={this.addNewContact}>
             <div className="new-contact__forms-container">
             <div className="contact-form ">
-         
         <h2 className="contact-form__title">Contact Details</h2>
         <div className="contact-form__title-label-container">
           <label htmlFor="contactName" className="contact-form__label">Name</label>
@@ -83,17 +78,12 @@ render(){
           <label htmlFor="contactCountry" className="contact-form__label">Country</label>
           <input type="text" id="contactCountry" className="contact-form__input" name="contactCountry" placeholder="Country"/>
         </div>
-     
-        <div className="form-footer">
-              <div className="form-footer__btn-container">
-                <button className="btn btn--gamma"><span>Cancel</span></button>
-                <button className="btn btn--delta" type="submit"><span>Enter</span></button>
-              </div>
+        <div className="contact-form__title-label-container">
+            <div className="btn btn--delta contact__buttoncenter" type="submit"><span className="contact__buttontext">Enter</span></div>
             </div>
             </div>
             </div>
           </form>
-      
           </section>
         </div>
       
