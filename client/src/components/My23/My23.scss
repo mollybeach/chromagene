@@ -5,252 +5,81 @@
 
 
 .my23{
-    position:static;
-    display:flex;
-    padding-left: 125px;
-    flex-direction:row;
+    &__title{
+		@include standard-padding-horizontal;
+		color: $raspberrypi;
+		@include increment-2-bottom;
+		font-size: 45px;
+	}
+	&__arrow {
+		width: 1vw;
+		padding-top: 2vw;
+	}
+    &__textbox {
+		padding-top: 150px;
+		position: absolute;
+		color: $text-grey;
+	}
+	&__subtitle{
+		@include standard-padding-horizontal;
+		color: $raspberrypi;
+		padding-left: 5%;
+		@include increment-2-bottom;
+		font-size: 45px;
+	}
+    &__header{
+        position: absolute;
+        top: 40%;
+    	@include standard-padding-horizontal;
+        font-family: Roboto;
+        font-size: 30px;
+        color: $apple;
+    }
+    &__content{
+        position: absolute;
+        top: 50%;
+        font-family: Roboto;
+        text-align: center;
+        border-collapse: collapse;
+        border: 3px solid $text-grey;
+        width: 100%;
+        border: 1px solid $text-grey;
+        padding: 0.5rem;
+    }
+    &__img{
+        display:absolute;
+        //margin-right: 5rem;
+        height: 80px;
+        width:80px;
+        &:hover{
+        -webkit-transform: scale(1.01);
+    }
 }
-
-.my23__img-div{
-    display:absolute;
-    right: 3.0rem;
+}
+#content th {
+    border: $text-grey solid 1px ;
+    padding: 0.5rem;
     &:hover{
         -webkit-transform: scale(1.1);
-    }
- 
-}
-.my23__img{
-    display:absolute;
-  margin-right: 20rem;
-   height: 100px;
-   width:100px;
- 
-}
-.my23__table-row{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    display:flex;
-     width: 85%;
-    flex-wrap: wrap;
-    padding-top: 1rem;
-    padding-bottom: 1.6875rem;
-   //-top:1px solid #BDC5D5;
-  
-    @include tablet {
-       flex-wrap: nowrap;
-        align-items: center;
-        padding:1rem 2rem;
-    }
-}
-
-.my23__flex-col{
-    width:50%;
-    @include tablet{
-        display: flex;
-        width:auto;
-        flex-basis: 90%;   
-    }  
-}
-
-.my23__flex-col--box1{
-
-    @include tablet{
-        flex-basis: 42.33%;
-        align-items: center;
-    }
-    @include desktop{
-        flex-basis:51.275%;
-        align-items: center;
-    }
-}
-.my23__flex-col--box2{
-    @include tablet{
-        flex-basis:46.08%;
-        align-items: center;
-    }
-    @include desktop{
-        flex-basis:36.7%; 
-         align-items: center;
-       
-    }  
-}
-.my23__flex-col--box3{
-    @include tablet{
-        flex-basis:11.56%;
-        align-items: center;
-    }
-    @include desktop{ 
-        flex-basis:11.7%;
-         align-items: center;    
     } 
-}
+  }
 
-.my23__table-data{
-    width:100%; 
-}
-
-.my23__top-title{
-    margin-bottom:4px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.6875rem;
-    line-height: 1rem;
-    text-transform: uppercase;
-    color: $text-grey;
-    @include tablet{
-     display: none;
-    }
-}
-
-.my23__flex{
-    display: flex;
-    align-items: center;  
-}
-
-.my23__top-name{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.8125rem;
-    line-height: 1.25rem;
-    color: $text-grey; 
-    cursor: pointer;
-    &:hover{
-        -webkit-transform: scale(1.3);
-    }
   
-    @include tablet {
-        font-size: 0.875rem;
-        line-height: 1.375rem;
-        margin-right:4px;
-    }
-}
+  #content td{
+    border: $text-grey  1px solid;
+    padding: 0.5rem; 
+      &:hover{
+        -webkit-transform: scale(1.1);
+    } 
+  }
 
-.my23__top-img{
-    height:1.125rem;
-}
 
-.my23__para{
-    font-weight: normal;
-    font-size: 0.8125rem;
-    line-height: 1.25rem;
-    width:81.5%;
-    &:hover{
-        -webkit-transform: scale(1.3);
-    }
-    @include tablet{       
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    width:79%
-    
-    }
-    @include desktop{
-        width:82%;
-    }
-}
-
-.my23__table-data--spacing{
-    margin-bottom:1rem;
-    @include tablet{
-        margin-bottom:0;
-    }
-}
-.my23__table-data--mb{
-    margin-bottom:1.1875rem;
-    @include tablet{
-        margin-bottom:0
-    }
-}
-
-.my23__table-data--action{
-    display: flex;
-    justify-content: space-between;
-    @include tablet{
-        justify-content: flex-start;
-        width: auto; 
-        display: flex;
-        justify-content: flex-end;    
-    }
-}
-
-.my23__delete{
-    margin-right:1.5rem;
-    cursor: pointer;
-}
-
-.my23__tbl-d1{
-    @include tablet{
-        width:55.35%;
-    }
-    @include desktop{
-        width:45.85%;
-    }
-}
-
-.my23__tbl-d2{
-       @include tablet{
-        width:44.65%;
-    }
-    @include desktop{
-        width:54.15%
-    }
-}
-
-.my23__tbl-d3{
-       @include tablet{
-        width:41.01%;
-    }
-    @include desktop{
-        width:50.42%;
-    }
-}
-
-.my23__tbl-d4{
-       @include tablet{
-        width:58.98%;
-    }
-    @include desktop{
-        width:49.58%;
-    }
-}
-
-.my23__para--width{
-    @include tablet {
-        width : 81.5%;
-    }
-}
+  
+th {
+    padding: 1rem 0 1rem 0; 
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
  
-
-  iframe{
-      width:100px; 
-    justify-content: flex-start;
-    margin-right:43%;
-    top: 0.9%;
-    z-index: 1;
-    height: 100px;
-}
-.fram1{
-    width:100px; 
-    justify-content: flex-start;
-    margin-right:43%;
-    top: 0.9%;
-    z-index: 1;
-    height: 100px;
-}
-.fram2{
-    width:100px; 
-    justify-content: flex-start;
-    margin-right:43%;
-    top: 1.2%;
-    z-index: 1;
-    height: 100px;
-}
-.fram3{
-    width:100px; 
-    justify-content: flex-start;
-    margin-right:43%;
-    top: 1.4%;
-    z-index: 1;
-    height: 100px;
-}
+    
+  }

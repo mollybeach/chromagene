@@ -1,15 +1,7 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import dnaImg from '../../assets/Icons/dna.png';
 import company from '../../assets/Icons/company.svg';
-import company2 from '../../assets/Icons/company2.svg';
-import basicdna from '../../assets/Icons/basicdna.svg';
-import xx from '../../assets/images/chromocom.png' ///Users/mollybeach/Documents/git/molly-beach-chromagene/client/src/assets/images/chromocom.png
 import './Header.scss';
-//   <img className ="header__rainbow"src={xx} alt=''></img> 
-//  <text x="20%" text-anchor="top" y="20%" dy="0.4em" fill="url(#pattern)" font-family="sonos-logoregular" font-size="35vh">Gene</text>
-//  <img className="header__basicdna"src={basicdna} alt=''></img>
-//<img className ="header__rainbow"src={company2}   alt=''></img>
 
 function Header() {
   return (
@@ -57,15 +49,10 @@ function Header() {
 
    
       </nav>
-      
 
     </header>
   )
 }
-//  <img className ="header__rainbow"src={company2} alt=''></img>
-//  <img className ="header__rainbow2"src={company} alt=''></img>
-/*   <div className="header__partition-input">
-<input className="header__search-input" placeholder="Search"></input>
-</div> */ 
+
 
 export default Header;

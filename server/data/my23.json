@@ -1,0 +1,329 @@
+[
+  {
+    "id": "2922c286-16cd-4d43-ab98-c698aeab0",
+    "img":"https://pbs.twimg.com/media/EyUcwkGVcAAsAtW?format=jpg&name=small",
+    "chromosome": "Chromosome:",
+    "genotype": "Genotype:",
+    "data": "Data:",
+    "contact": {
+    "scienticname":"Type:",
+      "position": "Position:",
+      "type": "Type:",
+      "ribosome": "Ribosome:"
+    }
+  },
+    {
+      "id": "2922c286-16cd-4d43-ab98-c698aeab0",
+      "img": "https://pbs.twimg.com/media/EyMPGADVoAAHzWA?format=jpg&name=medium",
+      "chromosome": "1",
+      "genotype": "AT",
+      "data": ".",
+      "contact": {
+      "scienticname":"+",
+      "position": "823932 ",
+        "type": "-",
+        "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f698aeab",
+      "img": "https://pbs.twimg.com/media/EyMSEByVgAEkXF_?format=jpg&name=small",
+      "chromosome": "2",
+      "genotype": "CC",
+      "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+      
+    {
+      "id": "2922c286-16cd-4d43-ab98-c78aea",
+      "img": "https://pbs.twimg.com/media/EyMPIhNVEAE6xgu?format=jpg&name=medium",
+      "chromosome": "3",
+      "genotype": "GC",
+      "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+  
+      
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f698ae",
+      "img": "https://pbs.twimg.com/media/EyMRSJNUUAElGcJ?format=jpg&name=medium",
+      "chromosome": "4",
+      "genotype": "TA",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f698a",
+      "img": "https://pbs.twimg.com/media/EyMRV8IUYAE4TH_?format=jpg&name=medium",
+      "chromosome": "5",
+      "genotype": "TA",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c26cd-4d43-ab98-c79f698",
+      "img": "https://pbs.twimg.com/media/EyMSEmmVgAEABot?format=jpg&name=360x360",
+      "chromosome": "6",
+      "genotype": "GC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16d43-ab98-c79f68aea",
+      "img": "https://pbs.twimg.com/media/EyMSF9WVEAMSgu8?format=jpg&name=240x240",
+      "chromosome": "7",
+      "genotype": "TT",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+      
+    {
+      "id": "2922c286-16cd-4d43-a98-c79f698ae",
+      "img": "https://pbs.twimg.com/media/EyMSHMAVEAArWsq?format=jpg&name=240x240",
+      "chromosome": "8",
+      "genotype": "AG",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+  
+      
+    {
+      "id": "2922c286-16d-4d43-ab98-c79f98aeab2",
+      "img": "https://pbs.twimg.com/media/EyMPIhNVEAE6xgu?format=jpg&name=medium",
+      "chromosome": "9",
+      "genotype": "CA",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f698ab3123",
+      "img": "https://pbs.twimg.com/media/EyMSKbKVgAE7jg9?format=jpg&name=240x240",
+      "chromosome": "10",
+      "genotype": "TA",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-98-c79f698aeab5",
+      "img": "https://pbs.twimg.com/media/EyMRV8IUYAE4TH_?format=jpg&name=medium",
+      "chromosome": "11",
+      "genotype": "TC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f698aeab5",
+      "img": "https://pbs.twimg.com/media/EyMSHMAVEAArWsq?format=jpg&name=240x240",
+      "chromosome": "12",
+      "genotype": "AC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+      
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f6ab556",
+      "img": "https://pbs.twimg.com/media/EyMPIhNVEAE6xgu?format=jpg&name=medium",
+      "chromosome": "13",
+      "genotype": "AC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+  
+      
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f6ab5dssdds56",
+      "img": "https://pbs.twimg.com/media/EyMSHMAVEAArWsq?format=jpg&name=240x240",
+      "chromosome": "14",
+      "genotype": "TC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-abdsds98-c79f6ab5dssdds56",
+      "img": "https://pbs.twimg.com/media/EyMSHMAVEAArWsq?format=jpg&name=240x240",
+      "chromosome": "15",
+      "genotype": "TC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d-ab98-c79f698ae64",
+      "img": "https://pbs.twimg.com/media/EyMRSJNUUAElGcJ?format=jpg&name=medium",
+      "chromosome": "16",
+      "genotype": "TC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c2486-16cd-4d43-ab98-79f69ae654",
+      "img": "https://pbs.twimg.com/media/EyMSEByVgAEkXF_?format=jpg&name=small",
+      "chromosome": "17",
+      "genotype": "GG",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+      
+    {
+      "id": "2922c28-16cd-44d43-ab98-c79f698aeab0",
+      "img": "https://pbs.twimg.com/media/EyMSHMAVEAArWsq?format=jpg&name=240x240",
+      "chromosome": "18",
+      "genotype": "GA",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+  
+      
+    {
+      "id": "29226-16cd-4d43-ab98-c79f698aeab5",
+      "img": "https://pbs.twimg.com/media/EyMRSJNUUAElGcJ?format=jpg&name=medium",
+      "chromosome": "19",
+      "genotype": "GG",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16d-4d43-ab8-c79f698aeab032d",
+      "img": "https://pbs.twimg.com/media/EyMSHMAVEAArWsq?format=jpg&name=240x240",
+      "chromosome": "20",
+      "genotype": "CT",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-ab98-c79f6998aea34",
+      "img": "https://pbs.twimg.com/media/EyMSEByVgAEkXF_?format=jpg&name=small",
+      "chromosome": "21",
+      "genotype": "CT",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+    {
+      "id": "2922c286-16cd-4d43-ab98-c799f698aeab0",
+      "img": "https://pbs.twimg.com/media/EyMSEByVgAEkXF_?format=jpg&name=small",
+      "chromosome": "22",
+      "genotype": "AA",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    },
+      
+    {
+      "id": "2922c286-169cd-4d43-ab98-c79f698aeab34",
+      "img": "https://pbs.twimg.com/media/EyMSHMAVEAArWsq?format=jpg&name=240x240",
+      "chromosome": "23",
+      "genotype": "CC",
+        "data": ".",
+      "contact": {
+      "scienticname":"+",
+        "position": "823932 ",
+        "type": "-",
+     "ribosome": " rs369202065"
+      }
+    }
+  
+  ]
+  

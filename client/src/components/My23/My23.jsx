@@ -1,70 +1,71 @@
-import React, { Component } from 'react';
-//import DeletePopup from '../DeletePopup/DeletePopup';
-import deleteImg  from '../../assets/Icons/delete_outline-24px.svg';
-//import editImg from '../../assets/Icons/edit-24px.svg';
-//import chevronImg from '../../assets/Icons/chevron_right-24px.svg';
-import {Link} from 'react-router-dom';
-import './My23.scss';
+import React, { Component } from "react";
+import axios from "axios";
+import { API_URL } from "../../utils/utils";
+import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
+import "./My23.scss";
 
 class My23 extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { displayPopup: false };
-    }
-    togglePopup() {
-        this.setState({
-        displayPopup: !this.state.displayPopup,
+  state = {
+    my23List: this.props.my23List,
+  };
+  componentDidMount() {
+    this.setState({ my23List: this.props.my23List });
+  }
+  componentDidUpdate(prevProps) {
+    axios.get(`${API_URL}/my23`).then((response) => {
+      if (this.state.my23List !== prevProps.match.params) {
+        axios
+          .get(`${API_URL}/my23`)
+          .then((res) => {
+            this.setState({
+              my23List: res.data,
+            });
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+    });
+  }
+  newTable() {
+    let arr = this.state.my23List;
+    return !arr
+      ? null
+      : arr.map((item, index) => {
+          console.log(this.state.my23List);
+          const { id, img, chromosome, genotype, data } = item;
+          const { scienticname, position, type, ribosome } = item.contact;
+          return (
+            <tr key={id}>
+              <td>
+                <img src={img} alt="" className="my23__img" />
+              </td>
+              <td>{chromosome}</td>
+              <td>{genotype}</td>
+              <td>{data}</td>
+              <td>{scienticname}</td>
+              <td>{position}</td>
+              <td>{type}</td>
+              <td>{ribosome}</td>
+            </tr>
+          );
         });
-    }
-    render() {
-        const {single23} = this.props;
-        const {name,phone,email} = single23.contact;
-        return (
-       
-            <div className="my23">
-          
-        <div className = 'my23__table-row'>
-            <div className = 'my23__flex-col  my23__flex-col--box1'>
-                <div className = 'my23__table-data my23__table-data--spacing my23__tbl-d1' >
-                    <h4 className = 'my23__top-title'>my23</h4>
-                    
-                    <div className = 'my23__flex'>
-                                <Link to={`/my23s/${single23.id}`}>
-                            <div className = 'my23__top-name'></div>
-                        </Link>
-                        <img className = 'my23__top-img' alt=""/>
-                    </div>
-                </div>
-                    <div className='my23__img-div' > 
-                    <img  alt='' className='my23__img' src={single23.img}></img></div>
-                <div className = 'my23__table-data my23__table-data--mb my23__tbl-d2'>
-                        <h4 className = 'my23__top-title ' >ADDRESS</h4> 
-                    
-                        <p className = 'my23__para'>{single23.address}, {single23.city}, {single23.country}</p>
-                </div>
-            </div>
-            <div className = 'my23__flex-col my23__flex-col--box2' >
-                <div className = 'my23__table-data  my23__table-data--spacing  my23__tbl-d3 ' >
-                        <h4 className = 'my23__top-title' >CONTACT NAME</h4>
-                        <p className = 'my23__para my23__para--width' >{name}</p>
-                </div>
-                <div className = 'my23__table-data my23__table-data--mb  my23__tbl-d4 ' >
-                        <h4 className = 'my23__top-title' >CONTACT INFORMATION</h4>
-                        <p className = 'my23__para' >{phone}</p>
-                        <p className = 'my23__para' >{email}</p>
-                </div>      
-            </div>            
-            <div className = 'my23__table-data my23__table-data--action my23__flex-col--box3' >
-                <img className = 'my23__delete' src= {deleteImg} alt="" onClick={this.togglePopup.bind(this)}/>
-            </div>
-        </div>
-       
-        </div> 
+  }
+  render() {
+    return (
+      <div>
+         <div className='my23__textbox '>
+         <div className="my23__title ">ChromaGene
+          <img className="my23__arrow" src={chevronImg} alt="img" />
+          </div>
+          <div className="my23__subtitle ">Welcome to ChromaGene!</div>
+          </div>
+        <div className="my23__header">Chromosome Data</div>
+        <table id="content" className="my23__content">
+          <tbody>{this.newTable()}</tbody>
+        </table>
+      </div>
     );
-    }
+  }
 }
 export default My23;
-
-/* {this.state.displayPopup ? (
-          <DeletePopup closePopup={this.togglePopup.bind(this)} clickedId={single23.id} clickedName={single23.name} path="/"type="my23" kind="item"/>
-          ) : null}*/

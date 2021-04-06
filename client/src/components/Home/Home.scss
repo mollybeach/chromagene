@@ -17,7 +17,7 @@
 		position: absolute;
 		color: $text-grey;
 	}
-	&__subtitle {
+	&__title{
 		@include standard-padding-horizontal;
 		@include h1-page-header;
 		color: $raspberrypi;
@@ -28,24 +28,7 @@
 		width: 1vw;
 		padding-top: 2vw;
 	}
-	&__dna {
-		padding-left: 25%;
-	}
-	&__title {
-		@include standard-padding-horizontal;
-		@include h1-page-header;
-		color: $raspberrypi;
-		@include increment-2-bottom;
-		font-size: 45px;
-	}
-  &__title {
-		font-size: 45px;
-		@include tablet {
-			color: $raspberrypi;
-			font-size: 45px;
-		}
-	}
-	&__titleb {
+	&__subtitle{
 		@include standard-padding-horizontal;
 		color: $raspberrypi;
 		padding-left: 5%;

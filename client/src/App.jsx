@@ -1,68 +1,65 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import axios from 'axios';
-import Home from './components/Home/Home';
 import Header from "./components/Header/Header";
-import Gallery from './components/Gallery/Gallery';
-import Profile from './components/Profile/Profile';
+import Home from './components/Home/Home';
+//import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact/Contact";
-//import Footer from './components/Footer/Footer';
+import My23 from './components/My23/My23';
 import UploadFile from "./components/UploadFile/UploadFile";
-import company from './assets/Icons/company.svg';
+//import Footer from './components/Footer/Footer';
 import './App.scss'
+import company from './assets/Icons/company.svg';
+
 
 class App extends Component {
   state = {
-    homeList: null,
+    my23List: null,
     galleryList : null,
     updateList: null,
-    contactList : null,
+    //contactList : null,
+    homeList : null,
 }
 componentDidMount(){
   axios.get('http://localhost:8080/home')
+  .then(res=>{
+    this.setState({
+      homeList:res.data
+    })
+  axios.get('http://localhost:8080/my23')
     .then(res=>{
       this.setState({
-        homeList:res.data
+        my23List:res.data
       })
     axios.get('http://localhost:8080/gallery').then(res=>{
         this.setState({
           galleryList:res.data
         })
-    axios.get('http://localhost:8080/uploadfile').then(res=>{
-        this.setState({
-          uploadFileList:res.data
-    })
-    })
-    axios.get('http://localhost:8080/contact').then(res=>{
-      this.setState({
-        contactList:res.data
-  })
+   
   })
     })
     })
 }
 
   render() {
-    const { homeList, galleryList, uploadFileList, contactList} = this.state;
-    if(homeList===null ) {  return <> <p className = "gallery__loading">Loading...</p>
-    <img className ="header__rainbow"src={company} alt=''></img> </>
-     
-    }
-    if( galleryList===null ) {
-      return <> <p className = "gallery__loading">Loading...</p>
-      <img className ="header__rainbow"src={company} alt=''></img> </>
+    const { homeList, my23List, galleryList} = this.state;
+    if(homeList ===null ) {  
+      return <> 
+     <img className ="app__rainbows"src={company} alt=''></img>
+       <div className = "app__load"></div>
+       <div className = "app__text"> Thank you for waiting patiently. There's alot to load here! :) </div>
+       </>
     }
     return (
       <div className = 'app'>
         <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path={[`/`, `/home`]} render = {(props)=> <Home homeList = {homeList} {...props} />} />
-          <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
-          <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile  homeList = {homeList} {...props} />} />
-          <Route exact path = '/uploadfile' render = {(props)=> <UploadFile  uploadFileList = {uploadFileList} {...props} />}  />
-          <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
-       
+          <Route exact path={[`/`, `/home`]} render = {(props)=> <Home   homeList = {homeList}   {...props}  />} />
+          <Route exact path={[`/`, `/my23`]} render = {(props)=> <My23  my23List = {my23List} {...props} />} />
+         
+          <Route exact path = '/uploadfile' render = {(props)=> <UploadFile/>}  />
+          <Route exact path = '/contact'    render = {(props)=> <Contact  />} />
           </Switch> 
         
         </BrowserRouter>
@@ -72,7 +69,7 @@ componentDidMount(){
 }
 
 export default App;
-
+/// <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
 //  <Footer/>
 
 
