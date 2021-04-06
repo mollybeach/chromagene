@@ -1,15 +1,15 @@
 const express = require("express");
-const galleryList = require("../data/userData.json");
+const galleryList = require("../chromosome.json");
 const router = express.Router();
 const fs = require("fs");
 
 //get list of warehouse items from data
-router.get("/gallery", (req, res) => {
+router.get("chromosome", (req, res) => {
     res.status(200).json(galleryList);
 });
 
 
-router.get("/gallery/:galleryId", (req, res) => {
+router.get("/chromosome.id", (req, res) => {
     let targetDnaId = req.params.dnaId;
     let searchDnaQueryCheck = galleryList.find(item => {
     return targetDnaId === item.id;

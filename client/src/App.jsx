@@ -7,10 +7,8 @@ import Gallery from './components/Gallery/Gallery';
 import Profile from './components/Profile/Profile';
 import Contact from "./components/Contact/Contact";
 //import Footer from './components/Footer/Footer';
-import AddContactItem from "./components/AddContactItem/AddContactItem";
 import UploadFile from "./components/UploadFile/UploadFile";
 import company from './assets/Icons/company.svg';
-
 import './App.scss'
 
 class App extends Component {
@@ -64,7 +62,7 @@ componentDidMount(){
           <Route exact path={[`/`, `/my23`]} render = {(props)=> <Profile  homeList = {homeList} {...props} />} />
           <Route exact path = '/uploadfile' render = {(props)=> <UploadFile  uploadFileList = {uploadFileList} {...props} />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  {...props} contactList = {contactList} {...props} />} />
-          <Route exact path='/contact/add' render={(props) => <AddContactItem {...props}  galleryList={galleryList} />} />
+       
           </Switch> 
         
         </BrowserRouter>

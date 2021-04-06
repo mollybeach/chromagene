@@ -5,19 +5,19 @@ import './UploadFile.scss';
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 
 function FileUpload() {
-    /*******************STORE FILE WITH HOOKS****************************************/
+    /****************************STORE FILE WITH HOOKS****************************************/
     let [data, grabFile] = useState({ name: "", path: "" });    
     let [prog, set] = useState(0); 
     let [file, storeFile] = useState(''); 
     let el = useRef(); 
-    /**********************EVENT FUNCTION *********************************/
+    /******************************EVENT FUNCTION *********************************/
     let onEvent = (event) => {
         set(0)
         let file = event.target.files[0]; 
         console.log(file);
         storeFile(file); 
     }
-       /**********************UPLOAD FUNCTION*********************************/
+/****************************UPLOAD FUNCTION************************************/
     const uploadFile = () => {
         const formData = new FormData();        
         formData.append('file', file);

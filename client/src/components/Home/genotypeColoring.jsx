@@ -1,3 +1,14 @@
+import axios from "axios";
+import { API_URL } from "../../utils/utils";
+
+axios.get(`${API_URL}/chromosome`)
+          .then((res) => {
+         let dnaLists = res.data;
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+
    /* eslint-disable */
 export function snpCode()  {
     let current;
@@ -172,7 +183,7 @@ export function snpCode()  {
         rs13175786: { chromosome: 5, genotype: 'TT' },*/
       };
       let makeOrganized = () => {
-        Object.values(dnaList).forEach((vul) => {
+        Object.values(dnaLists).forEach((vul) => {
           let filledArray = new Array(1).fill(vul);
           let dataAll = filledArray[0];
           let dataG = dataAll.genotype;

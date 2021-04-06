@@ -37,7 +37,6 @@ class Profile extends React.Component {
         <div className="profile__subtitle">My 23
         <img className="profile__arrow" src={chevronImg} alt="" />
         </div>
-       
         <div className="profile__table-body profile__words">
           {this.state.homeList.map((profileObj) => (
             <My23 key={profileObj.id} single23={profileObj} />

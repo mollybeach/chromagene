@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DeletePopup from '../DeletePopup/DeletePopup';
+//import DeletePopup from '../DeletePopup/DeletePopup';
 import deleteImg  from '../../assets/Icons/delete_outline-24px.svg';
 //import editImg from '../../assets/Icons/edit-24px.svg';
 //import chevronImg from '../../assets/Icons/chevron_right-24px.svg';
@@ -19,7 +19,6 @@ class My23 extends Component {
     render() {
         const {single23} = this.props;
         const {name,phone,email} = single23.contact;
-        //const selectedWareId = single23.id;
         return (
        
             <div className="my23">
@@ -59,16 +58,13 @@ class My23 extends Component {
                 <img className = 'my23__delete' src= {deleteImg} alt="" onClick={this.togglePopup.bind(this)}/>
             </div>
         </div>
-     
-        {this.state.displayPopup ? (
-          <DeletePopup closePopup={this.togglePopup.bind(this)} clickedId={single23.id} clickedName={single23.name} path="/"type="my23" kind="item"/>
-          ) : null}
-        </div>
-          
+       
+        </div> 
     );
     }
 }
 export default My23;
-//{single23.name}
-//src={chevronImg} 
-//    <Link to = {`/my23s/${selectedWareId}/edit`} ><img className = 'my23__para' src= {editImg} alt=""/></Link>
+
+/* {this.state.displayPopup ? (
+          <DeletePopup closePopup={this.togglePopup.bind(this)} clickedId={single23.id} clickedName={single23.name} path="/"type="my23" kind="item"/>
+          ) : null}*/
