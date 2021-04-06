@@ -27,6 +27,7 @@
   }
   &__logo {
     display:contents;
+    height: 100px;
    }
   &__rainbow {
     position:absolute;
@@ -35,7 +36,7 @@
     padding-top: 8px;
     padding-bottom: 16px;
     @include tablet {
-  margin-left: 3.125%;
+   margin-left: 3.125%;
    
   }
   @include desktop {
@@ -49,66 +50,75 @@
    width: 100%;
     display: flex;
     flex-direction: column;
+   
     @include tablet {
       flex-direction: row;
-      height: 120px;
+      height: 150px;
     }
     @include desktop {
       height: 5.75rem;
     }
   }
   &__nav-list {
-   display:none;
+    z-index: 12;
+    display:absolute;
+    width: 50%;
+    background-color: transparent;   
+    justify-content: space-evenly;
+    //margin-left: 25%;
+    top: 210px;
+    padding-top:25px;
+    list-style: none;
     @include tablet {
+      background-color: transparent;    
       display:contents;
-      width: 50%;
+      width:700px;
       display:none;
-      justify-content: space-evenly;
-      margin-left: 25%;
-      padding-top:45px;
+      justify-content: flex;
+      //justify-content: space-evenly;
+      padding-top:70px;
       list-style: none;
-     margin-top: 0.01px;
-      margin-left:150px;
+      margin-top: 0.01px;
       display: flex;
-      justify-content: flex-end;
+     
     }
     @include desktop {
-    padding-top: 20px;
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    padding-top: 0.01px;
     margin-left:29vw;
    }
   }
-  &__nav-list-mobile{
-    display:contents;
-    width: 50%;
-    justify-content: space-evenly;
-    margin-left: 25%;
-    padding-top:45px;
-    list-style: none;
-    @include tablet {
-      display:none;
-    }
 
-  }
-  &__nav-item {    
+  &__nav-item { 
+
+    background-color: #FFFFFF;   
     display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
     border-radius: 20px;
-    margin-top: 8px;
+    margin-top: 70px;
     width: 71px;
     height: 23px;
+    padding-bottom: 50px;
     top: 18px;
     font-family: sonos-logoregular;
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 23px;
-    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+ 
     color: $apple;
+    @include tablet{
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      text-align: center;
+      background-color: transparent;   
+      margin-top: 20px;
+      width: 150px;
+    }
     &:hover {
       cursor: pointer;
-      color: $apple;
+      color: $raspberrypi;
       text-decoration: none;
       transform: scale(1.04);
     }
@@ -116,9 +126,6 @@
       color: $raspberrypi;
     }
 
-    @include tablet {
-      width: 150px;
-    }
   }
   &__partition-input {
     margin-top: 16px;

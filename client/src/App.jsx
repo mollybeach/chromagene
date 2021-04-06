@@ -57,7 +57,6 @@ componentDidMount(){
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home   homeList = {homeList}   {...props}  />} />
           <Route exact path={[`/`, `/my23`]} render = {(props)=> <My23  my23List = {my23List} {...props} />} />
-         
           <Route exact path = '/uploadfile' render = {(props)=> <UploadFile/>}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  />} />
           </Switch> 

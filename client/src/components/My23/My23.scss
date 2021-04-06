@@ -5,39 +5,59 @@
 
 
 .my23{
+ 
+
+
     &__title{
-		@include standard-padding-horizontal;
-		color: $raspberrypi;
-		@include increment-2-bottom;
-		font-size: 45px;
-	}
-	&__arrow {
-		width: 1vw;
-		padding-top: 2vw;
-	}
+        @include h1-page-header;
+        color: $raspberrypi;
+        @include increment-2-bottom;
+        margin-top: 50px;
+        font-size: 40px;
+        @include tablet{
+            font-size: 45px;
+        }
+    }
+    &__arrow {
+        width: 1vw;
+        padding-top: 2vw;
+    }
     &__textbox {
+        margin-left: 9rem;
 		padding-top: 150px;
 		position: absolute;
 		color: $text-grey;
+        @include tablet{
+        margin-left: 1rem;
+        }
 	}
-	&__subtitle{
-		@include standard-padding-horizontal;
-		color: $raspberrypi;
-		padding-left: 5%;
-		@include increment-2-bottom;
-		font-size: 45px;
-	}
+    &__subtitle{
+        margin-bottom: 1rem;
+        color: $raspberrypi;
+        padding-right: 1rem;
+        @include increment-2-bottom;
+        font-size: 24px;
+        @include tablet{
+            font-size: 45px;
+        }
+    }
     &__header{
+        margin-left: 9rem;
         position: absolute;
-        top: 40%;
+        top: 25%;
     	@include standard-padding-horizontal;
         font-family: Roboto;
         font-size: 30px;
         color: $apple;
+        @include tablet{
+            top: 350px;
+            margin-left: 0.001rem;
+        }
     }
     &__content{
+        margin-left: 9rem;
         position: absolute;
-        top: 50%;
+        top: 350px;
         font-family: Roboto;
         text-align: center;
         border-collapse: collapse;
@@ -45,6 +65,10 @@
         width: 100%;
         border: 1px solid $text-grey;
         padding: 0.5rem;
+        @include tablet{
+            margin-left: 0.001rem;
+            top: 55%;
+        }
     }
     &__img{
         display:absolute;

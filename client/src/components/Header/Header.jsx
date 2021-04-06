@@ -10,38 +10,21 @@ function Header() {
       <Link to="/" className="header__logo" alt="ChromaGene Logo">   
           <img className ="header__rainbow"src={company} alt=''></img>
           </Link>
-          <ul className="header__nav-list-mobile">
-          <li>
-            <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Home</NavLink>
-            <NavLink to="/my23" className="header__nav-item" activeClassName="header__nav-item--active">My 23</NavLink>
-          </li>
-          <li>
-            <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item--active">Gallery</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item--active">Contact</NavLink>
-          </li>
-          <li>
-            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
-       
-          </li>
-         
-        </ul>
         <ul className="header__nav-list">
           <li>
             <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/my23" className="header__nav-item" activeClassName="header__nav-item--active">My 23</NavLink>
+            <NavLink to="/my23" className="header__nav-item" activeClassName="header__nav-item">My 23</NavLink>
           </li>
           <li>
-            <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item--active">Gallery</NavLink>
+            <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item">Gallery</NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item--active">Contact</NavLink>
+            <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item">Contact</NavLink>
           </li>
           <li>
-            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item--active">Upload</NavLink>
+            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item">Upload</NavLink>
        
           </li>
          

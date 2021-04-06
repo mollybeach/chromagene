@@ -28,7 +28,7 @@
     </linearGradient>
  
     <!-- Stitch 2 gradients together for seamless animation  -->
-    <pattern id="pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+    <pattern id="pattern" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
       <rect x="0" y="0" width="150%" height="100%" fill="url(#gradient)">
         <animate attributeType="XML"
                  attributeName="x"
@@ -72,7 +72,7 @@
       <glyph unicode="&#x25fc;" horiz-adv-x="1000" d="M0 0z" />
     </font>
   </defs>
- <foreignObject id="G" x="180px" y="-10px" width="58px" height='300px' >
+ <foreignObject id="G" x="180px" y="-10px" width="58px" height='100px' >
  <svg version="1.1" xmlns="http://www.w3.org/2000/svg"	fill="url(#gradient)" viewBox="0 0 512 512" width="58px"   xmlns:xlink="http://www.w3.org/1999/xlink" >
  
 <defs >  

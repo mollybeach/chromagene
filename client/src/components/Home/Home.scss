@@ -9,6 +9,10 @@
 	background-color: #FFFFFF;
 	@include h1-page-header;
 	color: $slate;
+	margin-left: 9rem;
+	@include tablet{
+		margin-left: 5%;
+	}
 	&__basicDna {
 		margin-left: 300px;
 	}
@@ -16,31 +20,42 @@
 		padding-top: 150px;
 		position: absolute;
 		color: $text-grey;
+		@include tablet{
+			padding-top: 230px;
+		}
+		@include desktop{
+			padding-top: 150px;
+		}
 	}
 	&__title{
-		@include standard-padding-horizontal;
 		@include h1-page-header;
 		color: $raspberrypi;
 		@include increment-2-bottom;
-		font-size: 45px;
+		font-size: 40px;
+		@include tablet{
+			font-size: 45px;
+		}
 	}
 	&__arrow {
 		width: 1vw;
 		padding-top: 2vw;
 	}
 	&__subtitle{
-		@include standard-padding-horizontal;
+		margin-bottom: 1rem;
 		color: $raspberrypi;
-		padding-left: 5%;
+		padding-right: 1rem;
 		@include increment-2-bottom;
-		font-size: 45px;
+	    font-size: 24px;
+		@include tablet{
+			font-size: 45px;
+		}
 	}
 	&__about {
-		@include standard-padding-horizontal;
+		//@include standard-padding-horizontal;
 		padding-top: 1%;
-		padding-left: 5%;
-		width: 100%;
-		@include h1-desktop-size-that-should-be-available-on-mobile;
+		padding-left: 0.1rem;
+		width: 95%;
+		font-size: 18px;
 		color: $text-grey;
 		@include tablet {
 			@include h1-main-header;
