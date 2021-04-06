@@ -10,22 +10,21 @@ function Header() {
       <Link to="/" className="header__logo" alt="ChromaGene Logo">   
           <img className ="header__rainbow"src={company} alt=''></img>
           </Link>
-        <ul className="header__nav-list">
+        <ul className="header__nav-list"> 
           <li>
-            <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active">Home</NavLink>
+            <NavLink to="/" exact className="header__nav-item" activeClassName="header__nav-item--active"><span>Home</span></NavLink>
           </li>
           <li>
-            <NavLink to="/my23" className="header__nav-item" activeClassName="header__nav-item">My 23</NavLink>
+            <NavLink to="/my23" className="header__nav-item" activeClassName="header__nav-item"><span>My 23</span></NavLink>
           </li>
           <li>
-            <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item">Gallery</NavLink>
+            <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item"><span>Gallery</span></NavLink>
           </li>
           <li>
-            <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item">Contact</NavLink>
+            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item"><span>Upload</span></NavLink>
           </li>
           <li>
-            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item">Upload</NavLink>
-       
+            <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item"><span>Contact</span></NavLink>
           </li>
          
         </ul>
