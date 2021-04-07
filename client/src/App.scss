@@ -28,11 +28,11 @@
 
 &__load {
   position: absolute;
-	width: 120px;
-	height: 120px;
-  margin: 60% 0 0 30%;
-	border:solid 10px #e30b5d;
-	border-radius: 70%;
+	width: 230px;
+	height: 230px;
+  margin: 140px 0 0 45px;
+	border:solid 8px rgb(178, 149, 217);
+	border-radius: 50%;
 	border-right-color: transparent;
 	border-bottom-color: transparent;
 	 -webkit-transition: all 0.5s ease-in;
@@ -46,32 +46,44 @@
     animation-iteration-count:  infinite;
     animation-timing-function: linear; 
     @include tablet{
-      margin: 30% 0 0 30%;
+      margin: 230.391px 0 0 230.391px;
     }
     @include desktop{
-      margin: 18% 0 0 30%;
+      margin: 230.391px 0 0 384px;
     }
 }
 
 &__text{
   position: absolute;
-  margin-left: 20%;
-  margin-top: 150%;
+  margin-left: 64px;
+  margin-top: 480px;
   font-family: sonos-logoregular;
   color: $apple;
   font-weight: 600;
   @include tablet{
-    margin-left: 20%;
-    margin-top: 70%;
+    margin-left: 153.594px;
+    margin-top:  613.391px;
    
   }
     @include desktop{
-    margin-left: 20%;
-    margin-top: 40%;
+      margin-left: 303.594px;
+    margin-top:  613.391px;
    
   }
 }
-
+&__ring{
+  position:absolute;
+  width: 250px;
+  margin: 140px 0 0 45px;
+  @include tablet{
+    margin: 230.391px 0 0 230.391px;
+  }
+  @include desktop{
+    margin: 230.391px 0 0 384px;
+   
+  }
+ 
+}
 &__rainbows {
   position:absolute;
   left:0px;

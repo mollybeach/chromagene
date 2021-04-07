@@ -3,7 +3,7 @@ const galleryList = require("../chromosome.json");
 const router = express.Router();
 const fs = require("fs");
 
-//get list of warehouse items from data
+
 router.get("chromosome", (req, res) => {
     res.status(200).json(galleryList);
 });

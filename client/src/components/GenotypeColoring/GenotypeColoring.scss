@@ -1,0 +1,30 @@
+@use '../../partials/variables' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/typography' as *;
+
+.content {
+	height: 1120px;
+	font-size: 50px;
+    margin-top: 20px;
+	position: relative;
+	z-index: -1;
+	background-image: url('../../assets/Icons/fancydna.svg');
+	background-size: 150%;
+}
+
+.my-canvas {
+	width: 40vw;
+	height: 40vw;
+	border: 40px solid lavender;
+	margin-left: 16px;
+	@include tablet{
+		margin-left: 24px;
+	}
+		@include desktop{
+		margin-left: 80px;
+	}
+  }
+.removeAddtionalFrame{
+display:none;
+}

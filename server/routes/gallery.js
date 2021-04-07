@@ -1,11 +1,35 @@
 const express = require("express");
-const galleryList = require("../data/home.json");
+const galleryList = require("../data/chromosome.json");
 const router = express.Router();
 const fs = require("fs");
-
-
+/*
+let dnaList = [
+           { "id": "rs369202065",
+             "chromosome": 1, 
+             "genotype": "AA" 
+          },
+           { "id": "rs199476136",
+             "chromosome": 1, 
+             "genotype": "AC" 
+          },
+           { "id": "rs190214723",
+             "chromosome": 1, 
+             "genotype": "CC" },
+           { "id": "rs3131972",
+             "chromosome": 1, 
+             "genotype": "GG" },
+           { "id": "rs12562034",
+             "chromosome": 1, 
+             "genotype": "GB" },
+           { "id": "rs115093905", 
+             "chromosome": 1, 
+             "genotype": "GG"
+          }
+ ]
+ */
 router.get("/gallery", (req, res) => {
-    res.status(200).json(galleryList);
+   res.status(200).json(galleryList);
+   //res.send(dnaList);
 });
 /*
 

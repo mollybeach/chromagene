@@ -3,9 +3,9 @@ import React from 'react';
 //import { uuid } from 'uuidv4';
 import axios from 'axios';
 import { API_URL } from "../../utils/utils";
-import ring from '../../assets/Icons/DNA-Circle.svg';
+
 //import fancydna from '../../assets/Icons/fancydna.svg';
-import company from '../../assets/Icons/company.svg';
+
 import "./Contact.scss";
 /*class Button extends React.Component {
   constructor() {

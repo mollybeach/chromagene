@@ -33,44 +33,38 @@
 	&__dna {
 		padding-left: 25%;
 	}
-	&__title {
-		@include standard-padding-horizontal;
+	&__inside {
+		padding-top: 150px;
+		position: absolute;
+		color: $text-grey;
+		@include tablet{
+			padding-top: 230px;
+		}
+		@include desktop{
+			padding-top: 150px;
+		}
+	}
+	&__title{
 		@include h1-page-header;
 		color: $raspberrypi;
 		@include increment-2-bottom;
-		font-size: 45px;
-	}
-  &__title {
-		font-size: 45px;
-		@include tablet {
-			color: $raspberrypi;
+		font-size: 40px;
+		@include tablet{
 			font-size: 45px;
 		}
 	}
-	&__titleb {
-		@include standard-padding-horizontal;
+	&__arrow {
+		width: 1vw;
+		padding-top: 2vw;
+	}
+	&__subtitle{
+		margin-bottom: 1rem;
 		color: $raspberrypi;
-		padding-left: 5%;
+		padding-right: 1rem;
 		@include increment-2-bottom;
-		font-size: 45px;
-	}
-	&__about {
-		@include standard-padding-horizontal;
-		padding-top: 1%;
-		padding-left: 5%;
-		width: 100%;
-		@include h1-desktop-size-that-should-be-available-on-mobile;
-		color: $text-grey;
-		@include tablet {
-			@include h1-main-header;
-			color: $text-grey;
-			width: 50%;
+	    font-size: 24px;
+		@include tablet{
 			font-size: 45px;
-		}
-		@include desktop {
-			@include h1-main-header;
-			font-size: 45px;
-			color: $text-grey;
 		}
 	}
 
@@ -81,4 +75,30 @@
   height: 2000px;
 
 }
+}
+
+.content {
+	height: 1120px;
+	font-size: 50px;
+    margin-top: 20px;
+	position: relative;
+	z-index: -1;
+	background-image: url('../../assets/Icons/fancydna.svg');
+	background-size: 150%;
+}
+
+.my-canvas {
+	width: 40vw;
+	height: 40vw;
+	border: 40px solid lavender;
+	margin-left: 16px;
+	@include tablet{
+		margin-left: 24px;
+	}
+		@include desktop{
+		margin-left: 80px;
+	}
+  }
+.removeAddtionalFrame{
+display:none;
 }
