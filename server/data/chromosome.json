@@ -2,7 +2,7 @@
    {
      "id": "rs369202065",
      "chromosome": 1,
-     "genotype": "AA"
+     "genotype": "??"
    },
    {
     "id": "rs11888922",
@@ -21,12 +21,97 @@
   },
   {
     "id": "rs2851058",
-    "chromosome": 4,
+    "chromosome": 5,
+    "genotype": "AG"
+  },
+  {
+    "id": "rs2851058",
+    "chromosome": 6,
     "genotype": "AT"
   },
   {
     "id": "rs2851059",
-    "chromosome": 5,
+    "chromosome": 7,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 8,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 9,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 10,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 12,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 13,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 6,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851060",
+    "chromosome": 14,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 15,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 16,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 17,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 18,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome":19,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 20,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 21,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 22,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": "X",
     "genotype": "AT"
   }
  ]

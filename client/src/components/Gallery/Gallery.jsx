@@ -1,12 +1,9 @@
-import React from 'react';
-import { useEffect, useRef } from 'react';
-//import { glslToMinimalRenderer } from 'shader-park-core';
-import {sculptToMinimalRenderer} from 'shader-park-core';
-import './Gallery.scss';
+//import React from 'react';
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
-import axios from 'axios';
 import GS from './GS.jsx';
+import './Gallery.scss';
     const Gallery = ({ src }) => {
+
         return (
         <>
         <div className="gallery">
