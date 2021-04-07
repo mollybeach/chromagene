@@ -1,11 +1,9 @@
 
+
+
 ![GitHub Logo](client/src/assets/Icons/company.svg)
 
-
 # Getting Started with ChromoGene App
-
-
-
 
 DNA Files are enormous around 600,000 lines 
 
