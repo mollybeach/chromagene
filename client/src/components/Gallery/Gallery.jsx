@@ -203,7 +203,7 @@ axios.get('http://localhost:8080/gallery').then(res=>{
             <div className="hero-container "></div>
             <div className="content"></div>
           <div className='gallery__inside '> 
-          <div className="gallery__title "> ChromaGene Genotype Display: Each color represents one of the 16 SNPs
+          <div className="gallery__title "> ChromaGene Genotype Display:
             <img className="gallery__arrow" src={chevronImg} alt="img" />
           </div>
           <div className="gallery__title "> Each color represents one of the 16 SNPs

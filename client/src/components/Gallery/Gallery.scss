@@ -11,48 +11,59 @@
 	background-color: #FFFFFF;
 	@include h1-page-header;
 	color: $slate;
-	&__basicDna {
-		margin-left: 300px;
-	}
+
 	&__inside {
-		padding-top: 150px;
 		position: absolute;
-		color: $text-grey;
-	}
-	&__subtitle {
-		@include standard-padding-horizontal;
-		@include h1-page-header;
-		color: $raspberrypi;
-		@include increment-2-bottom;
-		font-size: 45px;
-	}
-	&__arrow {
-		width: 1vw;
-		padding-top: 2vw;
-	}
-	&__dna {
-		padding-left: 25%;
-	}
-	&__inside {
-		padding-top: 150px;
-		position: absolute;
+		top: 50px;
+		margin-left: 100px;
 		color: $text-grey;
 		@include tablet{
-			padding-top: 230px;
+			top: 130px;
 		}
 		@include desktop{
-			padding-top: 150px;
+		top: 150px;
 		}
 	}
 	&__title{
 		@include h1-page-header;
 		color: $raspberrypi;
+		font-weight: 700px;
 		@include increment-2-bottom;
-		font-size: 40px;
+		font-size: 30px;
+
 		@include tablet{
 			font-size: 45px;
 		}
 	}
+	&__subtitle {
+		@include h1-page-header;
+		color: $raspberrypi;
+		@include increment-2-bottom;
+		font-size: 16px;
+		@include tablet{
+			padding-top: 24px;
+		}
+		@include desktop{
+			padding-top: 24px;
+		}
+	}
+	&__arrow {
+		width: 1vw;
+		padding-top: 2vw;
+	}
+	&__inside {
+		padding-top: 130px;
+		position: absolute;
+		color: $text-grey;
+		left: 70px;
+		@include tablet{
+			padding-top: 130px;
+		}
+		@include desktop{
+			padding-top: 150px;
+		}
+	}
+
 	&__arrow {
 		width: 1vw;
 		padding-top: 2vw;
@@ -70,9 +81,8 @@
 
 &__content-background {
   position: relative;
-  //background-image: url('../Home/crrrr.jpeg');
   background-size: 21%;
-  height: 2000px;
+ // height: 2000px;
 
 }
 }
@@ -82,18 +92,31 @@
 	font-size: 50px;
     margin-top: 20px;
 	position: relative;
-	z-index: -1;
+	z-index: -3;
 	background-image: url('../../assets/Icons/fancydna.svg');
 	background-size: 150%;
 }
 
 .my-canvas {
+	position: absolute;
 	width: 40vw;
 	height: 40vw;
 	border: 40px solid lavender;
-	margin-left: 16px;
+//	margin-top: 300px;
+   left: 200px;
+	margin-right: 300px;
+	margin-bottom: 300px;
+	top: 400px;
 	@include tablet{
-		margin-left: 24px;
+		
+	margin-left: 24px;
+	width: 40vw;
+	height: 40vw;
+	border: 40px solid lavender;
+	margin-right: 0px;
+	left: 100px;
+	margin-bottom: 500px;
+	top: 600px;
 	}
 		@include desktop{
 		margin-left: 80px;

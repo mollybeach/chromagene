@@ -12,12 +12,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- // background-color: #FFFFFF;
+ background-color: transparent;
+ border: none;
   //@include standard-padding-horizontal;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-    background-color: #FFFFFF;
+    background-color:  transparent;
 }

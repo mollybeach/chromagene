@@ -28,9 +28,15 @@
 		@include h1-page-header;
 		color: $raspberrypi;
 		@include increment-2-bottom;
+	
 		font-size: 40px;
 		@include tablet{
-			font-size: 45px;
+			font-size: 30px;
+			margin-left: 24px;
+		}
+		@include desktop{
+			font-size: 30px;
+			margin-left: 80px;
 		}
 	}
 	&__arrow {
