@@ -6,8 +6,8 @@
 
 .header {
   z-index: 10;
-  position: absolute;
-  display: flex;
+  position: fixed;
+  display: absolute;
   margin-bottom: 30px;
   background-color: #FFFFFF;
   &__nav {
@@ -19,7 +19,7 @@
       flex-direction: row;
       position: fixed;
       padding: 0 0rem;
-      border: 0.75px #d5d7db solid;
+      border-bottom: 0.75px #d5d7db solid;
     }
     @include desktop {
       padding: 0 15rem;
@@ -28,6 +28,7 @@
   &__logo {
     display:contents;
     height: 100px;
+      background-color: #FFFFFF;
    }
   &__rainbow {
     position:absolute;

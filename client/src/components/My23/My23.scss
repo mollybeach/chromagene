@@ -12,10 +12,11 @@
         @include h1-page-header;
         color: $raspberrypi;
         @include increment-2-bottom;
-        margin-top: 50px;
+        margin-top: 0px;
         font-size: 40px;
         @include tablet{
             font-size: 45px;
+            margin-top: 50px;
         }
     }
     &__arrow {
@@ -24,11 +25,12 @@
     }
     &__textbox {
         margin-left: 9rem;
-		padding-top: 150px;
+		padding-top: 100px;
 		position: absolute;
 		color: $text-grey;
         @include tablet{
         margin-left: 1rem;
+        padding-top: 150px;
         }
 	}
     &__subtitle{
@@ -42,9 +44,9 @@
         }
     }
     &__header{
-        margin-left: 9rem;
+        margin-left: 7.5rem;
         position: absolute;
-        top: 25%;
+        top: 250px;
     	@include standard-padding-horizontal;
         font-family: Roboto;
         font-size: 30px;
@@ -67,7 +69,11 @@
         padding: 0.5rem;
         @include tablet{
             margin-left: 0.001rem;
-            top: 55%;
+            top: 425px;
+        }
+        @include desktop{
+            margin-left: 0.001rem;
+            top: 400px;
         }
     }
     &__img{

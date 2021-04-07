@@ -8,7 +8,7 @@
 	position:absolute;
 	top: 6rem;
 	margin-left: 5rem;
-}
+   }
 	display: flex;
 	width: 100%;
 	height: 90vh;
@@ -19,7 +19,7 @@
 		margin-left: 300px;
 	}
 	&__inside {
-		padding-top: 150px;
+		top: 150px;
 		position: absolute;
 		color: $text-grey;
 	}
@@ -27,7 +27,11 @@
 		@include h1-page-header;
 		color: $raspberrypi;
 		@include increment-2-bottom;
+		font-size: 30px;
+		@include tablet{
 		font-size: 45px;
+		}
+		
 	}
 	&__arrow {
 		width: 1vw;
@@ -43,14 +47,6 @@
 			font-size: 45px;
 		}
 	}
-	&__titleb {
-		@include standard-padding-horizontal;
-		color: $raspberrypi;
-		padding-left: 5%;
-		@include increment-2-bottom;
-		font-size: 45px;
-	}
-
 	&__title{
         @include h1-page-header;
         color: $raspberrypi;
@@ -126,7 +122,7 @@
 .content {
 	height: 1120px;
 	font-size: 50px;
-  margin-top: 20px;
+  //margin-top: 20px;
 	position: relative;
 	z-index: -1;
 	background-image: url('../../assets/Icons/fancydna.svg');

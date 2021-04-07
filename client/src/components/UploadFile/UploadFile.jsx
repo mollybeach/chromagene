@@ -37,12 +37,12 @@ function FileUpload() {
             <>
             <div className="upload">
                 <div className="hero-container "></div>
-                <div className="content"></div>
+           
               <div className='upload__inside '>
               <div className="upload__title ">ChromaGene
                 <img className="upload__arrow" src={chevronImg} alt="img" />
               </div>
-              <div className="upload__subtitle ">Upload Your DNA file!</div>
+              <div className="upload__subtitle ">Upload Your DNA file:</div>
               <div className="upload__about " > Upload DNA .txt or .csv file to create unique art and begin your journey!
                     <div className="upload__progessBar" style={{ width: prog }}>{prog}</div>
                     <input type="file" ref={el} onChange={onEvent} id="mod-button" hidden/> 
@@ -53,9 +53,7 @@ function FileUpload() {
               </div>
               </div>
             </div>
-            <div className="content">
-            </div>
-            <div className="content"></div>
+          
        </>
         );
     }
