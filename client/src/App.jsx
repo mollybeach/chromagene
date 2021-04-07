@@ -37,6 +37,7 @@ componentDidMount(){
         })
    
   })
+  
     })
     })
 }
@@ -62,7 +63,6 @@ componentDidMount(){
           <Route exact path = '/uploadfile' render = {(props)=> <UploadFile/>}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact  />} />
           </Switch> 
-        
         </BrowserRouter>
       </div>
     );

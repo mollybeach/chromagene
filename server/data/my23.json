@@ -8,13 +8,13 @@
      "contact":{
         "scienticname":"Type:",
         "position":"Position:",
-        "type":"Type:",
+        "type":"Sign:",
         "ribosome":"Ribosome:"
      }
   },
   {
      "id":"2922c286-16cd-4d43-ab98-c698aeab0",
-     "img":"https://pbs.twimg.com/media/EyY2NqTUYAI0e-4?format=png&name=360x360",
+     "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
      "chromosome":"1",
      "genotype":"??",
      "data":".",
@@ -53,7 +53,7 @@
   },
   {
      "id":"2922c286-16cd-4d43-ab98-c79f698ae",
-     "img":"https://pbs.twimg.com/media/EyY2UTZVIAAiVNg?format=png&name=360x360",
+     "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
      "chromosome":"4",
      "genotype":"??",
      "data":".",
@@ -66,7 +66,7 @@
   },
   {
      "id":"2922c286-16cd-4d43-ab98-c79f698a",
-     "img":"https://pbs.twimg.com/media/EyY2YZkUcAASq6y?format=png&name=360x360",
+     "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
      "chromosome":"5",
      "genotype":"??",
      "data":".",
@@ -79,7 +79,7 @@
   },
   {
      "id":"2922c26cd-4d43-ab98-c79f698",
-     "img":"https://pbs.twimg.com/media/EyY3YwBVEAErHTg?format=png&name=small",
+     "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
      "chromosome":"6",
      "genotype":"??",
      "data":".",
@@ -92,7 +92,7 @@
   },
   {
      "id":"2922c286-16d43-ab98-c79f68aea",
-     "img":"https://pbs.twimg.com/media/EyY3cTGUcAIZ7uM?format=png&name=small",
+     "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
      "chromosome":"7",
      "genotype":"CC",
      "data":".",
@@ -131,7 +131,7 @@
   },
   {
      "id":"2922c286-16cd-4d43-ab98-c79f698ab3123",
-     "img":"https://pbs.twimg.com/media/EyY45muVgAMA1YD?format=png&name=small",
+     "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
      "chromosome":"10",
      "genotype":"??",
      "data":".",
@@ -144,7 +144,7 @@
   },
   {
      "id":"2922c286-16cd-4d43-98-c79f698aeab5",
-     "img":"https://pbs.twimg.com/media/EyY48ASVoAIhTKh?format=png&name=small",
+     "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
      "chromosome":"11",
      "genotype":"AG",
      "data":".",
@@ -170,7 +170,7 @@
   },
   {
      "id":"2922c286-16cd-4d43-ab98-c79f6ab556",
-     "img":"https://pbs.twimg.com/media/EyY7GKFVgAERSYE?format=png&name=360x360",
+     "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
      "chromosome":"13",
      "genotype":"??",
      "data":".",
@@ -221,8 +221,8 @@
      }
   },
   {
-     "id":"2922c2486-16cd-4d43-ab98-79f69ae654",
-     "img":"https://pbs.twimg.com/media/EyY45muVgAMA1YD?format=png&name=small",
+     "id":"2922c2486-16cd-4d43-ab98-79f69adsse654",
+     "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
      "chromosome":"17",
      "genotype":"CC",
      "data":".",
@@ -235,7 +235,7 @@
   },
   {
      "id":"2922c28-16cd-44d43-ab98-c79f698aeab0",
-     "img":"https://pbs.twimg.com/media/EyY7CVKU4AAzmkb?format=png&name=360x360",
+     "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
      "chromosome":"18",
      "genotype":"CC",
      "data":".",
@@ -261,7 +261,7 @@
   },
   {
      "id":"2922c286-16d-4d43-ab8-c79f698aeab032d",
-     "img":"https://pbs.twimg.com/media/EyY48ASVoAIhTKh?format=png&name=small",
+     "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
      "chromosome":"20",
      "genotype":"CC",
      "data":".",
@@ -287,7 +287,7 @@
   },
   {
      "id":"2922c286-16cd-4d43-ab98-c799f698aeab0",
-     "img":"https://pbs.twimg.com/media/EyY7GKFVgAERSYE?format=png&name=360x360",
+     "img":"https://pbs.twimg.com/media/EyY7CVKU4AAzmkb?format=png&name=360x360",
      "chromosome":"22",
      "genotype":"??",
      "data":".",

@@ -1,5 +1,5 @@
 import React from 'react';
-//import { uuid } from 'uuidv4';
+import { uuid } from 'uuidv4';
 import axios from 'axios';
 import { API_URL } from "../../utils/utils";
 
@@ -20,7 +20,7 @@ class Contact extends React.Component {
           return;
           }
         axios.post(`${API_URL}/contact`, {
-          contactId: 20390123901,
+          contactId: {uuid},
           contactName: event.target.contactName.value,
           contactAddress: event.target.contactAddress.value,
           contactCity: event.target.contactCity.value,
