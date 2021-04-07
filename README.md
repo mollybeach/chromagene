@@ -3,7 +3,6 @@
 
 # Getting Started with ChromoGene App
 
-
 ![GitHub Logo](client/src/assets/images/chromosome2.png)
 
 ![GitHub Logo](client/src/assets/images/snpp.png)
@@ -11,6 +10,10 @@
 DNA Files are enormous around 600,000 lines 
 
 Example DNA the first of every chromosome displayed: 
+
+![GitHub Logo](client/src/assets/images/extxt.png)
+
+![GitHub Logo](client/src/assets/images/start.png)
 
 #AncestryDNA 
 rs369202065	1	569388	0	0
