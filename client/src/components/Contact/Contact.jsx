@@ -1,34 +1,11 @@
 import React from 'react';
-//import { NavLink } from "react-router-dom";
 //import { uuid } from 'uuidv4';
 import axios from 'axios';
 import { API_URL } from "../../utils/utils";
 
-//import fancydna from '../../assets/Icons/fancydna.svg';
 
 import "./Contact.scss";
-/*class Button extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      clicked: false
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick() {
-    this.setState({
-      clicked: true
-    });
-  }
-  render() {
-    return (
-      <button {...this.props}>
-        click
-      </button>
-    );
-  }  
-}
-*/
+
 class Contact extends React.Component {
   state=({
         current: false
@@ -54,7 +31,6 @@ class Contact extends React.Component {
     }
 render(){
     return (
-      
       <main className="new-contact content-background">
         <div className="new-contact__full-container">
           <section className="new-contact__header-container">
@@ -92,9 +68,3 @@ render(){
   }
 }
 export default Contact;
-
-//  <img className="new-contact__ring" src={ring} alt=''></img>
-/* <div>
-        <Button onClick={this.handleClick} />
-        {this.state.clicked ? <Uploads /> : null}
-      </div> */

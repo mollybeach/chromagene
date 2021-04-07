@@ -32,7 +32,6 @@ class My23 extends Component {
     return !arr
       ? null
       : arr.map((item, index) => {
-          console.log(this.state.my23List);
           const { id, img, chromosome, genotype, data } = item;
           const { scienticname, position, type, ribosome } = item.contact;
           return (

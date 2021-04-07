@@ -3,5 +3,30 @@
      "id": "rs369202065",
      "chromosome": 1,
      "genotype": "AA"
-   }
+   },
+   {
+    "id": "rs11888922",
+    "chromosome": 2,
+    "genotype": "AC"
+  },
+  {
+    "id": "rs16832787",
+    "chromosome": 3,
+    "genotype": "GG"
+  },
+  {
+    "id": "rs2851058",
+    "chromosome": 4,
+    "genotype": "AG"
+  },
+  {
+    "id": "rs2851058",
+    "chromosome": 4,
+    "genotype": "AT"
+  },
+  {
+    "id": "rs2851059",
+    "chromosome": 5,
+    "genotype": "AT"
+  }
  ]
