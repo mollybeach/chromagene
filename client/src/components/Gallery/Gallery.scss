@@ -21,7 +21,7 @@
 			top: 130px;
 		}
 		@include desktop{
-		top: 150px;
+		top: 110px;
 		}
 	}
 	&__title{
@@ -37,7 +37,7 @@
 	}
 	&__subtitle {
 		@include h1-page-header;
-		color: $raspberrypi;
+		color: $apple;
 		@include increment-2-bottom;
 		font-size: 16px;
 		@include tablet{
@@ -57,6 +57,7 @@
 		color: $text-grey;
 		left: 70px;
 		@include tablet{
+			left: 2px;
 			padding-top: 130px;
 		}
 		@include desktop{
@@ -90,11 +91,16 @@
 .content {
 	height: 1120px;
 	font-size: 50px;
-    margin-top: 20px;
+	//top: 80px;
+	left: 150px;
+	bottom: 20px;
 	position: relative;
-	z-index: -3;
+	z-index: -1;
 	background-image: url('../../assets/Icons/fancydna.svg');
 	background-size: 150%;
+	@include tablet{
+		top: 180px;
+	}
 }
 
 .my-canvas {

@@ -32,11 +32,11 @@
 		font-size: 40px;
 		@include tablet{
 			font-size: 30px;
-			margin-left: 24px;
+			//margin-left: 24px;
 		}
 		@include desktop{
 			font-size: 30px;
-			margin-left: 80px;
+			//margin-left: 80px;
 		}
 	}
 	&__arrow {
@@ -46,7 +46,7 @@
 	&__subtitle{
 		margin-bottom: 1rem;
 		color: $raspberrypi;
-		padding-right: 1rem;
+		//padding-right: 1rem;
 		@include increment-2-bottom;
 	    font-size: 24px;
 		@include tablet{
@@ -81,6 +81,7 @@
 	position: relative;
 	background-image: url('../../assets/Icons/fancydna.svg');
 	background-size: 150%;
+	margin-top: 200px;
 	 ::before {
 		content: "";
 		position: absolute;
