@@ -4,7 +4,7 @@ import {sculptToMinimalRenderer} from 'shader-park-core';
 //import { fullSpCode, getData } from './spCode';
 //import './Gallery.scss';
 
-import { snpCode } from './snpCode';
+import { snpCodeLoad } from './snpCodeLoad';
 /****************USE HOOKS TO LOAD SHADER ***********************/
 const GS = ({ src }) => {
   const shadeRef = useRef(null);
@@ -20,7 +20,7 @@ const GS = ({ src }) => {
        
      });
      */
-     sculptToMinimalRenderer(canvas, snpCode);
+     sculptToMinimalRenderer(canvas, snpCodeLoad);
     
     }
   }, [src]);
