@@ -3,6 +3,7 @@ import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import GS from './GS.jsx';
 import './Gallery.scss';
     const Gallery = ({ src }) => {
+    
 
         return (
         <>

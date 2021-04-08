@@ -6,20 +6,22 @@ import {sculptToMinimalRenderer} from 'shader-park-core';
 
 import { snpCodeLoad } from './snpCodeLoad';
 /****************USE HOOKS TO LOAD SHADER ***********************/
-const GS = ({ src }) => {
+const GS = ({ src }) => { 
   const shadeRef = useRef(null);
   useEffect(() => {
     if (shadeRef.current) {
+
+      /******USE JS OR GLSL CODE FOR SHADER**********/
       const canvas = document.querySelector(".my-canvas");
      //glslToMinimalRenderer(canvas, spCode);
 
-     /*
-     getData().then((resp) => {
-      sculptToMinimalRenderer(canvas, fullSpCode(JSON.stringify(resp.data)));
+    
+     //getData().then((resp) => {
+      //sculptToMinimalRenderer(canvas, fullSpCode(JSON.stringify(this.state.resp.data)));
       //sculptToMinimalRenderer(canvas, 'sphere(0.5);');
        
-     });
-     */
+    // });
+     
      sculptToMinimalRenderer(canvas, snpCodeLoad);
     
     }
