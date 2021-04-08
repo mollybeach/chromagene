@@ -2,79 +2,82 @@
 export function snpCodeLoad() { 
     let current;
     let filledG = (dataG) => {
+   
         let newG = new Array(1).fill(dataG);
         console.log(newG);
         let valInt = newG.values();
+        switch (new Date().getDay()) {
         for (let snp of valInt) {
-          if (snp === "AA") {
+         case 0: 
+         snp === "AA":
            current = 0.1;
           strand(current);
-        } else if (snp === "AT") {
-            console.log("red green");
+          break;
+       case 1: snp === "AT":
             current = 0.2;
             strand(current);
-          } else if (snp === "AG") {
-            console.log("red orange");
+           break;
+         case 2: snp === "AG":
              current = 0.3;
             strand(current);
-          } else if (snp === "AC") {
-            console.log("red green");
+           break;
+         case 2: snp === "AC":
             current = 0.4;
-            strand(current);
-          } else if (snp === "TA") {
-            console.log("green");
+           break;
+         case 3: snp === "TA":
             current = 0.5;
             strand(current);
-          } else if (snp === "TT") {
-            console.log(" light green");
+           break;
+         case 4: snp === "TT":
             current = 0.6;
             strand(current);
-          } else if (snp === "TG") {
-            console.log("green blue");
+           break;
+         case 5: snp === "TG":
             current = 0.7;
             strand(current);
-          } else if (snp === "TC") {
-            console.log("green red");
+           break;
+         case 6: snp === "TC":
             current = 0.8;
             strand(current);
-          } else if (snp === "GA") {
-            console.log("blue red");
+           break;
+         case 7: snp === "GA":
             current = 0.9;
             strand(current);
-          } else if (snp === "GT") {
-            console.log("blue green");
+           break;
+         case 8: snp === "GT":
             current = 0.31;
             strand(current);
-          } else if (snp === "GG") {
-            console.log("blue");
+           break;
+         case 9: snp === "GG":
             current = 0.43;
             strand(current);
-          } else if (snp === "GC") {
-            console.log("blue pink");
+           break;
+         case 10: snp === "GC":
             current = 0.43;
+           break;
             strand(current);
-          } else if (snp === "CA") {
-            console.log("pink red");
+         case 11: snp === "CA":
             current = 0.21;
             strand(current);
-          } else if (snp === "CT") {
-            console.log("pink green");
+           break;
+         case 12: snp === "CT":
             current = 0.59;
             strand(current);
-          } else if (snp === "CG") {
-            console.log("pink blue");
+           break;
+         case 13: snp === "CG":
             current = 0.377;
             strand(current);
-          } else if (snp === "CC") {
-            console.log("pink");
+           break;
+         case 14: snp === "CC":
             current = 0.311;
             strand(current);
-        } else if (snp === "??") {
+           break;
+        case 15: snp === "??":
             /*********IF COME ACCROSS A ?? GENOTYPE *****/
             let current = 0.3;
              strand(current);
-          }else {
-           console.log('done ');
+        case 16:
+         break;
         
           }
         }
