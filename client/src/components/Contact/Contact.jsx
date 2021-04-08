@@ -1,15 +1,10 @@
 import React from 'react';
-import { uuid } from 'uuidv4';
 import axios from 'axios';
 import { API_URL } from "../../utils/utils";
-
-
 import "./Contact.scss";
+const uuid = require('uuid');
 
 class Contact extends React.Component {
-  state=({
-        current: false
-    })
       addNewContact= (event) =>{
       event.preventDefault();
       if(!event.target.contactName.value || 
@@ -20,7 +15,7 @@ class Contact extends React.Component {
           return;
           }
         axios.post(`${API_URL}/contact`, {
-          contactId: {uuid},
+          contactId: 90284902,
           contactName: event.target.contactName.value,
           contactAddress: event.target.contactAddress.value,
           contactCity: event.target.contactCity.value,

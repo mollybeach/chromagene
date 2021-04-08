@@ -15,10 +15,11 @@ import ring from './assets/Icons/DNA-Circle.svg';
 
 class App extends Component {
   state = {
+    homeList : null,
     my23List: null,
     galleryList : null,
     updateList: null,
-    homeList : null,
+    contactList : null
 }
 componentDidMount(){
   axios.get('http://localhost:8080/home')
@@ -35,15 +36,23 @@ componentDidMount(){
         this.setState({
           galleryList:res.data
         })
-   
   })
-  
+  axios.get('http://localhost:8080/contact').then(res=>{
+    this.setState({
+      contactList:res.data
+    })
+})
+axios.get('http://localhost:8080/uploadfile').then(res=>{
+  this.setState({
+    uploadFileList:res.data
+  })
+})
     })
     })
 }
 
   render() {
-    const { homeList, my23List, galleryList} = this.state;
+    const { homeList, my23List, galleryList, contactList, uploadFileList} = this.state;
     if(homeList ===null ) {  
       return <> 
      <img className ="app__rainbows"src={company} alt=''></img>
@@ -60,8 +69,8 @@ componentDidMount(){
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home   homeList = {homeList}   {...props}  />} />
           <Route exact path={[`/`, `/my23`]} render = {(props)=> <My23  my23List = {my23List} {...props} />} />
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
-          <Route exact path = '/uploadfile' render = {(props)=> <UploadFile/>}  />
-          <Route exact path = '/contact'    render = {(props)=> <Contact  />} />
+          <Route exact path = '/uploadfile' render = {(props)=> <UploadFile uploadFileList = {uploadFileList}  {...props} />}  />
+          <Route exact path = '/contact'    render = {(props)=> <Contact contactList = {contactList}  {...props}  />} />
           </Switch> 
         </BrowserRouter>
       </div>
@@ -70,7 +79,7 @@ componentDidMount(){
 }
 
 export default App;
-/// <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
+
 //  <Footer/>
 
 

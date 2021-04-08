@@ -1,6 +1,5 @@
 
 ![GitHub Logo](client/src/assets/Icons/company.svg)
-
 # Getting Started with ChromoGene App
 
 ![GitHub Logo](client/src/assets/images/chromosome2.png)

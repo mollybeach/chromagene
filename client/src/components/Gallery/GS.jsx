@@ -4,7 +4,6 @@ import {sculptToMinimalRenderer} from 'shader-park-core';
 //import { fullSpCode, getData } from './spCode';
 //import './Gallery.scss';
 
-
 import { snpCode } from './snpCode';
 /****************USE HOOKS TO LOAD SHADER ***********************/
 const GS = ({ src }) => {
@@ -21,13 +20,8 @@ const GS = ({ src }) => {
        
      });
      */
-
-
-
      sculptToMinimalRenderer(canvas, snpCode);
     
-    
-       
     }
   }, [src]);
 
@@ -43,7 +37,6 @@ const GS = ({ src }) => {
 };
 
 export default GS;
-
   
   /*     sculptToMinimalRenderer(canvas, `let lstp = JSON.parse(\`[{"id":"rs369202065","chromosome":1,"genotype":"AA"},{"id":"rs11888922","chromosome":2,"genotype":"AC"},{"id":"rs16832787","chromosome":3,"genotype":"GG"},{"id":"rs2851058","chromosome":4,"genotype":"AG"},{"id":"rs2851058","chromosome":4,"genotype":"AT"},{"id":"rs2851059","chromosome":5,"genotype":"AT", "chromosome":5,"genotype":"AT"}]\`);
 
@@ -200,5 +193,4 @@ export default GS;
     }
   
 }
-
 `); */
