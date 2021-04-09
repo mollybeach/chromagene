@@ -150,7 +150,7 @@ let strand = function (current) {
   pairSpheres();
   displace(-0.01, 0.1, -0.0545); //space between SNP
 };
-displace(0.0, 0.0, 0.6); //position of entire strand
+displace(0.0, 0.0, 0.50); //position of entire strand
 /*************DATA FUNCTIONS****************/
 let dnaList = {
   rs369202065: { chromosome: 1, genotype: "AA" },
@@ -186,7 +186,6 @@ let makeOrganized = () => {
   });
 };
 makeOrganized();
-
 
 }
 
