@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { API_URL } from "../../utils/utils";
 import "./Contact.scss";
-const uuid = require('uuid');
+//const uuid = require('uuid');
 
 class Contact extends React.Component {
       addNewContact= (event) =>{

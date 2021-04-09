@@ -3,36 +3,29 @@ import { useEffect, useRef } from 'react';
 import {sculptToMinimalRenderer} from 'shader-park-core';
 //import { fullSpCode, getData } from './spCode';
 //import './Gallery.scss';
-//import { spCode } from './spCode';
+
 import { snpCodeColor } from './snpCodeLoad';
 /****************USE HOOKS TO LOAD SHADER ***********************/
-const GS = ({ galleryList }) => { 
+const GS = ({ src }) => { 
   const shadeRef = useRef(null);
   useEffect(() => {
     if (shadeRef.current) {
+
       /******USE JS OR GLSL CODE FOR SHADER */
       const canvas = document.querySelector(".my-canvas");
      //glslToMinimalRenderer(canvas, spCode);
-     sculptToMinimalRenderer(canvas, snpCodeColor);
-     //console.log(galleryList)
-
-
-     /*************THE DATA FROM THE BACKEND IT ISNT WORKING BECAUSE  ASYNC */
-  //  let source = spCode.toString();
-   // let sourceRes = `let lstp = JSON.parse(\`${galleryList}\`);\n` + source;
-   //console.log(sourceRes);
-
-     /*
-      // With a function defined separately
-     getData().then((resp) => {
-     // sculptToMinimalRenderer(canvas, fullSpCode(JSON.stringify(galleryList)));
-      //sculptToMinimalRenderer(canvas, 'sphere(0.5);');
-     */
-     
 
     
+     //getData().then((resp) => {
+      //sculptToMinimalRenderer(canvas, fullSpCode(JSON.stringify(this.state.resp.data)));
+      //sculptToMinimalRenderer(canvas, 'sphere(0.5);');
+       
+    // });
+     
+     sculptToMinimalRenderer(canvas, snpCodeColor);
+    
     }
-  }, []);
+  }, [src]);
 
   return (
     <div>

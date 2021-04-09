@@ -100,6 +100,8 @@ let filledG = (dataG) => {
       case "FG":
         current = purpleP;
         strand(current);
+        strand(current);
+        strand(current);
         break;
       default:
         current = grey;

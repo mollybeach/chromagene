@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 export function getData() {
     return axios.get("http://localhost:8080/gallery")
     /*
@@ -27,18 +28,18 @@ export function getData() {
       */
 }
 
-/*
+
 export function fullSpCode(dat) {
     let source = spCode.toString();
     source = `let lstp = JSON.parse(\`${dat}\`);\n` + source;
-   console.log(source);
+    console.log(source);
     return source;
 }
 
-*/
+
   /* eslint-disable */
 
-export function spCode()  {
+function spCode()  {
 
 for (let i = 1; i < lstp.length; i++){
     var value = lstp[i];

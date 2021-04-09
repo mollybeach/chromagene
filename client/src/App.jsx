@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact/Contact";
 import My23 from './components/My23/My23';
+//import SnpCodeLoad from './components/Gallery/snpCodeLoad';
 import UploadFile from "./components/UploadFile/UploadFile";
 //import Footer from './components/Footer/Footer';
 import './App.scss'
@@ -71,6 +72,7 @@ axios.get('http://localhost:8080/uploadfile').then(res=>{
           <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
           <Route exact path = '/uploadfile' render = {(props)=> <UploadFile uploadFileList = {uploadFileList}  {...props} />}  />
           <Route exact path = '/contact'    render = {(props)=> <Contact contactList = {contactList}  {...props}  />} />
+     
           </Switch> 
         </BrowserRouter>
       </div>
@@ -82,5 +84,5 @@ export default App;
 
 //  <Footer/>
 
-
+//     <Route exact path = '/snpcodeload'    render = {(props)=> <SnpCodeLoad  galleryList = {galleryList}  {...props} />} />
 

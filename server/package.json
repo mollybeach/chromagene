@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/mollybeach/chromagene/issues"
   },
-  "homepage": "https://github.com/mollybeach/chromagene/#readme",
+  "homepage": "https://chromagene.netlify.app/",
   "dependencies": {
     "@react-firebase/auth": "^0.2.10",
     "axios": "^0.21.1",
