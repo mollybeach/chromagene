@@ -14,6 +14,11 @@ Example DNA the first of every chromosome displayed:
 
 ![GitHub Logo](client/src/assets/images/start.png)
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3b566b63-7386-4756-b4c5-37e055650f8e/deploy-status)](https://app.netlify.com/sites/chromagene/deploys)
+
+
+
 #AncestryDNA 
 rs369202065	1	569388	0	0
 rs6712483	2	27572	C	C

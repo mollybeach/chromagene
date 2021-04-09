@@ -19,6 +19,7 @@
   "dependencies": {
     "@react-firebase/auth": "^0.2.10",
     "axios": "^0.21.1",
+    "build": "^0.1.4",
     "cors": "^2.8.5",
     "dna2json": "^1.0.7",
     "email-validator": "^2.0.4",
@@ -26,11 +27,14 @@
     "express-fileupload": "^1.2.1",
     "firebase": "^8.3.2",
     "fs": "0.0.2",
+    "netlify": "^6.1.16",
+    "netlify-cli": "^3.16.0",
     "node": "^15.12.0",
     "react": "^17.0.2",
     "react-image-gallery": "^1.0.9",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "run-script": "^0.1.1",
     "text-reader": "^0.1.0",
     "txt-reader": "^1.4.5",
     "uuidv4": "^6.2.7"
