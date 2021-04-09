@@ -53,14 +53,14 @@ axios.get('http://localhost:8080/uploadfile').then(res=>{
 
   render() {
     const { homeList, my23List, galleryList, contactList, uploadFileList} = this.state;
-    if(homeList ===null ) {  
+
       return <> 
      <img className ="app__rainbows"src={company} alt=''></img>
        <div className = "app__load"></div>
        <div className = "app__text"> Thank you for waiting patiently. There's alot to load here! :) </div>
        <img className="app__ring" src={ring} alt=''></img>
        </>
-    }
+    
     return (
       <div className = 'app'>
         <BrowserRouter>
