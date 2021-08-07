@@ -11,8 +11,7 @@ class Footer extends Component {
     <footer className="footer">
         <div className="footer__directory">
             <div className="footer__partition-card">
-		         <div className="footer__partition-top">
-                 <Link to="/" className="header__logo" alt="ChromaGene Logo">   
+		    <div className="footer__partition-top"><Link to="/" className="header__logo" alt="ChromaGene Logo">   
           <div className='footer__company'>  
           <img className ="footer__rainbow"src={company} alt=''></img>
           </div>
@@ -23,8 +22,8 @@ class Footer extends Component {
                 
                 <div className="footer__partition-bottom">
                 <div>Molly Beach</div>
-                     <div className="footer__partition-bottom">Toronto, Ontario M5V 1L7</div>
-                      <div className="footer__email">info@thechromogene.com </div>
+                    <div className="footer__partition-bottom">Toronto, Ontario M5V 1L7</div>
+                    <div className="footer__email">info@thechromogene.com </div>
                 </div>
             </div>
             <div className="footer__partition-card">
@@ -32,7 +31,7 @@ class Footer extends Component {
                 <div>Molly Beach</div>
                     <div> Artist Group International </div>
                 </div>
-                 <div className="footer__partition-bottom">
+                    <div className="footer__partition-bottom">
                     <div>Booking Agent for </div>
                     <div className="footer__partition-bottom">US / South America / Japan</div>
                     <div className="footer__email">info@artistgraphicgrp.com</div>
@@ -43,7 +42,7 @@ class Footer extends Component {
                     <div> ThreeJS</div>
                     <div> Artist Graphic Group International </div>
                 </div>
-             <div className="footer__partition-bottom">
+                <div className="footer__partition-bottom">
                 <div>Questions </div>
                     <div className="footer__partition-bottom">Contact Us M-F</div>
                     <div className="footer__email">apply@artistgraphicsgrp.com</div>
