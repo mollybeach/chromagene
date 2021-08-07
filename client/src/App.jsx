@@ -6,14 +6,12 @@ import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact/Contact";
 import My23 from './components/My23/My23';
-//import SnpCodeLoad from './components/Gallery/snpCodeLoad';;
+//import SnpCodeLoad from './components/Gallery/snpCodeLoad';
 import UploadFile from "./components/UploadFile/UploadFile";
-//import Footer from './components/Footer/Footer';
+//import Footer from './components/Footer/Footekkr';
 import './App.scss'
 import company from './assets/Icons/company.svg';
 import ring from './assets/Icons/DNA-Circle.svg';
-
-
 class App extends Component {
   state = {
     homeList : null,
