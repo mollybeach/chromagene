@@ -1,11 +1,36 @@
 {
   "name": "chromagene",
+  "author": "Molly Beach",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://chromagene.herokuapp.com/",
+  "description": "Build art with Chromosomal DNA",
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollybeach/chromagene.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mollybeach/chromagene/issues"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "build": "^0.1.4",
     "events": "^3.3.0",
+    "express": "^4.17.1",
     "firebase": "^8.9.0",
     "netlify-cli": "^6.0.8",
     "node": "^16.6.1",
@@ -29,12 +54,6 @@
     "uuidv4": "^6.2.11",
     "web-vitals": "^2.1.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -53,23 +72,11 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@types/react": "^17.0.16"
-  },
-  "description": "Build art with Chromosomal DNA",
-  "engines": {
-    "node": "16.x",
-    "npm": "7.x"
-  },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mollybeach/chromagene.git"
-  },
-  "author": "Molly Beach",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mollybeach/chromagene/issues"
-  },
-  "homepage": "https://chromagene.herokuapp.com/"
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "devDependencies": {}
 }
