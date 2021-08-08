@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "description": "Build art with Chromosomal DNA",
+  "description": "Build art with Chromosomal DNa",
   "engines": {
     "node": "16.x",
     "npm": "7.x"
