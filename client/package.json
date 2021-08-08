@@ -1,6 +1,21 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "description": "Build art with Chromosomal DNA",
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollybeach/chromagene.git"
+  },
+  "author": "Molly Beach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mollybeach/chromagene/issues"
+  },
   "private": true,
   "dependencies": {
     "@react-spring/konva": "^9.2.4",
@@ -45,14 +60,14 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
+      "not ie <= 11",
       "not op_mini all"
     ],
     "development": [
@@ -64,20 +79,6 @@
   "devDependencies": {
     "@types/react": "^17.0.16"
   },
-  "description": "Build art with Chromosomal DNA",
-  "engines": {
-    "node": "16.x",
-    "npm": "7.x"
-  },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mollybeach/chromagene.git"
-  },
-  "author": "Molly Beach",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mollybeach/chromagene/issues"
-  },
-  "homepage": "https://chromagene.herokuapp.com/"
+  "proxy": "http://localhost:5000"
+
 }
