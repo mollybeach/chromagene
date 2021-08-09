@@ -1,51 +1,42 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Build art with Chromosomal DNA",
-  "engines": {
-    "node": "16.x",
-    "npm": "7.x"
-  },
+  "description": "server for chromagene app",
   "main": "index.js",
-"scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ],
-    "rules": {
-     "react/react-in-jsx-scope": "off",
-     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-    }
+  "scripts": {
+    "test": "react-scripts test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mollybeach/chromagene.git"
   },
+  "keywords": [
+    "node",
+    "heroku",
+    "node",
+    "create-react-app"
+  ],
   "author": "Molly Beach",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mollybeach/chromagene/issues"
   },
-  "homepage": "https://chromagene.herokuapp.com/",
+  "homepage": "https://github.com/mollybeach/chromagene#readme",
   "dependencies": {
-    "axios": "^0.21.1",
     "build": "^0.1.4",
     "cors": "^2.8.5",
     "dna2json": "^1.0.7",
     "email-validator": "^2.0.4",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
-    "fs": "0.0.2",
+    "fs": "^0.0.1-security",
     "node": "^16.6.1",
+    "nodemon": "^2.0.12",
     "react": "^17.0.2",
-    "react-image-gallery": "^1.2.6",
+    "react-app": "^1.1.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "run-script": "^0.1.1",
-    "text-reader": "^0.1.0",
-    "txt-reader": "^1.4.5"
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

@@ -1,46 +1,10 @@
 {
   "name": "client",
-  "version": "0.1.0",
-  "description": "Build art with Chromosomal DNda",
-  "homepage": "https://chromagene.herokuapp.com/",
-  "engines": {
-    "node": "16.x",
-    "npm": "7.x"
-  },
+  "version": "1.0.0",
+  "description": "front end for chromagene app",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mollybeach/chromagene.git"
-  },
-  "author": "Molly Beach",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mollybeach/chromagene/issues"
-  },
-  "private": true,
-  "dependencies": {
-    "axios": "^0.21.1",
-    "build": "^0.1.4",
-    "events": "^3.3.0",
-    "node": "^16.6.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-iframe": "^1.8.0",
-    "react-is-mounted-hook": "^1.1.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^1.1.5",
-    "react-spring": "^9.2.4",
-    "react-three-fiber": "^5.3.22",
-    "run-script": "^0.1.1",
-    "scss": "^0.2.4",
-    "serve": "^12.0.0",
-    "shader-park-core": "0.0.28",
-    "three": "^0.131.3",
-    "use-script": "^3.0.0",
-    "web-vitals": "^2.1.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cd cli start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,17 +12,45 @@
   "eslintConfig": {
     "extends": [
       "react-app"
-    ],
-    "rules": {
-      "react/react-in-jsx-scope": "off",
-     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-    }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollybeach/chromagene.git"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mollybeach/chromagene/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "build": "^0.1.4",
+    "express": "^4.17.1",
+    "heroku": "^7.56.1",
+    "node": "^16.6.1",
+    "react": "^17.0.2",
+    "react-app": "^1.1.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "sass": "^1.37.5",
+    "serve": "^12.0.0",
+    "shader-park-core": "^0.0.2-8.2"
   },
   "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
-      "not ie <= 11",
       "not op_mini all"
     ],
     "development": [
@@ -69,6 +61,5 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.16"
-  },
-  "proxy": "http://localhost:3000"
+  }
 }
