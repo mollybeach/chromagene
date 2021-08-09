@@ -5,6 +5,9 @@
   "version": "1.0.0",
   "description": "create sculptures with chromasomal dna",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "test": "react-scripts test",
     "start": "cd client && npm start && cd .. / cd server nodemon index.js",
@@ -13,8 +16,6 @@
     "deploy": "cd server/ nodemon index.js && cd .. / && cd client/ && npm install && npm run build",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "go":"git add . && git commit -m 'heroku deploy' && git push heroku master"
-
-    
   },
   "repository": {
     "type": "git",

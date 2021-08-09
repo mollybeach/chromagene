@@ -2,12 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "server for chromagene app genefn",
+  "engines": {
+    "node": "16.x"
+  },
   "main": "index.js",
   "scripts": {
     "test": "react-scripts test"
-  },
-  "engines": {
-    "node": "16.x"
   },
   "repository": {
     "type": "git",
