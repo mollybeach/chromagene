@@ -7,7 +7,7 @@
     "node": "16.x",
     "npm": "7.x"
   },
-  "main": "index.jsx",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mollybeach/chromagene.git"
