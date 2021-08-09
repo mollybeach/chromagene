@@ -13,7 +13,7 @@ let port = process.env.REACT_APP_PORT;
 let host = process.env.REACT_APP_HOST;
 let url = process.env.REACT_APP_API_URL
 
-//server.use(static(path.join(__dirname, 'client/build'))kd);    
+//server.use(static(path.join(__dirname, j'client/build'))kd);    
 
 server.use(cors());                                   
 server.use(express.json());                         
