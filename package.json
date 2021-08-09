@@ -5,6 +5,10 @@
   "version": "1.0.0",
   "description": "create sculptures with chromasomal dna",
   "main": "index.js",
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
+  },
   "scripts": {
     "test": "react-scripts test",
     "start": "node server",
