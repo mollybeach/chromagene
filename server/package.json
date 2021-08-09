@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "server for chromagene app",
+  "description": "server for chromagene app gene",
   "main": "index.js",
   "scripts": {
     "test": "react-scripts test"
