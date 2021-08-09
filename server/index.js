@@ -14,7 +14,7 @@ let host = process.env.REACT_APP_HOST;
 console.log(process.env.REACT_APP_API_URL);
 
 
-//server.use(static(path.join(__dirname, 'client/build')));    
+//server.use(static(path.join(__dirname, 'client/build'))d);    
                                                        
 server.use(cors());                                   
 server.use(express.json());                         
