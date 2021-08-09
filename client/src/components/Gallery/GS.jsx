@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import { useEffect, useRef } from 'react';
 //import { glslToMinimalRenderer } from 'shader-park-core';
 import {sculptToMinimalRenderer} from 'shader-park-core';
