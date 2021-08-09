@@ -1,13 +1,15 @@
 {
   "name": "chromagene",
   "author": "Molly Beach",
-  "homepage": "/build",
+  "homepage": "https://chromagene.herokuapp.com/",
   "version": "1.0.0",
   "description": "create sculptures with chromasomal dna",
   "main": "index.js",
   "engines": {
     "node": "16.x"
   },
+
+
   "scripts": {
     "test": "react-scripts test",
     "start": "cd client && npm start && cd .. / cd server nodemon index.js",

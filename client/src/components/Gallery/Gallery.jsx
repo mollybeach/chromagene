@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
+import { API_URL } from "../../utils/utils";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import GS from './GS.jsx';
 import './Gallery.scss';
@@ -12,13 +13,13 @@ class Gallery extends Component {
       }
     
       componentDidMount(){
-        axios.get('http://localhost:8080/gallery')
+        axios.get(`${API_URL}/gallery`)
         .then(res=>{
           this.setState({
             galleryList:res.data
           })
           })
-          axios.get('http://localhost:8080/gallery')
+          axios.get(`${API_URL}/gallery`)
           .then(res=>{
             this.setState({
               draw:res.data

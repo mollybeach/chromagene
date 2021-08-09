@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact/Contact";
 import My23 from './components/My23/My23';
+import { API_URL } from "./utils/utils";
 //import SnpCodeLoad from './componentds/Gallery/snpCoddfgdfefdfdfdfdfdkoLoad';
 import UploadFile from "./components/UploadFile/UploadFile";
 //import Footer from './components/Footer/Footekkr';
@@ -21,27 +22,27 @@ class App extends Component {
     contactList : null
 }
 componentDidMount(){
-  axios.get('http://localhost:8080/home')
+  axios.get(`${API_URL}/contact`)
   .then(res=>{
     this.setState({
       homeList:res.data
     })
-  axios.get('http://localhost:8080/my23')
+  axios.get(`${API_URL}/my23`)
     .then(res=>{
       this.setState({
         my23List:res.data
       })
-    axios.get('http://localhost:8080/gallery').then(res=>{
+    axios.get(`${API_URL}/gallery`).then(res=>{
         this.setState({
           galleryList:res.data
         })
   })
-  axios.get('http://localhost:8080/contact').then(res=>{
+  axios.get(`${API_URL}/contact`).then(res=>{
     this.setState({
       contactList:res.data
     })
 })
-axios.get('http://localhost:8080/uploadfile').then(res=>{
+axios.get(`${API_URL}/uploadfile`).then(res=>{
   this.setState({
     uploadFileList:res.data
   })

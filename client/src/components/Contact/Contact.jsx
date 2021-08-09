@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { API_URL } from "../../utils/utils";
+import {API_URL} from "../../utils/utils";
 import "./Contact.scss";
 //const uuid = require('uuid');
 
