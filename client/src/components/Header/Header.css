@@ -1,0 +1,496 @@
+/**********************MOCKUP COLUMN VARIABLES*******************************/
+/*****************INCREMENT VARIABLES IN PX************/
+/*****************INCREMENT VARIABLES IN REM************/
+/*****************MOBILE INCREMENT VARIABLES IN VW************/
+/*****************TABLET INCREMENT VARIABLES************/
+/*****************DESKTOP INCREMENT VARIABLES************/
+/**********************MOCKUP COLUMN PERCENT VARIABLES*******************************/
+/*******************************INCREMENT PERCENTAGE*******************************/
+/*****************MOBILE INCREMENT PERCENT VARIABLES************/
+/*****************TABLET INCREMENT PERCENT VARIABLES************/
+/*****************DESKTOP INCREMENT PERCENT VARIABLES************/
+/************OTHER COMMON INCREMENT VARIABLES *********/
+/**********************************CALCULATION**DATA***********************/
+/********************************* FOR TABLETS**********************************************************/
+/********************************* FOR DESKTOP*************************************/
+/*************************************TEXT STYLES************************************/
+/*****************************************H1-Main-heading***************************/
+/*********************H2 - Header subheader for mobile*********************/
+/*******************************H3 - Subheader for Tablet and Desktop************/
+/********************H4 Paragraph & Comments******************************/
+.btn {
+  outline: none;
+  margin-right: 30px;
+  margin-top: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  padding: 1.25rem 2rem;
+  font-size: 1rem;
+  border-radius: 3.5rem/100%;
+  position: relative;
+  min-width: 15rem;
+  max-width: 90vw;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 330ms;
+  outline: none;
+}
+.btn + .btn {
+  outline: none;
+  margin-top: 1rem;
+}
+.btn span {
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+.btn:before {
+  outline: none;
+  content: "";
+  background-color: #21D4FD;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale(4) translateX(-100%);
+  transition: all 495ms ease-out;
+  outline: none;
+}
+.btn:hover:before, .btn:focus:before, .btn:active:before {
+  outline: none;
+  transform: scale(4) translate(37%);
+}
+
+.btn--alpha {
+  outline: none;
+  background-color: #21D4FD;
+  color: #B721FF;
+}
+.btn--alpha:before {
+  background-color: #B721FF;
+  background-image: linear-gradient(to right, #B721FF 30%, #21D4FD 100%);
+  position: absolute;
+}
+.btn--alpha:hover, .btn--alpha:focus, .btn--alpha:active {
+  outline: none;
+  color: #21D4FD;
+}
+
+.btn--beta {
+  outline: none;
+  background-color: #08AEEA;
+  color: #2AF598;
+}
+.btn--beta:before {
+  background-color: #2AF598;
+  background-image: linear-gradient(to right, #2AF598 30%, #08AEEA 100%);
+  position: absolute;
+}
+.btn--beta:hover, .btn--beta:focus, .btn--beta:active {
+  outline: none;
+  color: #08AEEA;
+}
+
+.btn--gamma {
+  outline: none;
+  background-color: #FEE140;
+  color: #FA709A;
+}
+.btn--gamma:before {
+  background-color: #FA709A;
+  background-image: linear-gradient(to right, #FA709A 30%, #FEE140 100%);
+  position: absolute;
+}
+.btn--gamma:hover, .btn--gamma:focus, .btn--gamma:active {
+  outline: none;
+  color: #FEE140;
+}
+
+.btn--delta {
+  outline: none;
+  background-color: #3EECAC;
+  color: #EE74E1;
+}
+.btn--delta:before {
+  background-color: #EE74E1;
+  background-image: linear-gradient(to right, #EE74E1 30%, #3EECAC 100%);
+  position: absolute;
+}
+.btn--delta:hover, .btn--delta:focus, .btn--delta:active {
+  outline: none;
+  color: #3EECAC;
+}
+
+.btn-form {
+  outline: none;
+  outline: none;
+  margin-right: 30px;
+  margin-top: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  padding: 1.25rem 2rem;
+  font-size: 1rem;
+  border-radius: 3.5rem/100%;
+  position: relative;
+  min-width: 15rem;
+  max-width: 90vw;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 330ms;
+}
+.btn-form + .btn-form {
+  margin-top: 1rem;
+}
+.btn-form span {
+  position: relative;
+  z-index: 1;
+}
+.btn-form:before {
+  content: "";
+  background-color: #21D4FD;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale(4) translateX(-100%);
+  transition: all 495ms ease-out;
+}
+.btn-form:hover:before, .btn-form:focus:before, .btn-form:active:before {
+  background-color: #B721FF;
+}
+
+.btn-form--alpha {
+  background-color: #21D4FD;
+  color: #B721FF;
+}
+.btn-form--alpha:before {
+  background-color: #B721FF;
+  background-image: linear-gradient(to right, #B721FF 30%, #21D4FD 100%);
+  position: absolute;
+}
+.btn-form--alpha:hover, .btn-form--alpha:focus, .btn-form--alpha:active {
+  color: #B721FF;
+}
+
+.btn-form--beta {
+  background-color: #08AEEA;
+  color: #2AF598;
+}
+.btn-form--beta:before {
+  background-color: #2AF598;
+  background-image: linear-gradient(to right, #2AF598 30%, #08AEEA 100%);
+  position: absolute;
+}
+.btn-form--beta:hover, .btn-form--beta:focus, .btn-form--beta:active {
+  color: #B721FF;
+}
+
+.btn-form--gamma {
+  background-color: #FEE140;
+  color: #FA709A;
+}
+.btn-form--gamma:before {
+  background-color: #FA709A;
+  background-image: linear-gradient(to right, #FA709A 30%, #FEE140 100%);
+  position: absolute;
+}
+.btn-form--gamma:hover, .btn-form--gamma:focus, .btn-form--gamma:active {
+  color: #B721FF;
+}
+
+.btn-form--delta {
+  background-color: #3EECAC;
+  color: #EE74E1;
+}
+.btn-form--delta:before {
+  background-color: #EE74E1;
+  background-image: linear-gradient(to right, #EE74E1 30%, #3EECAC 100%);
+  position: absolute;
+}
+.btn-form--delta:hover, .btn-form--delta:focus, .btn-form--delta:active {
+  color: #B721FF;
+}
+
+/********************************h4-lists-and-contacts-information*************/
+/*******************************************H5-Labels***********************/
+/***************************************STANDARD PADDING**************************************************/
+/**********************************WIDTH*100%*PADDING**********************************************/
+/*******************WIDTH MINUS MOCKUP COLUMN************/
+/**********************************************DIVIDERS******************************************************/
+/**********************************************LOGOS******************************************************/
+/**********************************************BUTTONS******************************************************/
+/**********************************************MOCKUP COLUMNS****************************************************************/
+/*******************RIGHT*****************/
+/*******************LEFT***************/
+/*********************HORIZONTAL**************/
+/*********************************************WIDTH 100% MINUS INCREMENTS*********************************/
+/************************************%%%%%%%%%%%%%%%%%%%%%******************************************************
+/******%%%%%%%%%%%%%%%%%%%%%%%****CONTENTS LIST:*********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+*******%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*****TOP MARGIN**********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+*****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%******RIGHT MARGIN**********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%***BOTTOM MARGIN**********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+*********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%***LEFT MARGIN**********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+***********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*VERTICAL MARGIN**********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+***********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*HORIZTONAL**********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+*********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%***WIDTH **********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+*******%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%****HEIGHT**********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+******%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*****OTHER COMMON INCREMENTS*********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+ ******%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*****MOCKUP COLUMN PADDING*********%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********
+******%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*********/
+/*******************************************************INCREMENT MARGIN TOP******************************************/
+/***********************************INCREMENT RIGHT*************************************************/
+/*******************************************************INCREMENT MARGIN BOTTOM******************************************/
+/*******************************************************INCREMENT LEFT******************************************/
+/************************************VERTICAL MARGIN INCREMENTS******************************************************/
+/************************************HORIZONTAL MARGIN INCREMENTS******************************************************/
+/***************************************************INCREMENT WIDTH******************************************/
+/***************************************************INCREMENT HEIGHT******************************************/
+/***************************************************OTHER COMMON INCREMENTS********************************/
+/*******TOP****/
+/***************RIGHT********************/
+/****************BOTTOM***************/
+/*****************LEFT****************/
+/************VERTICAL***********/
+/**********HORIZONTAL*********/
+/***********WIDTH*********/
+/***********HEIGHT*********/
+/**********************************************MOCKUP COLUMNS PADDING****************************************************************/
+/***LEFT*******/
+/***HORIZONTAL*******/
+/************************************FONTS******************************************/
+@font-face {
+  font-family: "TitilliumWebSemiBold600";
+  src: url("../assets/fonts/TitilliumWeb-SemiBold.woff") format("woff"), url("../assets/fonts/TitilliumWeb-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "TitilliumWebRegular400";
+  src: url("../assets/fonts/TitilliumWeb-Regular.woff") format("woff"), url("../assets/fonts/TitilliumWeb-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+/************************************FONTS**************************************
+
+@font-face {
+    font-family: "AvenirNextLTProRegular";
+    src: url("../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"), url("../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "AvenirNextLTProDemi";
+    src: url("../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff"), url("../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "AvenirNextLTProBold";
+    src: url("../assets/fonts/AvenirNextLTPro-Bold.woff") format("woff"), url("../assets/fonts/AvenirNextLTPro-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+
+/*************************************H1 HERO HEADING************************************
+
+@mixin h1-hero-heading {
+    font-family: AvenirNextLTProBold;
+    color: $white;
+    font-size: 3.8rem; //60px 
+    line-height: 4.3rem; //68px
+    @include tablet {
+        font-size: 3.8rem; //60px
+        line-height: 4.3rem; //68px
+    }
+    @include desktop {
+        font-size: 3.8rem; //60px 
+        line-height: 4.3rem; //68px
+    }
+}
+
+
+
+
+
+*/
+.header {
+  z-index: 10;
+  position: fixed;
+  display: absolute;
+  margin-bottom: 30px;
+  background-color: #FFFFFF;
+}
+.header__nav {
+  z-index: 10;
+  background-color: #FFFFFF;
+  max-height: 12.5rem;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    height: 80px;
+    flex-direction: row;
+    position: fixed;
+    padding: 0 0rem;
+    border-bottom: 0.75px #d5d7db solid;
+  }
+}
+@media (min-width: 1280px) {
+  .header__nav {
+    padding: 0 15rem;
+  }
+}
+.header__logo {
+  display: contents;
+  height: 100px;
+  background-color: #FFFFFF;
+}
+.header__rainbow {
+  position: absolute;
+  left: 0px;
+  margin-left: 16px;
+  padding-top: 8px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .header__rainbow {
+    margin-left: 3.125%;
+  }
+}
+@media (min-width: 1280px) {
+  .header__rainbow {
+    margin-left: 80px;
+  }
+}
+.header__nav {
+  font-family: sonos-logoregular;
+  padding-top: 12px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .header__nav {
+    flex-direction: row;
+    height: 150px;
+  }
+}
+@media (min-width: 1280px) {
+  .header__nav {
+    height: 5.75rem;
+  }
+}
+.header__nav-list {
+  z-index: 12;
+  display: absolute;
+  width: 50%;
+  background-color: transparent;
+  justify-content: space-evenly;
+  top: 210px;
+  padding-top: 25px;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .header__nav-list {
+    background-color: transparent;
+    display: contents;
+    width: 700px;
+    display: none;
+    justify-content: flex;
+    padding-top: 70px;
+    list-style: none;
+    margin-top: 0.01px;
+    display: flex;
+  }
+}
+@media (min-width: 1280px) {
+  .header__nav-list {
+    justify-content: space-evenly;
+    justify-content: flex-end;
+    padding-top: 0.01px;
+    margin-left: 29vw;
+  }
+}
+.header__nav-item {
+  display: flex;
+  text-decoration: none;
+  border-radius: 20px;
+  margin-top: 70px;
+  width: 71px;
+  height: 23px;
+  padding-bottom: 50px;
+  top: 18px;
+  font-family: sonos-logoregular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6CC04A;
+}
+@media (min-width: 768px) {
+  .header__nav-item {
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 20px;
+    width: 150px;
+  }
+}
+.header__nav-item:hover {
+  cursor: pointer;
+  color: #e30b5d;
+  text-decoration: none;
+  transform: scale(1.04);
+}
+.header__nav-item:active {
+  color: #e30b5d;
+}
+.header__partition-input {
+  margin-top: 16px;
+  background-color: #6CC04A;
+}
+.header__search-input {
+  display: contents;
+  width: 300px;
+  background-image: url("../../assets/images/loupe.png");
+  background-repeat: no-repeat;
+  background-size: 1.3rem;
+  background-position-y: center;
+  background-position-x: 1rem;
+  padding-left: 2.5rem;
+  border-radius: 0.3rem;
+  border: solid 1px #c4c4c4;
+  background-color: white;
+  width: 391px;
+  height: 44px;
+  justify-content: right;
+}
+.header__search-input:active {
+  border-color: #6CC04A;
+}
+.header__search-input:hover {
+  border-color: #6CC04A;
+}
+.header__avi {
+  width: 40px;
+  height: 40px;
+  border-radius: 33.3px;
+  margin-right: 16px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .header__avi {
+    margin-top: 16px 1.3vw 0 0;
+  }
+}
+.header__dna {
+  padding-right: 10px;
+  width: 2vw;
+  height: 2vw;
+}/*# sourceMappingURL=Header.css.map */

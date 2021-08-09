@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 8080;
+const path = require('path');
 const cors = require("cors");
 const home = require("./routes/home");
 const gallery = require("./routes/gallery");
@@ -11,6 +12,8 @@ const my23 = require("./routes/my23");
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 app.use("/", home);
 app.use("/", gallery);
 app.use("/", uploadfile);

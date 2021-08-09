@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "react-scripts test",
-    "start": "node server",
+    "start": "node index.js",
     "build": "cd client/ && npm install && npm run build"
   },
   "repository": {
