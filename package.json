@@ -1,69 +1,71 @@
 {
-  "name": "chromagene",
-  "author": "Molly Beach",
-  "homepage": "https://chromagene.herokuapp.com/",
-  "version": "1.0.0",
-  "description": "create sculptures with chromasomal dna",
-  "main": "index.js",
-  "engines": {
-    "node": "16.x"
-  },
-
-
-  "scripts": {
-    "test": "react-scripts test",
-    "start": "cd client && npm start && cd .. / cd server nodemon index.js",
-    "build": "cd client/ && npm install && npm run build",
-    "server": "cd server/ && nodemon index.js",
-    "deploy": "cd server/ nodemon index.js && cd .. / && cd client/ && npm install && npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "go":"git add . && git commit -m 'heroku deploy' && git push heroku master"
-  },
-  "heroku-run-build-script": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mollybeach/chromagene.git"
-  },
-  "cacheDirectories": [
-    "node_modules",
-    "client/node_modules"
-  ],
-  "keywords": [
-    "node",
-    "heroku",
-    "create-react-app",
-    "react"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mollybeach/chromagene/issues"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "build": "^0.1.4",
-    "express": "^4.17.1",
-    "heroku": "^7.56.1",
-    "node": "^16.6.1",
-    "react": "^17.0.2",
-    "react-app": "^1.1.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "shader-park-core": "^0.0.2-8.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "chromagene",
+    "author": "Molly Beach",
+    "homepage": "https://chromagene.herokuapp.com/",
+    "version": "1.0.0",
+    "description": "create sculptures with chromasomal dna",
+    "main": "index.js",
+    "engines": {
+        "node": "16.x"
+    },
+    "scripts": {
+        "test": "react-scripts test",
+        "start": "cd client && npm start && cd .. / cd server nodemon index.js",
+        "build": "cd client/ && npm install && npm run build", 
+        "server": "cd server/ && nodemon index.js",
+        "deploy": "cd server/ nodemon index.js && cd .. / && cd client/ && npm install && npm run build",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+        "go": "git add . && git commit -m 'heroku deploy' && git push heroku master"
+    },
+    "heroku-run-build-script": true,
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mollybeach/chromagene.git"
+    },
+    "cacheDirectories": [
+        "node_modules",
+        "client/node_modules"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.16"
-  }
+    "keywords": [
+        "node",
+        "heroku",
+        "create-react-app",
+        "react"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mollybeach/chromagene/issues"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "build": "^0.1.4",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "heroku": "^7.56.1",
+        "node": "^16.6.1",
+        "react": "^17.0.2",
+        "react-app": "^1.1.2",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "^4.0.3",
+        "shader-park-core": "^0.0.2-8.2",
+        "webpack": "4.44.2"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.16",
+        "dotenv-webpack": "^7.0.3",
+        "webpack-cli": "^4.7.2"
+    }
 }

@@ -1,7 +1,10 @@
-import axios from "axios";
+//const axios = require("axios");   
+require('dotenv').config();
 
+
+/*
 export function getData() {
-    return axios.get(`${API_URL}/gallery`)
+    return axios.get(process.env.REACT_APP_API_URL + /^\/gallery\/$/)
   
     /*
        .then(function(response){
@@ -26,7 +29,7 @@ export function getData() {
       
       return lst.JSON.stringify();
       */
-}
+
 
 /*
 export function fullSpCode(dat) {
@@ -177,3 +180,4 @@ let strand = function (current) {
    };
 
         
+   console.log(process.env.HOST);

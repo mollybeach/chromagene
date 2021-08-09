@@ -1,8 +1,8 @@
 import axios from "axios";
-
+require('dotenv').config();
 
 export function getData() {
-    return axios.get(`${API_URL}/gallery`)
+    return axios.get(process.env.REACT_APP_API_URL + "/gallery")
     /*
        .then(function(response){
            return ;

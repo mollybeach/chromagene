@@ -1,28 +1,33 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+require('dotenv').config();    
+const express = require('express');                                               
+const cors = require("cors");                               
+const home = require("./routes/home");                        
+const gallery = require("./routes/gallery");                  
+const uploadfile= require("./routes/uploadfile");             
+const contact = require("./routes/contactRoute");             
+const my23 = require("./routes/my23");   
 
-const PORT = 8080;
-const cors = require("cors");
-const home = require("./routes/home");
-const gallery = require("./routes/gallery");
-const uploadfile= require("./routes/uploadfile");
-const contact = require("./routes/contactRoute");
-const my23 = require("./routes/my23");
-
-
-app.use(cors());
-app.use(express.json());
-app.use(express.static(path.join(__dirname, 'client/build')));
-app.listen(process.env.PORT || 3000);
-app.use("/", home);
-app.use("/", gallery);
-app.use("/", uploadfile);
-app.use("/", contact);
-app.use("/", my23);
+let server = express();                                        
+let path = require('path');                                 
+let port = process.env.REACT_APP_PORT;   
+let host = process.env.REACT_APP_HOST;
+console.log(process.env.REACT_APP_API_URL);
 
 
+//server.use(static(path.join(__dirname, 'client/build')));    
+                                                       
+server.use(cors());                                   
+server.use(express.json());                         
+server.use("/", home);                                
+server.use("/", gallery);                             
+server.use("/", uploadfile);                          
+server.use("/", contact);                             
+server.use("/", my23);                                                                         
+                                                   
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+server.use(express.static(__dirname));
+
+server.listen(process.env.PORT);
+
+
+server.listen(port, host, () => console.log(`Server running at http://${host}:${port}/`));

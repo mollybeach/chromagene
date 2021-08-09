@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { API_URL } from "../../utils/utils";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import "./My23.scss";
+require('dotenv').config();
 
 class My23 extends Component {
   state = {
@@ -12,10 +12,10 @@ class My23 extends Component {
     this.setState({ my23List: this.props.my23List });
   }
   componentDidUpdate(prevProps) {
-    axios.get(`${API_URL}/my23`).then((response) => {
+    axios.get(process.env.REACT_APP_API_URL + "/my23")
+    .then((response) => {
       if (this.state.my23List !== prevProps.match.params) {
-        axios
-          .get(`${API_URL}/my23`)
+        axios.get(process.env.REACT_APP_API_URL + "/my23")
           .then((res) => {
             this.setState({
               my23List: res.data,

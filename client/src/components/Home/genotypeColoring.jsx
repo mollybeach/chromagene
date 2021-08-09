@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_URL } from "../../utils/utils";
+require('dotenv').config();
 
    /* eslint-disable */
 export function snpCode()  {
@@ -10,7 +10,7 @@ export function snpCode()  {
         let valInt = newG.values();
         for (let snp of valInt) {
           if (snp === "AA") {
-           current = 0.1;
+            current = 0.1;
           strand(current);
         } else if (snp === "AT") {
             console.log("red green");
@@ -18,7 +18,7 @@ export function snpCode()  {
             strand(current);
           } else if (snp === "AG") {
             console.log("red orange");
-             current = 0.3;
+            current = 0.3;
             strand(current);
           } else if (snp === "AC") {
             console.log("red green");
@@ -129,7 +129,7 @@ export function snpCode()  {
         };
         displace(0.0, -0.8, 0.0); //position of entire strand
       /*************DATA FUNCTIONS****************/
-      axios.get(`${API_URL}/gallery`)
+      axios.get(process.env.REACT_APP_API_URL + "/gallery")
           .then((res) => {
          let returnedJson = res.data;
         convertJson(returnedJson);

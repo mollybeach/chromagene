@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import axios from 'axios';
-import { API_URL } from "../../utils/utils";
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import GS from './GS.jsx';
 import './Gallery.scss';
+require('dotenv').config();
 
 class Gallery extends Component {
   
@@ -13,13 +13,13 @@ class Gallery extends Component {
       }
     
       componentDidMount(){
-        axios.get(`${API_URL}/gallery`)
+        axios.get(process.env.REACT_APP_API_URL + "/gallery")
         .then(res=>{
           this.setState({
             galleryList:res.data
           })
           })
-          axios.get(`${API_URL}/gallery`)
+          axios.get(process.env.REACT_APP_API_URL + "/gallery")
           .then(res=>{
             this.setState({
               draw:res.data
