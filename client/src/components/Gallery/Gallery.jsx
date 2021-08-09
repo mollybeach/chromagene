@@ -29,7 +29,7 @@ class Gallery extends Component {
 render(){
   //const { galleryList} = this.state;
         return (
-        <>
+        <div>
         <div className="gallery">
             <div className="hero-container "></div>
             <div className="content"></div>
@@ -45,7 +45,7 @@ render(){
           </div>
         </div>
     <GS  galleryList = {this.state.galleryList}  draw = {this.state.draw}  />
-      </>   
+      </div>   
         );
         }
 }

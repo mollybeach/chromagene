@@ -7,7 +7,7 @@ import "./Home.scss";
 class Home extends Component {
   render() {
     return (
-      <>
+      <div>
         <div className="home">
           <div className="hero-container "></div>
           <div className="content"></div>
@@ -35,7 +35,7 @@ class Home extends Component {
         <div className="content">
         </div>
         <div className="content"></div>
-      </>
+      </div>
     );
   }
 }

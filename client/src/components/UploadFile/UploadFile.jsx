@@ -34,7 +34,7 @@ function FileUpload() {
             })
         }).catch(err => console.log(err))}
         return (
-            <>
+            <div>
             <div className="upload">
                 <div className="hero-container "></div>
            
@@ -54,7 +54,7 @@ function FileUpload() {
               </div>
             </div>
           
-       </>
+       </div>
         );
     }
     export default FileUpload;
