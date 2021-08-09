@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/mollybeach/chromagene/issues"
   },
-  "homepage": "https://github.com/mollybeach/chromagene#readme",
+  "homepage": "https://chromagene.herokuapp.com/",
   "dependencies": {
     "build": "^0.1.4",
     "cors": "^2.8.5",
