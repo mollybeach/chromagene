@@ -17,6 +17,7 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "go":"git add . && git commit -m 'heroku deploy' && git push heroku master"
   },
+  "heroku-run-build-script": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mollybeach/chromagene.git"
