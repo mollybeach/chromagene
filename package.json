@@ -14,7 +14,6 @@
         "build": "cd client/ && npm install && npm run build", 
         "server": "cd server/ && nodemon index.js",
         "deploy": "cd server/ nodemon index.js && cd .. / && cd client/ && npm install && npm run build",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
         "go": "git add . && git commit -m 'heroku deploy' && git push heroku master"
     },
     "heroku-run-build-script": true,

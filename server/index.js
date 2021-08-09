@@ -8,13 +8,14 @@ const contact = require("./routes/contactRoute");
 const my23 = require("./routes/my23");   
 
 let server = express();                                        
-let path = require('path');                                 
+//let path = require('path');                                 
 let port = process.env.REACT_APP_PORT;   
 let host = process.env.REACT_APP_HOST;
-console.log(process.env.REACT_APP_API_URL);
+let url = process.env.REACT_APP_API_URL
 
 
-//server.use(static(path.join(__dirname, 'client/build'))d);    
+
+//server.use(static(path.join(__dirname, 'client/build'))kd);    
                                                        
 server.use(cors());                                   
 server.use(express.json());                         
@@ -27,7 +28,7 @@ server.use("/", my23);
 
 server.use(express.static(__dirname));
 
-server.listen(process.env.PORT);
 
+server.listen(url, () => console.log(`Server running at ${url}`));
 
-server.listen(port, host, () => console.log(`Server running at http://${host}:${port}/`));
+//server.listen(port, host, () => console.log(`Server running at http://${host}:${port}/`));
