@@ -1,17 +1,20 @@
 {
   "name": "chromagene",
   "author": "Molly Beach",
-  "homepage": "https://chromagene.herokuapp.com/",
+  "homepage": "/build",
   "version": "1.0.0",
   "description": "create sculptures with chromasomal dna",
   "main": "index.js",
-  "engines": {
-    "node": "16.x"
-  },
   "scripts": {
     "test": "react-scripts test",
-    "start": "node index.js",
-    "build": "cd client/ && npm install && npm run build"
+    "start": "cd client && npm start && cd .. / cd server nodemon index.js",
+    "build": "cd client/ && npm install && npm run build",
+    "server": "cd server/ && nodemon index.js",
+    "deploy": "cd server/ nodemon index.js && cd .. / && cd client/ && npm install && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "go":"git add . && git commit -m 'heroku deploy' && git push heroku master"
+
+    
   },
   "repository": {
     "type": "git",
@@ -34,9 +37,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "build": "^0.1.4",
-    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-fileupload": "^1.2.1",
     "heroku": "^7.56.1",
     "node": "^16.6.1",
     "react": "^17.0.2",

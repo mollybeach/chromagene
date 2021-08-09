@@ -4,13 +4,12 @@
   "description": "front end for chromagene app",
   "main": "index.js",
   "scripts": {
-    "start": "cd cli start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "serve -s build"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app"
