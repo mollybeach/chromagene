@@ -13,6 +13,7 @@
     "start": "node server",
     "build": "cd client/ && npm install && npm run build"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mollybeach/chromagene.git"
