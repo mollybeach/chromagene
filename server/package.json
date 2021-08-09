@@ -10,6 +10,15 @@
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "rules": {
+     "react/react-in-jsx-scope": "off",
+     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mollybeach/chromagene.git"
