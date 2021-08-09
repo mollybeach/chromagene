@@ -4,12 +4,12 @@
     "description": "front end for chromagene app",
     "main": "index.js",
     "scripts": {
-        "start": "react-scripts start",
+        "start": "node --max_old_space_size=2560 node_modules/.bin/react-scripts start",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "deploy": "serve -s build",
         "dev": "webpack --mode=development --env API_URL=https://localhost:8080/ --config  webpack.config.js",
-        "build": "react-scripts build"
+        "build": "node --max_old_space_size=2560 node_modules/.bin/react-scripts build"
     },
     "eslintConfig": {
         "extends": [
