@@ -4,9 +4,10 @@ const router = express();
 const fileUpload = require('express-fileupload');  
 router.use(express.static('publicDna'));           
 router.use(cors());                                
-router.use(fileUpload());                          
+router.use(fileUpload());    
+const uploadData = require("../data/uploadData.json");                      
 /***************MIDDLE WARE TO MOVE FILE TO PUBLIC DNA FOLDER**************/
-router.post('/uploadfile', (req, res) => {         
+router.post('/uploadApi', (req, res) => {         
     if (!req.files) {                              
         return res.status(500).send({ msg: "file wasnot found" })
     }                                              
@@ -18,6 +19,11 @@ router.post('/uploadfile', (req, res) => {
         }                                          
         return res.send({name: newFile.name, path: `/${newFile.name}`});
     });
-})
+});
+
+router.get("/uploadApi", (req, res) => {
+    res.status(200).json(uploadData);
+});
+
 
 module.exports = router;

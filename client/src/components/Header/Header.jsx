@@ -21,7 +21,7 @@ function Header() {
             <NavLink to="/gallery" className="header__nav-item" activeClassName="header__nav-item"><span>Gallery</span></NavLink>
           </li>
           <li>
-            <NavLink to="/uploadfile" className="header__nav-item" activeClassName="header__nav-item"><span>Upload</span></NavLink>
+            <NavLink to="/upload" className="header__nav-item" activeClassName="header__nav-item"><span>Upload</span></NavLink>
           </li>
           <li>
             <NavLink to="/contact" className="header__nav-item" activeClassName="header__nav-item"><span>Contact</span></NavLink>

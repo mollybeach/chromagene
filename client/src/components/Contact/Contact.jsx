@@ -12,7 +12,7 @@ class Contact extends React.Component {
           alert("Please fill in all fields to update item");
           return;                                 
           }  
-          axios.post(process.env.REACT_APP_API_URL + "/contact", {
+          axios.post(process.env.REACT_APP_API_URL + "contactApi", {
           contactId: 90284902,                    
           contactName: event.target.contactName.value,
           contactAddress: event.target.contactAddress.value,

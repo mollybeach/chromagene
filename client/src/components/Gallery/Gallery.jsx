@@ -1,34 +1,15 @@
 import React, { Component } from "react";
-import axios from 'axios';
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 import GS from './GS.jsx';
 import './Gallery.scss';
-require('dotenv').config();
+
 
 class Gallery extends Component {
-  
-      state = {
-        galleryList: [],
-        draw: ''
-      }
-    
-      componentDidMount(){
-        axios.get(process.env.REACT_APP_API_URL + "/gallery")
-        .then(res=>{
-          this.setState({
-            galleryList:res.data
-          })
-          })
-          axios.get(process.env.REACT_APP_API_URL + "/gallery")
-          .then(res=>{
-            this.setState({
-              draw:res.data
-            })
-            })
-          
-      }
+  state = {
+    galleryData: this.props.galleryData,
+  };
 render(){
-  //const { galleryList} = this.state;
+  const { galleryData} = this.state;
         return (
         <div>
         <div className="gallery">
@@ -45,7 +26,7 @@ render(){
           </div>
           </div>
         </div>
-    <GS  galleryList = {this.state.galleryList}  draw = {this.state.draw}  />
+        <GS galleryData={galleryData}/>
       </div>   
         );
         }

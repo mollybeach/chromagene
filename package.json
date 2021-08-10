@@ -1,22 +1,16 @@
 {
     "name": "chromagene",
     "author": "Molly Beach",
-    "homepage": "https://chromagene.herokuapp.com/",
+    "homepage": "https://chromagene.herokuapp.com/myapp",
     "version": "1.0.0",
     "description": "create sculptures with chromasomal dna",
-    "main": "index.js",
     "engines": {
         "node": "16.x"
     },
     "scripts": {
-        "test": "react-scripts test",
-        "start": "cd client && npm start && cd .. / cd server nodemon index.js",
-        "build": "cd client/ && npm install && npm run build", 
-        "server": "cd server/ && nodemon index.js",
-        "deploy": "cd server/ nodemon index.js && cd .. / && cd client/ && npm install && npm run build",
-        "go": "git add . && git commit -m 'heroku deploy' && git push heroku master"
+        "start": "node server",
+        "build": "cd client/ && npm install && npm run build"
     },
-    "heroku-run-build-script": true,
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mollybeach/chromagene.git"
@@ -38,15 +32,27 @@
     "dependencies": {
         "axios": "^0.21.1",
         "build": "^0.1.4",
+        "cluster": "^0.7.7",
+        "cors": "^2.8.5",
+        "dna2json": "^1.0.7",
         "dotenv": "^10.0.0",
+        "email-validator": "^2.0.4",
         "express": "^4.17.1",
+        "express-fileupload": "^1.2.1",
+        "fs": "^0.0.1-security",
         "heroku": "^7.56.1",
+        "http": "^0.0.1-security",
         "node": "^16.6.1",
+        "nodemon": "^2.0.12",
+        "os": "^0.1.2",
+        "path": "^0.12.7",
         "react": "^17.0.2",
         "react-app": "^1.1.2",
         "react-dom": "^17.0.2",
         "react-router-dom": "^5.2.0",
         "react-scripts": "^4.0.3",
+        "sass": "^1.37.5",
+        "serve": "^12.0.0",
         "shader-park-core": "^0.0.2-8.2",
         "webpack": "4.44.2"
     },
@@ -63,8 +69,7 @@
         ]
     },
     "devDependencies": {
-        "@types/react": "^17.0.16",
-        "dotenv-webpack": "^7.0.3",
-        "webpack-cli": "^4.7.2"
+        "express": "^4.17.1",
+        "node": "^16.6.1"
     }
 }

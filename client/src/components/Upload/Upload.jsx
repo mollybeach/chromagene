@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
-import './UploadFile.scss';
+import './Upload.scss';
 import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 require('dotenv').config();
 function FileUpload() {
@@ -20,7 +20,7 @@ function FileUpload() {
     const uploadFile = () => {
         const formData = new FormData();        
         formData.append('file', file);
-        axios.post(process.env.REACT_APP_API_URL + "/uploadfile", formData, {
+        axios.post(process.env.REACT_APP_API_URL + "/uploadApi", formData, {
             onUploadProgress: (loadEvent) => {
                 let prog = Math.round(
                 loadEvent.loaded / loadEvent.total * 100) + '%';
@@ -29,7 +29,7 @@ function FileUpload() {
         }).then(res => {
             console.log(res);
             grabFile({ name: res.data.name,
-            path: process.env.REACT_APP_API_URL + res.data.path
+            path: process.env.REACT_APP_API_URL  + res.data.path
             })
         }).catch(err => console.log(err))}
         return (

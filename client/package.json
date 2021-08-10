@@ -1,75 +1,28 @@
 {
-    "name": "client",
-    "version": "1.0.0",
-    "description": "front end for chromagene app",
-    "main": "index.js",
-    "scripts": {
-        "start": "node --max_old_space_size=2560 node_modules/.bin/react-scripts start",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "deploy": "serve -s build",
-        "dev": "webpack --mode=development --env API_URL=https://localhost:8080/ --config  webpack.config.js",
-        "build": "node --max_old_space_size=2560 node_modules/.bin/react-scripts build"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app"
-        ]
-    },
-    "engines": {
-        "node": "16.x"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mollybeach/chromagene.git"
-    },
-    "cacheDirectories": [
-        "node_modules",
-        "client/node_modules"
-    ],
-    "keywords": [
-        "node",
-        "heroku",
-        "create-react-app",
-        "react"
-    ],
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/mollybeach/chromagene/issues"
-    },
-    "dependencies": {
-        "axios": "^0.21.1",
-        "build": "^0.1.4",
-        "cors": "^2.8.5",
-        "express": "^4.17.1",
-        "heroku": "^7.56.1",
-        "node": "^16.6.1",
-        "path": "^0.12.7",
-        "react": "^17.0.2",
-        "react-app": "^1.1.2",
-        "react-dom": "^17.0.2",
-        "react-router-dom": "^5.2.0",
-        "react-scripts": "^4.0.3",
-        "sass": "^1.37.5",
-        "serve": "^12.0.0",
-        "shader-park-core": "^0.0.2-8.2",
-        "webpack": "4.44.2",
-        "webpack-cli": "^4.7.2"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@types/react": "^17.0.16",
-        "dotenv-webpack": "^7.0.3"
-    }
+  "name": "client",
+  "version": "1.0.0",
+  "description": "front end for chromagene",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "shader-park-core": "^0.0.2-8.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "http://localhost:5000"
 }

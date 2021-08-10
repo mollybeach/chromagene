@@ -5,6 +5,32 @@
 ![GitHub Logo](client/src/assets/images/chromosome2.png)
 ![GitHub Logo](client/src/assets/images/snpp.png)
 
+npm install heroku
+
+git clone https://github.com/mollybeach/chromagene.git
+cd chromagene/
+heroku login
+heroku create
+git push heroku masterf
+
+npm install
+cd client
+npm install
+cd ..
+
+npm run build
+npm install -g serve
+serve -s build
+CTRL+C
+npm start
+
+git add .
+git commit -m "Migrate from chromagene-buildpack to Node server"
+git push heroku master
+
+heroku buildpacks:clear
+
+
 DNA Files are enormous around 600,000 lines 
 
 Example DNA the first of every chromosome displayed: 

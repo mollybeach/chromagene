@@ -1,5 +1,7 @@
 /* eslint-disable */
-export function snpCodeColor() { 
+
+export const spCode = () => {
+  
 /*************DOUBLE HELIX***********/
 rotateX(PI / 2);
 /*************COLORS**************/
@@ -187,6 +189,3 @@ makeOrganized();
 
 
 }
-
-
-

@@ -7,9 +7,10 @@ import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact/Contact";
 import My23 from './components/My23/My23';
-//import SnpCodeLoad from './componentds/Gallery/snpCoddfgdfefdfdfdfdfdkoLoad';
-import UploadFile from "./components/UploadFile/UploadFile";
+
+import Upload from "./components/Upload/Upload";
 //import Footer from './components/Footer/Footekkr';
+//import SnpCodeLoad from './componentds/Gallery/snpCodeLoad';
 import './App.scss'
 //import company from './assets/Icons/company.svg';
 //import ring from './assets/Icons/DNA-Circle.svg';
@@ -20,39 +21,39 @@ console.log(process.env.REACT_APP_API_URL);
 console.log(process.env.REACT_APP_HOST);
 class App extends Component {    
   state = {                      
-    homeList : null,             
-    my23List: null,              
-    galleryList : null,          
-    updateList: null,            
-    contactList : null           
+    homeData : null,             
+    my23Data: null,              
+    galleryData : null,          
+    uploadData: null,            
+    contactData : null           
 }                                
 componentDidMount(){             
-  axios.get(process.env.REACT_APP_API_URL + "/home")
+  axios.get(process.env.REACT_APP_API_URL + "/homeApi")
     .then(res=>{                 
     this.setState({              
-      homeList:res.data          
+      homeData:res.data          
     })                           
-    axios.get(process.env.REACT_APP_API_URL + "/my23")
+    axios.get(process.env.REACT_APP_API_URL + "/my23Api")
     .then(res=>{                 
       this.setState({            
-        my23List:res.data        
+        my23Data:res.data        
       })                         
-      axios.get(process.env.REACT_APP_API_URL + "/gallery")
+      axios.get(process.env.REACT_APP_API_URL + "/galleryApi")
     .then(res=>{
         this.setState({
-          galleryList:res.data
+          galleryData:res.data
         })            
   })                  
-  axios.get(process.env.REACT_APP_API_URL + "/contact")
+  axios.get(process.env.REACT_APP_API_URL + "/contactApi")
     .then(res=>{
     this.setState({   
-      contactList:res.data
+      contactData:res.data
     })                
 })                    
-axios.get(process.env.REACT_APP_API_URL + "/uploadfile")
+axios.get(process.env.REACT_APP_API_URL + "/uploadApi")
 .then(res=>{
   this.setState({     
-    uploadFileList:res.data
+    uploadData:res.data
   })                  
 })                    
     })                
@@ -60,10 +61,11 @@ axios.get(process.env.REACT_APP_API_URL + "/uploadfile")
 }                     
                       
   render() {   
-    const { homeList, my23List, galleryList, contactList, uploadFileList} = this.state;
+    
+    const { homeData, my23Data, galleryData, contactData, uploadData} = this.state;
     /*       
 
-    if(homeList ===null ) {  
+    if(homeData ===null ) {  
       return (
       <div> 
      <img className ="app__rainbows"src={company} alt=''></img>
@@ -77,11 +79,11 @@ axios.get(process.env.REACT_APP_API_URL + "/uploadfile")
         <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path={[`/`, `/home`]} render = {(props)=> <Home   homeList = {homeList}   {...props}  />} />
-          <Route exact path={[`/`, `/my23`]} render = {(props)=> <My23  my23List = {my23List} {...props} />} />
-          <Route exact path={[`/gallery`]} render = {(props)=> <Gallery galleryList = {galleryList}  {...props} />} />
-          <Route exact path = '/uploadfile' render = {(props)=> <UploadFile uploadFileList = {uploadFileList}  {...props} />}  />
-          <Route exact path = '/contact'    render = {(props)=> <Contact contactList = {contactList}  {...props}  />} />
+          <Route exact path={[`/`, `/home`]} render = {(props)=> <Home   homeData = {homeData}   {...props}  />} />
+          <Route exact path={[ `/`,`/my23`]} render = {(props)=> <My23  my23Data = {my23Data} {...props} />} />
+          <Route exact path={[ `/`,`/gallery`]} render = {(props)=> <Gallery galleryData = {galleryData}  {...props} />} />
+          <Route exact path = {['/upload']}  render = {(props)=> <Upload uploadData = {uploadData}  {...props} />}  />
+          <Route exact path ={[ '/contact' ]}  render = {(props)=> <Contact contactData = {contactData}  {...props}  />} />
      
           </Switch> 
         </BrowserRouter>
@@ -94,5 +96,13 @@ export default App;
 
 //  <Footer/>
 
-//     <Route exact path = '/snpcodeload'    render = {(props)=> <SnpCodeLoad  galleryList = {galleryList}  {...props} />} />
+//     <Route exact path = '/snpcodeload'    render = {(props)=> <SnpCodeLoad  galleryData = {galleryData}  {...props} />} />
 
+/*        { process.env.NODE_ENV === 'production' ?
+            <p>
+              This is a production build from create-react-app.
+            </p>
+          : <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+        }*/

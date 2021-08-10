@@ -27,7 +27,7 @@ class Home extends Component {
              human genome and the genotype call oriented toward the plus strand on 
              the human reference sequence.
             <div className="home__buttons">
-            <Link to="/uploadfile">  <button className="btn btn--delta" type="submit"><span>Get Started</span></button></Link>
+            <Link to="/upload">  <button className="btn btn--delta" type="submit"><span>Get Started</span></button></Link>
             </div>
           </div>
           </div>

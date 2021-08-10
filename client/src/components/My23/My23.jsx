@@ -6,19 +6,19 @@ require('dotenv').config();
 
 class My23 extends Component {
   state = {
-    my23List: this.props.my23List,
+    my23Data: this.props.my23Data,
   };
   componentDidMount() {
-    this.setState({ my23List: this.props.my23List });
+    this.setState({ my23Data: this.props.my23Data });
   }
   componentDidUpdate(prevProps) {
-    axios.get(process.env.REACT_APP_API_URL + "/my23")
+    axios.get(process.env.REACT_APP_API_URL + "/my23Api")
     .then((response) => {
-      if (this.state.my23List !== prevProps.match.params) {
-        axios.get(process.env.REACT_APP_API_URL + "/my23")
+      if (this.state.my23Data !== prevProps.match.params) {
+        axios.get(process.env.REACT_APP_API_URL + "/my23Api")
           .then((res) => {
             this.setState({
-              my23List: res.data,
+              my23Data: res.data,
             });
           })
           .catch((error) => {
@@ -28,7 +28,7 @@ class My23 extends Component {
     });
   }
   newTable() {
-    let arr = this.state.my23List;
+    let arr = this.state.my23Data;
     return !arr
       ? null
       : arr.map((item, index) => {
