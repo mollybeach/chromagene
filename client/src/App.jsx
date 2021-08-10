@@ -80,8 +80,8 @@ axios.get(process.env.REACT_APP_API_URL + "/uploadApi")
         <Header />
         <Switch>
           <Route exact path={[`/`, `/home`]} render = {(props)=> <Home   homeData = {homeData}   {...props}  />} />
-          <Route exact path={[ `/`,`/my23`]} render = {(props)=> <My23  my23Data = {my23Data} {...props} />} />
-          <Route exact path={[ `/`,`/gallery`]} render = {(props)=> <Gallery galleryData = {galleryData}  {...props} />} />
+          <Route exact path={[ `/my23`]} render = {(props)=> <My23  my23Data = {my23Data} {...props} />} />
+          <Route exact path={[ `/gallery`]} render = {(props)=> <Gallery galleryData = {galleryData}  {...props} />} />
           <Route exact path = {['/upload']}  render = {(props)=> <Upload uploadData = {uploadData}  {...props} />}  />
           <Route exact path ={[ '/contact' ]}  render = {(props)=> <Contact contactData = {contactData}  {...props}  />} />
      
