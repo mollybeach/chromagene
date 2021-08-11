@@ -9,7 +9,8 @@
     },
     "scripts": {
         "start": "node server",
-        "build": "cd client/ && npm install && npm run build"
+        "build": "cd client/ && npm install && npm run build && npm install -g serve && serve -s build",
+        "go": "git add . && git commit -m 'push to git heroku and deploy' && git push heroku master"
     },
     "repository": {
         "type": "git",
@@ -70,6 +71,7 @@
     },
     "devDependencies": {
         "express": "^4.17.1",
-        "node": "^16.6.1"
+        "node": "^16.6.1",
+        "@types/react": "^17.0.16"
     }
 }

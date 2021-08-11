@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-export const spCode = () => {
-  
+export function spCode() {
+
 /*************DOUBLE HELIX***********/
 rotateX(PI / 2);
 /*************COLORS**************/
@@ -187,5 +187,6 @@ let makeOrganized = () => {
 };
 makeOrganized();
 
-
 }
+
+//export default spCode;
