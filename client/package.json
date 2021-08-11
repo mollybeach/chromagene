@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "1.0.0",
-  "description": "front end for chromagene",
+  "description": "front end for chromagene app",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
