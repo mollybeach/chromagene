@@ -11,7 +11,7 @@ git clone https://github.com/mollybeach/chromagene.git
 cd chromagene/
 heroku login
 heroku create
-git push heroku masterf
+git push heroku master
 
 npm install
 cd client
@@ -30,7 +30,7 @@ git push heroku master
 
 heroku buildpacks:clear
 
-
+Upload raw dna text file to chromagene.heroku.app/upload
 DNA Files are enormous around 600,000 lines 
 
 Example DNA the first of every chromosome displayed: 
@@ -38,9 +38,6 @@ Example DNA the first of every chromosome displayed:
 ![GitHub Logo](client/src/assets/images/extxt.png)
 
 ![GitHub Logo](client/src/assets/images/start.png)
-
-
-
 
 
 
