@@ -1,7 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react'; //, { useCallback, useEffect, useState }
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-
-
 import Header from "./components/Header/Header";
 import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
@@ -19,9 +17,9 @@ console.log(process.env.REACT_APP_API_URL);
 console.log(process.env.REACT_APP_HOST);
 
 function App() {
-  const [message, setMessage] = useState(null);
-  const [isFetching, setIsFetching] = useState(false);
-  const [url] = useState('/api');
+  //const [message, setMessage] = useState(null);
+  //const [isFetching, setIsFetching] = useState(false);
+  //const [url] = useState('/api');
   //const [homeData] = useState('/homeApi');
  // const [my23Data] = useState('/my23Api');
  // const [galleryData] = useState('/galleryApi');
@@ -29,7 +27,7 @@ function App() {
  // const [contactData] = useState('/contactApi');
 
   
-
+/*
   const fetchData = useCallback(() => {
     fetch(url)
       .then(response => {
@@ -45,31 +43,32 @@ function App() {
         setMessage(`API call failed: ${e}`);
         setIsFetching(false);
       })
-  }, [url]);
+  }, [url]);*/
 
-  useEffect(() => {
+  /*useEffect(() => {
     setIsFetching(true);
     fetchData();
-  }, [fetchData]);
+  }, [fetchData]);*/
 
   return (
-         /*       
-
+      /*       
     if(homeData ===null ) {  
       return (
       <div> 
-     <img className ="app__rainbows"src={company} alt=''></img>
-       <div className = "app__load"></div>
-       <div className = "app__text"> Thank you for waiting patiently. There's alot to load here! :) </div>
-       <img className="app__ring" src={ring} alt=''></img>
+          <img className ="app__rainbows"src={company} alt=''></img>
+            <div className = "app__load"></div>
+            <div className = "app__text"> Thank you for waiting patiently. There's alot to load here! :) </div>
+            <img className="app__ring" src={ring} alt=''></img>
        </div> )
-       } */
     <div >
 <strong>
           {isFetching
             ? 'Fetching message from API'
             : message}
         </strong>
+            } */
+    <div >
+  
       <BrowserRouter>
       <Header />
         <Switch>

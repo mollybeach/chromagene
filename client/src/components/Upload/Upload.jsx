@@ -3,7 +3,8 @@ import axios from 'axios';
 import './Upload.scss';
 //import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 require('dotenv').config();
-function FileUpload() {
+
+const Upload = () => {
     /****************************STORE FILE WITH HOOKS****************************************/
     let [data, grabFile] = useState({ name: "", path: "" });    
     let [prog, set] = useState(0); 
@@ -16,7 +17,7 @@ function FileUpload() {
         console.log(file);
         storeFile(file); 
     }
-/****************************UPLOAD FUNCTION************************************/
+    /****************************UPLOAD FUNCTION************************************/
     const uploadFile = () => {
         const formData = new FormData();        
         formData.append('file', file);
@@ -32,6 +33,8 @@ function FileUpload() {
             path: process.env.REACT_APP_API_URL  + res.data.path
             })
         }).catch(err => console.log(err))}
+
+        /****************************HTML************************************/
         return (
         <main className="main">
             <form  className=""method='POST' action="post">
@@ -52,4 +55,4 @@ function FileUpload() {
 
         );
     }
-    export default FileUpload;
+    export default Upload;
