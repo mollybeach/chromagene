@@ -1,14 +1,12 @@
-import React, { useRef,  useEffect } from 'react';
-import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
+import React from 'react'; //, { useRef,  useEffect }
+//import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 //import spCode from './spCode';
 import './Gallery.scss';
-import sculptToMinimalRenderer from 'shader-park-core';
-
-import {spCode} from './spCode.js';
-
+//import sculptToMinimalRenderer from 'shader-park-core';
+//import {spCode} from './spCode.js';
 
 const Gallery = () => {
-  //let [galleryApi, setGalleryApi] = useState([]);
+ /* //let [galleryApi, setGalleryApi] = useState([]);
   const shadeRef = useRef(null);
   useEffect(() => {
     if(shadeRef.current){
@@ -16,39 +14,36 @@ const Gallery = () => {
       console.log(typeof spCode);
       console.log(spCode);
       sculptToMinimalRenderer(canvas, 'sphere(0.5);');
-  }
-
-      
-  }, []);
+  }      
+  }, []);*/
 
         return (
-        <div>
-          <div className="gallery">
-            <div className="hero-container "></div>
-            <div className="content"></div>
-            <div className='gallery__inside '> 
-            <div className="gallery__title "> ChromaGene Genotype Display:<img className="gallery__arrow" src={chevronImg} alt="img" /></div>
-                <div className="gallery__subtitle "> Each color represents one of the 16 SNP</div>
-                <div className="gallery__subtitle "> Simulated Display: </div>
-                <div className="gallery__about "></div>
-            </div>
-          </div>
-        <div>
-      <canvas className="my-canvas"></canvas>
-          <iframe title="miframie" ref={shadeRef}>
-          <body className="removeAdditionaFrame"></body>
-      </iframe>
-    </div>
-      </div>   
+          <main class="main">
+              <article class="sector sector-featured">
+                  <div class="">
+                      <div class="sector__maintitle imgborderround">ChromaGene Gallery 
+                          <img class="home__arrow " src="https://res.cloudinary.com/chromagene/image/upload/v1628704653/dna/chevron_right-24px_p2z0sa.svg" alt="img"/>
+                      </div>
+                      <div class="sector__subtitle imgborderround"> Each color represents one of the 16 SNPs</div> 
+                          <div class="sector__text gallery__border">
+                              <img class="hero__image  "src="https://res.cloudinary.com/chromagene/image/upload/v1628720174/dna/imgs/transparentdnagif_uzrqua.gif" alt="" />
+                          </div>
+                  </div>
+              </article>
+      </main> 
         );
     }
-
+//ref={shadeRef}
 
 export default Gallery;
 
+/* <canvas className="my-canvas"></canvas>
+                              <iframe title="miframie" frameBorder="0"ref={shadeRef} >
+                                  <body className="removeAdditionaFrame"></body>
+                          
+                              </iframe>*/
 
-
-
+//ref={shadeRef} 
      /*************THE DATA FROM THE BACKEND IT ISNT WORKING BECAUSE  ASYNC */
   //  let source = spCode.toString();
    // let sourceRes = `let lstp = JSON.parse(\`${galleryList}\`);\n` + source;

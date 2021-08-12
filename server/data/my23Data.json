@@ -1,7 +1,7 @@
 [
    {
       "id":"2922c286-16cd-4d4dd3-ab98-cq698aeab0",
-      "img":"https://pbs.twimg.com/media/EyUcwkGVcAAsAtW?format=jpg&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/DOWNARROW_yecl6t.jpgl",
       "chromosome":"Chromosome:",
       "genotype":"Genotype:",
       "data":"Data:",
@@ -14,7 +14,7 @@
    },
    {
       "id":"2922cdsds286-16cd-4d43-ab98-c698aeab0",
-      "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/1GREY_hdfeqt.jpg",
       "chromosome":"1",
       "genotype":"??",
       "data":".",
@@ -27,7 +27,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f698aeab",
-      "img":"https://pbs.twimg.com/media/EyY2RO7VgAEHi45?format=png&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/CClightblue2_cs3k86.png",
       "chromosome":"2",
       "genotype":"CC",
       "data":".",
@@ -40,7 +40,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c78aea",
-      "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/AGMEDIUMPURPLE3_ldlt1l.png",
       "chromosome":"3",
       "genotype":"AG",
       "data":".",
@@ -53,7 +53,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f698ae",
-      "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/1GREY_hdfeqt.jpg",
       "chromosome":"4",
       "genotype":"??",
       "data":".",
@@ -66,7 +66,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f698a",
-      "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/1GREY_hdfeqt.jpg",
       "chromosome":"5",
       "genotype":"??",
       "data":".",
@@ -79,7 +79,7 @@
    },
    {
       "id":"2922c26cd-4d43-ab98-c79f698",
-      "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/1GREY_hdfeqt.jpg",
       "chromosome":"6",
       "genotype":"??",
       "data":".",
@@ -92,9 +92,9 @@
    },
    {
       "id":"2922c286-16d43-ab98-c79f68aea",
-      "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/AGMEDIUMPURPLE3_ldlt1l.png",
       "chromosome":"7",
-      "genotype":"CC",
+      "genotype":"AG",
       "data":".",
       "contact":{
          "scienticname":"+",
@@ -105,7 +105,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-a98-c79f698ae",
-      "img":"https://pbs.twimg.com/media/EyY4wzjVoAQP54r?format=png&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/GGMEDIUMBROWN8_cnpusj.png",
       "chromosome":"8",
       "genotype":"GG",
       "data":".",
@@ -118,7 +118,7 @@
    },
    {
       "id":"2922c286-16d-4d43-ab98-c79f98aeab2",
-      "img":"https://pbs.twimg.com/media/EyY41QLUYAUGSXQ?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/CAPEASOUP9_ob3zfh.png",
       "chromosome":"9",
       "genotype":"CA",
       "data":".",
@@ -131,7 +131,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f698ab3123",
-      "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/1GREY_hdfeqt.jpg",
       "chromosome":"10",
       "genotype":"??",
       "data":".",
@@ -144,7 +144,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-98-c79f698aeab5",
-      "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/AGMEDIUMPURPLE3_ldlt1l.png",
       "chromosome":"11",
       "genotype":"AG",
       "data":".",
@@ -157,9 +157,9 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f698aeab5",
-      "img":"https://pbs.twimg.com/media/EyY7CVKU4AAzmkb?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/TARED12_c61bd3.png",
       "chromosome":"12",
-      "genotype":"AG",
+      "genotype":"TA",
       "data":".",
       "contact":{
          "scienticname":"+",
@@ -170,7 +170,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f6ab556",
-      "img":"https://pbs.twimg.com/media/EyZVb7nU4Ac0IyG?format=jpg&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/1GREY_hdfeqt.jpg",
       "chromosome":"13",
       "genotype":"??",
       "data":".",
@@ -183,7 +183,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f6ab5dssdds56",
-      "img":"https://pbs.twimg.com/media/EyY7IdLVIAA52OX?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/TTMEDIUMBLUE14_tyuvsw.png",
       "chromosome":"14",
       "genotype":"TT",
       "data":".",
@@ -196,7 +196,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-abdsds98-c79f6ab5dssdds56",
-      "img":"https://pbs.twimg.com/media/EyY7L4aUcAEmvtK?format=png&name=900x900",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/ACLIGHTVIOLET15_n7frw2.png",
       "chromosome":"15",
       "genotype":"AC",
       "data":".",
@@ -209,9 +209,9 @@
    },
    {
       "id":"2922c286-16cd-4d-ab98-c79f698ae64",
-      "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/AGMEDIUMPURPLE3_ldlt1l.png",
       "chromosome":"16",
-      "genotype":"CC",
+      "genotype":"AG",
       "data":".",
       "contact":{
          "scienticname":"+",
@@ -222,9 +222,9 @@
    },
    {
       "id":"2922c2486-16cd-4d43-ab98-79f69adsse654",
-      "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/AGMEDIUMPURPLE3_ldlt1l.png",
       "chromosome":"17",
-      "genotype":"CC",
+      "genotype":"AG",
       "data":".",
       "contact":{
          "scienticname":"+",
@@ -235,9 +235,9 @@
    },
    {
       "id":"2922c28-16cd-44d43-ab98-c79f698aeab0",
-      "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/AGMEDIUMPURPLE3_ldlt1l.png",
       "chromosome":"18",
-      "genotype":"CC",
+      "genotype":"AG",
       "data":".",
       "contact":{
          "scienticname":"+",
@@ -248,9 +248,9 @@
    },
    {
       "id":"29226-16cd-4d43-ab98-c79f698aeab5",
-      "img":"https://pbs.twimg.com/media/EyY2YZkUcAASq6y?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/TTMEDIUMBLUE14_tyuvsw.png",
       "chromosome":"19",
-      "genotype":"CC",
+      "genotype":"TT",
       "data":".",
       "contact":{
          "scienticname":"+",
@@ -261,9 +261,9 @@
    },
    {
       "id":"2922c286-16d-4d43-ab8-c79f698aeab032d",
-      "img":"https://pbs.twimg.com/media/EyY2D98VgAYZG_X?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706311/dna/snp/AGMEDIUMPURPLE3_ldlt1l.png",
       "chromosome":"20",
-      "genotype":"CC",
+      "genotype":"AG",
       "data":".",
       "contact":{
          "scienticname":"+",
@@ -274,7 +274,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c79f6998aea34",
-      "img":"https://pbs.twimg.com/media/EyY3cTGUcAIZ7uM?format=png&name=small",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/GGLIGHTGREEN21_k2iz8b.png",
       "chromosome":"21",
       "genotype":"GG",
       "data":".",
@@ -287,7 +287,7 @@
    },
    {
       "id":"2922c286-16cd-4d43-ab98-c799f698aeab0",
-      "img":"https://pbs.twimg.com/media/EyY7CVKU4AAzmkb?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/TARED12_c61bd3.png",
       "chromosome":"22",
       "genotype":"??",
       "data":".",
@@ -300,7 +300,7 @@
    },
    {
       "id":"2922c286-169cd-4d43-ab98-c79f698aeab34",
-      "img":"https://pbs.twimg.com/media/EyY7CVKU4AAzmkb?format=png&name=360x360",
+      "img":"https://res.cloudinary.com/chromagene/image/upload/v1628706305/dna/snp/TARED12_c61bd3.png",
       "chromosome":"X",
       "genotype":"??",
       "data":".",

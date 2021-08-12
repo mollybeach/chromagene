@@ -7,8 +7,8 @@ import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
 import Contact from "./components/Contact/Contact";
 import My23 from './components/My23/My23';
-
 import Upload from "./components/Upload/Upload";
+import Footer from "./components/Footer/Footer";
 import './App.scss'
 //import company from './assets/Icons/company.svg';
 //import ring from './assets/Icons/DNA-Circle.svg';
@@ -64,7 +64,7 @@ function App() {
        <img className="app__ring" src={ring} alt=''></img>
        </div> )
        } */
-    <div className="App">
+    <div >
 <strong>
           {isFetching
             ? 'Fetching message from API'
@@ -81,6 +81,7 @@ function App() {
           <Route exact path ={[ '/contact' ]}  render = {(props)=> <Contact   {...props}  />} />
      
           </Switch> 
+          <Footer />
         </BrowserRouter>
     </div>
   );

@@ -24,39 +24,20 @@ class Contact extends React.Component {
     }                                             
 render(){                                         
     return (                           
-      <main className="new-contact content-background">
-        <div className="new-contact__full-container">
-          <section className="new-contact__header-container">
-          <form onSubmit={this.addNewContact}>
-            <div className="new-contact__forms-container">
-            <div className="contact-form ">
-        <h2 className="contact-form__title">Contact Details</h2>
-        <div className="contact-form__title-label-container">
-          <label htmlFor="contactName" className="contact-form__label">Name</label>
-          <input type="text" id="contactName" className="contact-form__input" name="contactName" placeholder="Name"/>
-        </div>                         
-        <div className="contact-form__title-label-container">
-          <label htmlFor="contactAddress" className="contact-form__label">Address</label>
-          <input type="text" id="contactAddress" className="contact-form__input" name="contactAddress" placeholder="Street Address"/>
-        </div>
-        <div className="contact-form__title-label-container">
-          <label htmlFor="contactCity" className="contact-form__label" data-error="City field seems to be invalid">City</label>
-          <input type="text" id="contactCity" className="contact-form__input" name="contactCity" placeholder="City"/>
-        </div>
-        <div className="contact-form__title-label-container">
-          <label htmlFor="contactCountry" className="contact-form__label">Country</label>
-          <input type="text" id="contactCountry" className="contact-form__input" name="contactCountry" placeholder="Country"/>
-        </div>
-        <div className="contact-form__title-label-container">
-            <div className="btn btn--delta contact__buttoncenter" type="submit"><span className="contact__buttontext">Enter</span></div>
-            </div>
-            </div>
-            </div>
-          </form>
-          </section>
-        </div>
-      
-      </main>
+      <main class="main">
+      <form  class=""method='POST' action="post"  onSubmit={this.addNewContact}>
+          <h1 class='form-header'>CONTACT US</h1>
+          <div class="form-input " >
+                  <label for="user">Subject:</label>
+                  <input name='username' type="text" id="user" class="form-input" autocomplete="off"/>
+          </div>
+          <div class="input-block">
+                  <label for="password">Message:</label>
+                  <input name='password' type="text" id="password" class="form-input"/>
+          </div>
+  <button type="submit" class="btn btn--delta">Submit</button>
+  </form>
+</main>
     )
   }
 }

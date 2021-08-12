@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import axios from 'axios';
 import './Upload.scss';
-import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
+//import chevronImg from "../../assets/Icons/chevron_right-24px.svg";
 require('dotenv').config();
 function FileUpload() {
     /****************************STORE FILE WITH HOOKS****************************************/
@@ -33,26 +33,23 @@ function FileUpload() {
             })
         }).catch(err => console.log(err))}
         return (
-        <div>
-            <div className="upload">
-            <div className="hero-container "></div>
-            <div className='upload__inside '>
-                <div className="upload__title ">ChromaGene
-                <img className="upload__arrow" src={chevronImg} alt="img" />
-            </div>
-            <div className="upload__subtitle ">Upload Your DNA file:</div>
-                <div className="upload__about " > Upload DNA .txt or .csv file to create unique art and begin your journey!
-                    <div className="upload__progessBar" style={{ width: prog }}>{prog}</div>
+        <main className="main">
+            <form  className=""method='POST' action="post">
+                <h1 className='form-header'>Upload Your DNA file:</h1><br></br>
+                <div className="input-block">
+                    <label for="user">Upload DNA .txt or .csv file to create unique art and begin your journey!</label>
+                    <div className="upload__about " >
+                    <div className="upload__progessbar" style={{ width: prog }}>{prog}</div>
                     <input type="file" ref={el} onChange={onEvent} id="mod-button" hidden/> 
-                    <label for="mod-button"  className="btn-form btn-form--delta" ><span>Choose File</span></label>   
-                    <button onClick={uploadFile} className="btn btn--gamma"><span>Upload</span></button>
-                      <hr />
+                    <label for="mod-button"  className="" ><span>Choose File</span></label>  
+                        <button onClick={uploadFile} className="btn btn--gamma"><span>Upload</span></button>
+                        <hr/>
                     {data.path && <img src={data.path} alt={data.name} />}
-              </div>
-              </div>
-            </div>
-          
-       </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+
         );
     }
     export default FileUpload;
