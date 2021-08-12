@@ -27,7 +27,7 @@ render(){
       <main class="main">
       <form  class=""method='POST' action="post"  onSubmit={this.addNewContact}>
           <h1 class='form-header'>CONTACT US</h1>
-          <div class="form-input " >
+          <div class="input-block " >
                   <label for="user">Subject:</label>
                   <input name='username' type="text" id="user" class="form-input" autocomplete="off"/>
           </div>

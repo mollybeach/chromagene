@@ -1299,20 +1299,6 @@ label {
   };
 };
 /**************************END FORM**************************/
-/**************************23 TABLE*************************/
-#content.my23__table{
-  display: flex;
-  padding: 2%;
-}
-table, th, td {
-  border: 1px solid var(--cottoncandy);
-
-
-}
-table {
-  width: 100%;
-  table-layout:fixed;
-}
 
 
 /****************************************END TABLES****************************************/
@@ -1542,3 +1528,19 @@ table {
     color: white;
     padding:2px
   }
+  /**************************END FORM**************************/
+  /**************************23 TABLE*************************/
+  #content.my23__table{
+    display: flex;
+    padding: 2%;
+  }
+  table, th, td {
+    border: 1px solid var(--cottoncandy);
+  
+  
+  }
+  table {
+    width: 100%;
+    table-layout:fixed;
+  }
+  
