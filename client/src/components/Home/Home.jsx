@@ -23,7 +23,6 @@ const Home = () => {
                 <div className="sector-card">
                         <h4 className="sidebar-list__label imgborderround">INFO</h4>
                         <a href="/#"><img className="sidebar-list__image"src='https://res.cloudinary.com/chromagene/image/upload/v1628704643/dna/DNA-Circle_ixxq6g.svg' alt="Facial" /></a>
-                        <h6 className="sector-date">07.15.21</h6> 
                             <div className="sector__text">
                                 <h1 className="sector-title imgborderround"><a href="/#">TEMPLATES</a></h1>
                                 <p className="excerpt imgborderround">Homo J est A diu DNA molecule ex parte aut ex toto geneticae materia of an organism. Quo dicitur servo histones Eukaryotic maxime chromosomata includunt packaging adiutus chaperone servo obligant et conprehensa DNA moleculae servare integrit</p>
@@ -35,7 +34,6 @@ const Home = () => {
                     <div className="sector-card ">
                         <h4 className="sidebar-list__label imgborderround">DATA</h4>
                         <img  className="sidebar-list__image imgborderround" src="https://res.cloudinary.com/chromagene/image/upload/v1628720174/dna/imgs/transparentdnagif_uzrqua.gif" width="256" height="256" alt="" />   
-                        <h6 className="sector-date">07.15.21</h6> 
                         <div className="sector__text">
                             <h1 className="sector-title imgborderround"><a href="/#">STUDIES</a></h1>
                             <p className="excerpt imgborderround">Geneticae tamen experientia certissima est vexillum, etiam maior modi est, inter coetus, Patrem omnipotentem sanguis typing, analysis de variis aliorum proteins quod enzymes, vel per humanae leukocyte antigen antigens. Nam paternitas temptationis quae per artes in current Encephalitis (PCR) et Dictyostelium discoideum (RFLP). Temptationis potest fieri paternitas nunc et usque dum femina gravida ducatur a sanguine..</p>

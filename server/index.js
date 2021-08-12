@@ -30,12 +30,13 @@ if (!isDev && cluster.isMaster) {
 
 } else {
   const app = express();
+  app.use(cors())
   app.use("/", homeApi);                                
   app.use("/", galleryApi);                             
   app.use("/", uploadApi);                          
   app.use("/", contactApi);                             
   app.use("/", my23Api);  
-  app.use(cors())
+ 
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../client/build')));
 
